@@ -1,319 +1,376 @@
-﻿# Typed Math
-Sometimes when working with calculations I tend to get a touch of Dyscalculia. That is why I loved Visual Basic in the 90s. 
-It had descriptive code, and VB.net does still have it. But I prefer to work with C#. Though I do miss some functions from time to time.
-To avoid visits from the ghost of Dyscalculia I created this project.
-At first it seemed like a pretty meaningless project, but soon I realised this could be useful. So, I made it a NuGet.
-It's all extensions to number types. 
+# TypedMath
 
-LinQ is great and it does offer a lot of ways to make the code more readable, if you use LinQ I see no reason why you should need this package. 
+[![NuGet](https://img.shields.io/nuget/v/TypedMath.svg)](https://www.nuget.org/packages/TypedMath/)
+[![.NET](https://img.shields.io/badge/.NET-8.0+-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Instead of writing
+Verbose math operations for better code readability. Perfect for developers dealing with dyscalculia or anyone who prefers explicit, readable calculations.
+
+## Overview
+
+Sometimes when working with calculations, I tend to get a touch of Dyscalculia. That's why I loved Visual Basic in the 90s - it had descriptive code, and VB.NET still does. But I prefer working with C#, though I miss some functions from time to time.
+
+To avoid visits from the ghost of Dyscalculia, I created TypedMath. At first it seemed pretty meaningless, but soon I realized this could be useful for others too!
+
+## The Problem
+
+Traditional math operators can be hard to read in complex calculations:
+
 ```csharp
 var x = 10 * 32 + y;
 ```
-you can write 
+
+## The Solution
+
+TypedMath makes calculations explicit and readable:
+
 ```csharp
 var x = 10.MultipliedWith(32).Add(y);
 ```
 
+## Features
 
-The package contains namespaces for the most common data types in Visual Studio.
+- ✅ **Verbose Arithmetic** - Explicit method names for all math operations
+- ✅ **Type Extensions** - Works with all numeric types (int, double, decimal, float, byte, char, long, etc.)
+- ✅ **Comparison Methods** - Readable `GreaterThan()`, `LessThan()`, `IsEqualTo()`
+- ✅ **Bitwise Operations** - `And()`, `Or()`, `Xor()`, `Not()`, `ShiftLeft()`, `ShiftRight()`
+- ✅ **Percentage Helpers** - Easy `PercentOf()`, `AddPercent()`, `SubtractPercent()`
+- ✅ **Array Operations** - Comprehensive array manipulation methods
+- ✅ **Prime Number Detection** - Built-in `IsPrime()` method
+- ✅ **Value Selection** - Helpers like `ChooseIfHigher()`, `SwapWith()`
+- ✅ **Zero Dependencies** - Pure .NET extensions
+- ✅ **Comprehensive Tests** - Full xUnit test coverage
 
-To use the extensions, use any of the namespaces
-```csharp
-using MarcusMedinaPro.TypedMath.ByteExtension; // Bytes
-using MarcusMedinaPro.TypedMath.CharExtension; // Char
-using MarcusMedinaPro.TypedMath.DecimalExtension; // Decimal
-using MarcusMedinaPro.TypedMath.DoubleExtension; // Double
-using MarcusMedinaPro.TypedMath.IntExtension; // Int
-using MarcusMedinaPro.TypedMath.LongExtension; // Long
-using MarcusMedinaPro.TypedMath.SByteExtension; // SByte
-using MarcusMedinaPro.TypedMath.ShortExtension; // Short
-using MarcusMedinaPro.TypedMath.UintExtension; // Uint
-using MarcusMedinaPro.TypedMath.UlongExtension; //Ulong
-using MarcusMedinaPro.TypedMath.UshorttExtension; //Ushort
+## Requirements
+
+- .NET 8.0 or higher
+
+## Installation
+
+### Package Manager Console
+```powershell
+Install-Package TypedMath
 ```
-Most of the functions have automatic casting from one to another, so you can work with mixed doubles and floats and ints if you want.
+
+### .NET CLI
+```bash
+dotnet add package TypedMath
+```
+
+### Package Reference
+```xml
+<PackageReference Include="TypedMath" Version="2.0.0" />
+```
+
+## Quick Start
+
+```csharp
+using MarcusMedinaPro.TypedMath.IntExtension;
+
+// Arithmetic operations
+var sum = 10.Add(5);              // 15
+var diff = 10.Subtract(3);        // 7
+var product = 10.MultipliedWith(5); // 50
+var quotient = 20.DividedBy(4);   // 5
+var remainder = 10.Modulus(3);    // 1
+
+// Comparisons
+if (y.GreaterThan(x))
+{
+    // Do something
+}
+
+// Percentages
+var money = 1500.5;
+var tax = 15.2.PercentOf(money);       // Calculate 15.2% of money
+money = money.AddPercent(20);          // Increase by 20%
+money = money.SubtractPercent(10);     // Decrease by 10%
+
+// Prime numbers
+if (17.IsPrime())
+{
+    Console.WriteLine("17 is prime!");
+}
+
+// Value selection
+var highest = 50.ChooseIfHigher(32);   // Returns 50
+var lowest = 32.ChooseIfLower(50);     // Returns 32
+```
+
+## Supported Types
+
+TypedMath provides extensions for all common numeric types:
+
+```csharp
+using MarcusMedinaPro.TypedMath.ByteExtension;    // byte
+using MarcusMedinaPro.TypedMath.CharExtension;    // char
+using MarcusMedinaPro.TypedMath.DecimalExtension; // decimal
+using MarcusMedinaPro.TypedMath.DoubleExtension;  // double
+using MarcusMedinaPro.TypedMath.FloatExtension;   // float
+using MarcusMedinaPro.TypedMath.IntExtension;     // int
+using MarcusMedinaPro.TypedMath.LongExtension;    // long
+using MarcusMedinaPro.TypedMath.SByteExtension;   // sbyte
+using MarcusMedinaPro.TypedMath.ShortExtension;   // short
+using MarcusMedinaPro.TypedMath.UintExtension;    // uint
+using MarcusMedinaPro.TypedMath.UlongExtension;   // ulong
+using MarcusMedinaPro.TypedMath.UshortExtension;  // ushort
+```
+
+Most functions have automatic casting between types, so you can mix doubles, floats, and ints if needed.
+
+## API Reference
+
+### Arithmetic Operations
+
+```csharp
+int Add(this int x, int y)
+int Subtract(this int x, int y)
+int MultipliedWith(this int x, int y)
+int DividedBy(this int x, int y)
+int Modulus(this int x, int y)
+```
+
+### Comparison Operations
+
+```csharp
+bool GreaterThan(this int x, int y)
+bool LessThan(this int x, int y)
+bool IsEqualTo(this int x, int y)
+bool IsNotEqualTo(this int x, int y)
+bool IsPositive(this int x)
+bool IsNegative(this int x)
+```
+
+### Bitwise Operations
+
+Available for integer types (int, short, sbyte, long, etc.):
+
+```csharp
+int And(this int x, int y)          // Bitwise AND
+int Or(this int x, int y)           // Bitwise OR
+int Xor(this int x, int y)          // Bitwise XOR
+int Not(this int x)                 // Bitwise NOT
+int ShiftLeft(this int x, int y)    // Left shift
+int ShiftRight(this int x, int y)   // Right shift
+```
+
+**Example:**
+```csharp
+var test1 = 10.And(2);        // 1010 & 0010 = 0010 (2)
+var test2 = 12.Or(2);         // 1100 | 0010 = 1110 (14)
+var test3 = 14.Xor(2);        // 1110 ^ 0010 = 1100 (12)
+var test4 = 16.Not();         // ~16 = -17
+var test5 = 42.ShiftLeft(1);  // 42 << 1 = 84
+var test6 = 24.ShiftRight(1); // 24 >> 1 = 12
+```
+
+### Percentage Operations
+
+```csharp
+double PercentOf(this double x, double y)
+double AddPercent(this double x, double y)
+double SubtractPercent(this double x, double y)
+```
+
+**Example:**
+```csharp
+var money = 1500.5;
+var x = 15.2.PercentOf(money);  // Calculate 15.2% of 1500.5
+money = money.AddPercent(20);    // Add 20% to money
+money = money.SubtractPercent(20); // Subtract 20% from money
+```
+
+### Value Selection
+
+```csharp
+int ChooseIfHigher(this int x, int y)  // Returns higher value
+int ChooseIfLower(this int x, int y)   // Returns lower value
+void SwapWith(this int x, ref int y)   // Swaps two values
+void SetHighestValueOf(this ref int x, int val1, int val2)
+void SetLowestValueOf(this ref int x, int val1, int val2)
+```
+
+**Example:**
+```csharp
+var value1 = 50;
+var value2 = 32;
+var x = value1.ChooseIfHigher(value2);  // Returns 50
+var y = value2.ChooseIfLower(value1);   // Returns 32
+
+// Swap values
+var a = 10;
+var b = 20;
+b.SwapWith(ref a);  // a = 20, b = 10
+```
+
+### Prime Numbers
+
+```csharp
+bool IsPrime(this int x)
+```
+
+**Example:**
+```csharp
+var x = 5.IsPrime();  // true
+var y = 6.IsPrime();  // false
+```
+
+### Difference
+
+```csharp
+int GetDifference(this int x, int y)
+```
+
+**Example:**
+```csharp
+var num1 = 100;
+var num2 = 129;
+var diff = num1.GetDifference(num2);  // 29
+
+var num3 = 100;
+var num4 = 35;
+var diff2 = num3.GetDifference(num4); // -65
+```
+
+### Type Casting
+
+```csharp
+byte CastDoubleToByte(this double x)
+char CastDoubleToChar(this double x)
+decimal CastDoubleToDecimal(this double x)
+int CastDoubleToInt(this double x)
+long CastDoubleToLong(this double x)
+sbyte CastDoubleToSbyte(this double x)
+short CastDoubleToShort(this double x)
+uint CastDoubleToUint(this double x)
+ulong CastDoubleToUlong(this double x)
+ushort CastDoubleToUshort(this double x)
+```
+
+**Example:**
+```csharp
+double y = 13.37;
+var i = y.CastDoubleToInt();      // 13
+var d = y.CastDoubleToDecimal();  // 13.37
+var b = y.CastDoubleToByte();     // 13
+```
+
+## Array Extensions
+
+TypedMath includes comprehensive array manipulation methods:
+
+```csharp
+using MarcusMedinaPro.TypedMath.DoubleExtension;
+
+var arr = new double[] { 10, 42, 20.13, 91.4, 30, 1, 3, 11, 29, 46 };
+```
+
+### Basic Array Operations
+
+```csharp
+var average = arr.GetAverage();      // Calculate average
+var first = arr.GetFirstValue();     // Get first element
+var last = arr.GetLastValue();       // Get last element
+var middle = arr.GetMiddleValue();   // Get middle element
+var highest = arr.GetHighestValue(); // Get maximum
+var lowest = arr.GetLowestValue();   // Get minimum
+```
+
+### Filtering Operations
+
+```csharp
+var higherThan = arr.GetValuesHigherThan(10);  // Values > 10
+var lowerThan = arr.GetValuesLowerThan(10);    // Values < 10
+```
+
+### Sorting Operations
+
+```csharp
+var sortAscending = arr.SortArrayAsc();   // Sort ascending
+var sortDescending = arr.SortArrayDesc(); // Sort descending
+```
+
+### Array Manipulation
+
+```csharp
+var newSize = arr.SetNewArraySize(150);          // Resize array
+var sum = arr.SumAllValues();                    // Sum all elements
+var left = arr.RotateLeft();                     // Rotate left
+var right = arr.RotateRight();                   // Rotate right
+var ints = arr.ConvertArrayToInt();              // Convert to int[]
+var plusVal = arr.IncreaseAllValuesWith(10);     // Add 10 to all
+var minusVal = arr.DecreaseAllValuesWith(12);    // Subtract 12 from all
+```
+
+### Array Sections
+
+```csharp
+var firstHalf = arr.GetFirstHalf();     // First half of array
+var middleValues = arr.GetMiddle();     // Middle elements
+var lastHalf = arr.GetLastHalf();       // Last half of array
+```
+
+## When to Use TypedMath
+
+### ✅ Good Use Cases
+
+- **Code readability** - When you value explicit, self-documenting code
+- **Dyscalculia** - When you struggle with traditional math notation
+- **Teaching** - When explaining code to beginners
+- **Complex calculations** - When chaining many operations
+- **Code reviews** - When you want intentions to be crystal clear
+
+### ❌ Not Recommended
+
+- **Performance-critical code** - Adds minimal overhead
+- **Math-heavy algorithms** - Traditional operators are more concise
+- **When using LINQ** - LINQ already provides readable operations
+- **Minimalist code** - If you prefer terse, compact code
 
 ## Disclaimer
-This project is nothing magical most of the functions are one-liners. The idea is not to create special functions, but to make the code easier to read. If you're a hardcore coder that love to minimize your code, this is not for you. But if you feel like you want code that will be easy to read, this might help.
 
-## Changes
-* 20200406 - Added DifferenceFrom
-* 10190603 - Added array handlers
-* 20190524 - Added Percent, Highest, Lowest, Swap
-* 20190526 - Renamed ChoseHighestValue/ChoseLowestValue to ChoseHighestValueOf/ChoseLowestValueOf. Added SetHighestValueOf/SetLowestValueOf. Swap uses reference now
-* 20190529 - Corrected misspelling in Subtract and added Obsolete tag to the misspelled method. Renamed ChoseHighest/Lowest to ChooseIfHigher/ChooseIfLower
+This project is nothing magical - most functions are one-liners. The idea isn't to create special functions, but to make code easier to read. If you're a hardcore coder who loves to minimize your code, this isn't for you. But if you want code that's easy to read and maintain, this might help.
 
-## Examples
-Here is the list of functions available for most of the types. In this example I'm using *double*
-```csharp
-using MarcusMedinaPro.TypedMath.DoubleExtension; // Double
-```
-Compares the current double to a value of almost any type. Greater than and Less than works fine, but I don't recommend using IsEqual between different types of numbers like ints and doubles. That is just silly.
+## Migration Guide
 
-```csharp
-    // bool GreaterThan(...);
-    int x = 10;
-    double y = 15.2;
-    if (y.GreaterThan(x))
-    { 
-        // Do something
-    }
+### From v1.x to v2.0.0
 
-    // bool LessThan(...);
-    if (y.LessThan(x))
-    { 
-        // Do something
-    }
-```
+**Breaking Changes:**
+- **.NET Framework 4.6.1 → .NET 8.0**: Update your project's target framework
+- **License Change**: GPL v3 → MIT (more permissive)
 
-Compare if the numbers are equal or not
-(this can be tricky when using decimals though)
-```csharp
-    // bool IsEqual(...);
-    int x = 10;
-    double y = 15.2;
-    if (x.IsEqualTo(y))
-    {
-        // Do something
-    }
+**New Features:**
+- Full xUnit test coverage
+- Modern SDK-style project format
+- GitHub Actions CI/CD
+- Improved XML documentation
+- NuGet package improvements
 
-    // bool IsNotEqual(...);
-    if (x.IsNotEqualTo(y))
-    {
-        // Do something
-    }
+**No API Changes** - All existing code continues to work!
 
-```
-You could go wild and crazy and write
-```csharp
-    if (!x.IsNotEqualTo(y))
-    {
-        // Do something if x is not not equal to y
-        // or rather Do something if x is equal to y
-    }
+## Credits
 
-```
-But that would make the code look weird.
+- **Author**: Marcus Medina
+- **Prime Numbers**: LINQ implementation by [Zoran Horvat](http://www.codinghelmet.com/articles/linq-all-primes/)
+- **Array Operations**: Inspired by [mqp on Stack Overflow](https://stackoverflow.com/a/823537)
+- **Icon**: GPL from [Icons8](http://www.iconarchive.com/show/ios7-icons-by-icons8/Science-Math-icon.html)
 
-Check if the value is positive or negative
-```csharp
-    // bool IsNegative();
+## License
 
-    double y=-2;
-    if (y.IsNegative())
-    {
-        // Do something
-    }
+This work is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
-    // bool IsPositive();
-    if (y.IsPositive())
-    {
-        // Do something
-    }
-```
+## Source Code
 
-Add and Subtract can also be done in typed form.
-```csharp
-    // double Add(...);
-    double y = 12;
-    int x=14;
-    var res = y.Add(x);
+Full source available on [GitHub](https://github.com/MarcusMedina/TypedMath)
 
-    // double Subtract(...);
-    res = y.Subtract(x);
-```
+## NuGet Package
 
-Divide, Multiply and Modulus are also available
-```csharp
-    // double DividedBy(...);
-    int x = 10;
-    double y = 12;
-    var res = y.DividedBy(x);
-
-    // double MultipliedWith(...);
-    res = y.MultipliedWith(x);
-
-    // double Modulus(...);
-    res = y.Modulus(x);
-```
-
-Cast to another type if you don't like using var x=(int)myDouble;
-```csharp
-    double y = 13.37;
-// byte CastDoubleToByte();
-    var b = y.CastDoubleToByte();
-
-// char CastDoubleToChar();
-    var c = y.CastDoubleToChar();
-
-// decimal CastDoubleToDecimal();
-    var d = y.CastDoubleToDecimal();
-
-// int CastDoubleToInt();
-    var i = y.CastDoubleToInt();
-
-// long CastDoubleToLong(...);
-    var l = y.CastDoubleToLong();
-
-// sbyte CastDoubleToSbyte(...);
-    var sb = y.CastDoubleToSbyte();
-
-// short CastDoubleToShort(...);
-    var sh = y.CastDoubleToShort();
-
-// uint CastDoubleToUint(...);
-    var ui = y.CastDoubleToUint();
-
-// ulong CastDoubleToUlong(...);
-    var ul = y.CastDoubleToLong();
-
-// ushort CastDoubleToUshort(...);
-    var usr = y.CastDoubleToUshort();
-```
-
-You can also do bitwise operations And, Or, Xor, Not, Shift left and Shift right on the types that works with those operations (Int, short, sbyte etc)
-```csharp
-    var test1 = 10.And(2);
-    var test2 = 12.Or(2);
-    var test3 = 14.Xor(2);
-    var test4 = 16.Not();
-    var test5 = 42.ShiftLeft(1);
-    var test6 = 24.ShiftRight(1);
-```
-You can get the percent, add and Subtract percent from a value.
-```csharp
-    var money = 1500.5;
-    var x = 15.2.PercentOf(money);
-
-    money = money.AddPercent(20); // same as money += 20.PercentOf(money);
-    money = money.SubtractPercent(20); // same as money -= 20.PercentOf(money);
-```
-Choose highest or lowest number. It's a as simple as it sounds.
-```csharp
-    var value1 = 50;
-    var value2 = 32;
-
-    var x = value1.ChooseIfHigher(value2);
-    var y = value2.ChooseIfLower(value1);
-```
-
-Swap values if you'd ever need it.
-```csharp
-    var x = 10;
-    var y = 20;
-    y.SwapWith(ref x); 
-	// x == 20, Y == 10;
-```
-Choose highest or lowest number and set the variable. It's a as simple as it sounds.
-```csharp
-    var x = 0;
-    var y = 0;
-    var value1 = 50;
-    var value2 = 32;
-
-    x.SetHighestValueOf(value1, value2);
-    y.SetLowestValueOf(value1, value2);
-```
-Another nifty function is to be able to check if the current number is a prime number.
-```csharp
-    var x = 5.IsPrime();
-```
-
-## Arrays
-This time I decided to simplify common array functions. Some of them are directly links to LinQ methods, but with a hopefully more descriptive name :)
-```csharp
-      All you need is an array with numbers
-      var arr = new double[] { 10,42,20.13,91.4,30,1,3,11,29,46};
-```
-If you don't want to use LinQ you can use this alternative
-```csharp
-      var average = arr.GetAverage();
-```
-If you don't like using [0] or array[array.Length - 1] to get the first value and last value, or use array [(array.Length - 1) / 2] to get the value int the middle, you can use this alternatives. 
-Though, in LinQ you can just use arr.Last() and with C#8 you can use arr[^1]
-```csharp
-        var first = arr.GetFirstValue();
-        var last = arr.GetLastValue(); 
-        var middle = arr.GetMiddleValue();
-```
-Once again, if you don't want to use LinQ to get highest and lowest value, you can use this more readable alternative
-```csharp
-        var highest = arr.GetHighestValue();
-        var lowest = arr.GetLowestValue();
-```
-To filter out values higher/lower of given number without LinQ, use
-```csharp
-        var higherThan = arr.GetValuesHigherThan(10);
-        var lowerThan = arr.GetValuesLowerThan(10);
-```
-Sometimes you need to resize an array, this might help
-```csharp
-        var newArrSize = arr.SetNewArraySize(150);
-```
-If you need to sort your array and don't want to use LinQ, use this
-```csharp
-        var sortAscending = arr.SortArrayAsc();
-        var sortDescending= arr.SortArrayDesc();
-```
-If you need to sum the array and don't want to use LinQ, use this
-```csharp
-        var sum = arr.SumAllValues();
-```
-OK I admit it, I wrote this code for fun. It moves all values in the array from left to right and vice versa.
-```csharp
-        var left = arr.RotateLeft();
-        var right = arr.RotateRight();
-```
-If you by any reason need to convert the array from whatever numbers to int, and don't want Linq, use this.
-```csharp
-        var ints = arr.ConvertArrayToInt();
-```
-If you need to increase all values in the array with a specific value, this is the one for you
-```csharp
-        var plusVal = arr.IncreaseAllValuesWith(10);
-        var minusVal = arr.DecreaseAllValuesWith(12);
-```
-And finally some quirky code to get the first or last half of the array, or if you need all the numbers in the middle. 
-```csharp
-        var firsthalf = arr.GetFirstHalf();
-        var MiddleValues = arr.GetMiddle();
-        var lastHalf = arr.GetLastHalf();
-```
-# New function added
-GetDifference from, it gives you the difference between two numbers, positive, negative or just zero
-```csharp
-    var num1 = 100;
-    var num2 = 129;
-    var diff = num1.getDifference(num2); 
-    // diff = 29
-```
-or
-```csharp
-    var num1 = 100;
-    var num2 = 35;
-    var diff = num1.getDifference(num2); 
-    // diff = -65
-```
-
-
-
-## Source code
-You can find the code at https://github.com/MarcusMedina/TypedMath
-
-## NuGet
-The NuGet is available at https://www.nuget.org/packages/TypedMath/
+Available on [NuGet.org](https://www.nuget.org/packages/TypedMath/)
 
 ## Collaboration
-Feel free to add, suggest or request a feature. If you want to help develop this NuGet, feel free to send a Pull Request.
 
-## Borrowed code
-* LinQ Prime numbers, Zoran Horvat: http://www.codinghelmet.com/articles/linq-all-primes/
-* Increase/Decrease array values,  mgp (https://stackoverflow.com/users/55943/mqp ) @ https://stackoverflow.com/a/823537 
+Feel free to add, suggest, or request a feature. If you want to help develop this package, feel free to send a Pull Request!
 
-## Borrowed Icons
-* The icon is GPL from http://www.iconarchive.com/show/ios7-icons-by-icons8/Science-Math-icon.html.
+---
 
-Cheers.
-Marcus
+**Made with ❤️ for better code readability**

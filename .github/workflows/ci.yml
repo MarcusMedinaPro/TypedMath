@@ -1,0 +1,49 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+env:
+  DOTNET_VERSION: '8.0.x'
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Test
+        run: |
+          dotnet test \
+            --configuration Release \
+            --no-build \
+            --verbosity normal
+
+      - name: Security Scan - Vulnerable Packages
+        run: |
+          dotnet list package --vulnerable --include-transitive 2>&1 | tee security-scan.txt
+          if grep -q "has the following vulnerable packages" security-scan.txt; then
+            echo "❌ Vulnerable packages detected!"
+            cat security-scan.txt
+            exit 1
+          fi
+          echo "✅ No vulnerable packages found"

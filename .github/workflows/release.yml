@@ -1,0 +1,204 @@
+# TypedMath - Release Workflow
+# Automated NuGet package publishing
+
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'  # Trigger on version tags (v1.0.0, v2.0.0, etc.)
+
+env:
+  DOTNET_VERSION: '8.0.x'
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  # ==================== VALIDATE RELEASE ====================
+  validate:
+    name: Validate Release
+    runs-on: ubuntu-latest
+
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      is_prerelease: ${{ steps.version.outputs.is_prerelease }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Extract Version
+        id: version
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/v}
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+          if [[ "$VERSION" =~ (alpha|beta|rc) ]]; then
+            echo "is_prerelease=true" >> $GITHUB_OUTPUT
+          else
+            echo "is_prerelease=false" >> $GITHUB_OUTPUT
+          fi
+
+          echo "Release version: $VERSION"
+          echo "Pre-release: ${{ steps.version.outputs.is_prerelease }}"
+
+      - name: Verify CHANGELOG
+        run: |
+          if ! grep -q "${{ steps.version.outputs.version }}" CHANGELOG.md; then
+            echo "❌ Error: Version ${{ steps.version.outputs.version }} not found in CHANGELOG.md"
+            exit 1
+          fi
+          echo "✅ CHANGELOG.md contains release notes for ${{ steps.version.outputs.version }}"
+
+  # ==================== BUILD & TEST ====================
+  build:
+    name: Build & Test Release
+    runs-on: ubuntu-latest
+    needs: validate
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build Release
+        run: dotnet build --configuration Release --no-restore /p:Version=${{ needs.validate.outputs.version }}
+
+      - name: Run Tests
+        run: |
+          dotnet test \
+            --configuration Release \
+            --no-build \
+            --verbosity normal \
+            --collect:"XPlat Code Coverage"
+
+      - name: Security Scan - Vulnerable Packages
+        run: |
+          dotnet list package --vulnerable --include-transitive 2>&1 | tee security-scan.txt
+          if grep -q "has the following vulnerable packages" security-scan.txt; then
+            echo "❌ Vulnerable packages detected!"
+            cat security-scan.txt
+            exit 1
+          fi
+          echo "✅ No vulnerable packages found"
+
+  # ==================== PACKAGE ====================
+  package:
+    name: Create NuGet Package
+    runs-on: ubuntu-latest
+    needs: [validate, build]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Pack NuGet Package
+        run: |
+          dotnet pack \
+            --configuration Release \
+            --output ./artifacts \
+            /p:Version=${{ needs.validate.outputs.version }} \
+            /p:PackageReleaseNotes="See CHANGELOG.md for details"
+
+      - name: Upload Package Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nuget-package
+          path: ./artifacts/*.nupkg
+          retention-days: 30
+
+  # ==================== PUBLISH ====================
+  publish:
+    name: Publish to NuGet
+    runs-on: ubuntu-latest
+    needs: [validate, package]
+
+    steps:
+      - name: Download Package
+        uses: actions/download-artifact@v5
+        with:
+          name: nuget-package
+          path: ./packages
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Publish to NuGet.org
+        run: |
+          dotnet nuget push ./packages/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+
+  # ==================== GITHUB RELEASE ====================
+  github-release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    needs: [validate, publish]
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Download Package
+        uses: actions/download-artifact@v5
+        with:
+          name: nuget-package
+          path: ./packages
+
+      - name: Extract Release Notes
+        id: release_notes
+        run: |
+          VERSION=${{ needs.validate.outputs.version }}
+
+          # Extract version section from CHANGELOG.md
+          awk "/## \\[?$VERSION\\]?/,/## \\[?[0-9]/\" CHANGELOG.md | \
+            head -n -1 | tail -n +2 > release-notes.md
+
+          if [ ! -s release-notes.md ]; then
+            echo "Release notes for version $VERSION" > release-notes.md
+          fi
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Release v${{ needs.validate.outputs.version }}
+          body_path: release-notes.md
+          draft: false
+          prerelease: ${{ needs.validate.outputs.is_prerelease }}
+          files: ./packages/*.nupkg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # ==================== POST-RELEASE ====================
+  post-release:
+    name: Post-Release Tasks
+    runs-on: ubuntu-latest
+    needs: [validate, github-release]
+
+    steps:
+      - name: Release Summary
+        run: |
+          echo "🎉 Release v${{ needs.validate.outputs.version }} published successfully!"
+          echo ""
+          echo "📦 NuGet Package: https://www.nuget.org/packages/TypedMath/${{ needs.validate.outputs.version }}"
+          echo "📋 GitHub Release: ${{ github.server_url }}/${{ github.repository }}/releases/tag/v${{ needs.validate.outputs.version }}"
+          echo ""
+          echo "Pre-release: ${{ needs.validate.outputs.is_prerelease }}"
