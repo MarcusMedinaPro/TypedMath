@@ -169,7 +169,7 @@ jobs:
           VERSION=${{ needs.validate.outputs.version }}
 
           # Extract version section from CHANGELOG.md
-          awk "/## \\[?$VERSION\\]?/,/## \\[?[0-9]/\" CHANGELOG.md | \
+          awk "/## \[?$VERSION\]?/,/## \[?[0-9]/" CHANGELOG.md | \
             head -n -1 | tail -n +2 > release-notes.md
 
           if [ ! -s release-notes.md ]; then
