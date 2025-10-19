@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30011.22
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11111.16 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypedMath", "TypedMath\TypedMath.csproj", "{713C93FC-8E1B-4BD2-A6E5-C7AA2FC992EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypedMath.Tests", "TypedMath.Tests\TypedMath.Tests.csproj", "{B3B7FA95-29CF-BAE7-141D-E70FFE397086}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{713C93FC-8E1B-4BD2-A6E5-C7AA2FC992EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{713C93FC-8E1B-4BD2-A6E5-C7AA2FC992EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{713C93FC-8E1B-4BD2-A6E5-C7AA2FC992EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3B7FA95-29CF-BAE7-141D-E70FFE397086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B7FA95-29CF-BAE7-141D-E70FFE397086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B7FA95-29CF-BAE7-141D-E70FFE397086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B7FA95-29CF-BAE7-141D-E70FFE397086}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

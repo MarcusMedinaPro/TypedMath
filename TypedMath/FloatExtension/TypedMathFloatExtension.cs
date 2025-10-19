@@ -4,9 +4,6 @@
 //     conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
-// Credits for borrowed code: LinQ Primenumbers, Zoran Horvat, at
-// http://www.codinghelmet.com/articles/linq-all-primes/ Increase/Decrease array values, mgp -
-// https://stackoverflow.com/users/55943/mqp, at https://stackoverflow.com/a/823537 ----------------------------------------------------------------------------------------------
 
 namespace MarcusMedinaPro.TypedMath.FloatExtension;
 
@@ -18,1702 +15,1958 @@ using System.Linq;
 /// </summary>
 public static class TypedMathFloatExtension
 {
+
     /// <summary>
     /// Adds byte to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Add(this float x, byte y) => x + (float)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static float Add(this float x, byte addend) => x + (float)addend;
 
     /// <summary>
     /// Adds char to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Add(this float x, char y) => x + (float)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static float Add(this float x, char addend) => x + (float)addend;
 
     /// <summary>
     /// Adds decimal to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Add(this float x, decimal y) => x + (float)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static float Add(this float x, decimal addend) => x + (float)addend;
 
     /// <summary>
     /// Adds double to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Add(this float x, double y) => x + (float)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static float Add(this float x, double addend) => x + (float)addend;
 
     /// <summary>
     /// Adds float to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Add(this float x, float y) => x + y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static float Add(this float x, float addend) => x + addend;
 
     /// <summary>
     /// Adds int to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Add(this float x, int y) => x + (float)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static float Add(this float x, int addend) => x + (float)addend;
 
     /// <summary>
     /// Adds long to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Add(this float x, long y) => x + (float)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static float Add(this float x, long addend) => x + (float)addend;
 
     /// <summary>
     /// Adds sbyte to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Add(this float x, sbyte y) => x + (float)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static float Add(this float x, sbyte addend) => x + (float)addend;
 
     /// <summary>
     /// Adds short to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Add(this float x, short y) => x + (float)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static float Add(this float x, short addend) => x + (float)addend;
 
     /// <summary>
     /// Adds uint to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Add(this float x, uint y) => x + (float)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static float Add(this float x, uint addend) => x + (float)addend;
 
     /// <summary>
     /// Adds ulong to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Add(this float x, ulong y) => x + (float)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static float Add(this float x, ulong addend) => x + (float)addend;
 
     /// <summary>
     /// Adds ushort to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Add(this float x, ushort y) => x + (float)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static float Add(this float x, ushort addend) => x + (float)addend;
 
     /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float AddPercent(this float value, byte percent) => (float)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float AddPercent(this float value, char percent) => (float)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float AddPercent(this float value, decimal percent) => (float)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float AddPercent(this float value, double percent) => (float)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float AddPercent(this float value, float percent) => (float)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float AddPercent(this float value, int percent) => (float)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float AddPercent(this float value, long percent) => (float)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float AddPercent(this float value, sbyte percent) => (float)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float AddPercent(this float value, short percent) => (float)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float AddPercent(this float value, uint percent) => (float)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float AddPercent(this float value, ulong percent) => (float)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float AddPercent(this float value, ushort percent) => (float)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Tries to cast float to byte, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static byte CastFloatToByte(this float x) => (byte)x;
-
-    /// <summary>
-    /// Tries to cast float to char, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static char CastFloatToChar(this float x) => (char)x;
-
-    /// <summary>
-    /// Tries to cast float to decimal, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static decimal CastFloatToDecimal(this float x) => (decimal)x;
-
-    /// <summary>
-    /// Tries to cast float to double, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static double CastFloatToDouble(this float x) => (double)x;
-
-    /// <summary>
-    /// Tries to cast float to int, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static int CastFloatToInt(this float x) => (int)x;
-
-    /// <summary>
-    /// Tries to cast float to long, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static long CastFloatToLong(this float x) => (long)x;
-
-    /// <summary>
-    /// Tries to cast float to sbyte, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte CastFloatToSbyte(this float x) => (sbyte)x;
-
-    /// <summary>
-    /// Tries to cast float to short, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static short CastFloatToShort(this float x) => (short)x;
-
-    /// <summary>
-    /// Tries to cast float to uint, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static uint CastFloatToUint(this float x) => (uint)x;
-
-    /// <summary>
-    /// Tries to cast float to ulong, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static ulong CastFloatToUlong(this float x) => (ulong)x;
-
-    /// <summary>
-    /// Tries to cast float to ushort, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static ushort CastFloatToUshort(this float x) => (ushort)x;
-
-    /// <summary>
-    /// Compare original and second number
-    /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <returns>The highest of the two numbers</returns>
-    public static float ChooseIfHigher(this float first, float second) => first > second ? first : second;
-
-    /// <summary>
-    /// Compare original and second number
-    /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <returns>The lowest of the two numbers</returns>
-    public static float ChooseIfLower(this float first, float second) => first < second ? first : second;
-
-    /// <summary>
-    /// Converts the array to int.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>An array of <see cref="int"/> values.</returns>
-    public static int[] ConvertArrayToInt(this float[] array) => [.. array.Select(x => (int)x)];
-
-    /// <summary>
-    /// Decreases all values with given value.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <param name="dec">The value to add.</param>
-    /// <returns>The <see cref="float"/></returns>
-    public static float[] DecreaseAllValuesWith(this float[] array, float dec) => [.. array.Select(x => x - dec)];
-
-    /// <summary>
-    /// Gets the differnce between two numbers
-    /// </summary>
-    /// <param name="original">The original.</param>
-    /// <param name="compareTo">The compare to.</param>
-    /// <returns></returns>
-    public static float DiferenceFrom(this float original, float compareTo) => original > compareTo ? original - compareTo : original < compareTo ? compareTo - original : 0;
-
-    /// <summary>
-    /// Divides byte from float
+    /// Adds percentage to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float DividedBy(this float x, byte y) => x / (float)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static float AddPercent(this float x, byte percent) => x + (x * (float)percent / 100);
 
     /// <summary>
-    /// Divides char from float
+    /// Adds percentage to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float DividedBy(this float x, char y) => x / (float)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static float AddPercent(this float x, char percent) => x + (x * (float)percent / 100);
 
     /// <summary>
-    /// Divides decimal from float
+    /// Adds percentage to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float DividedBy(this float x, decimal y) => x / (float)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static float AddPercent(this float x, decimal percent) => x + (x * (float)percent / 100);
 
     /// <summary>
-    /// Divides double from float
+    /// Adds percentage to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float DividedBy(this float x, double y) => x / (float)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static float AddPercent(this float x, double percent) => x + (x * (float)percent / 100);
 
     /// <summary>
-    /// Divides float from float
+    /// Adds percentage to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float DividedBy(this float x, float y) => x / y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static float AddPercent(this float x, float percent) => x + (x * percent / 100);
 
     /// <summary>
-    /// Divides int from float
+    /// Adds percentage to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float DividedBy(this float x, int y) => x / (float)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static float AddPercent(this float x, int percent) => x + (x * (float)percent / 100);
 
     /// <summary>
-    /// Divides long from float
+    /// Adds percentage to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float DividedBy(this float x, long y) => x / (float)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static float AddPercent(this float x, long percent) => x + (x * (float)percent / 100);
 
     /// <summary>
-    /// Divides sbyte from float
+    /// Adds percentage to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float DividedBy(this float x, sbyte y) => x / (float)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static float AddPercent(this float x, sbyte percent) => x + (x * (float)percent / 100);
 
     /// <summary>
-    /// Divides short from float
+    /// Adds percentage to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float DividedBy(this float x, short y) => x / (float)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static float AddPercent(this float x, short percent) => x + (x * (float)percent / 100);
 
     /// <summary>
-    /// Divides uint from float
+    /// Adds percentage to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float DividedBy(this float x, uint y) => x / (float)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static float AddPercent(this float x, uint percent) => x + (x * (float)percent / 100);
 
     /// <summary>
-    /// Divides ulong from float
+    /// Adds percentage to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float DividedBy(this float x, ulong y) => x / (float)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static float AddPercent(this float x, ulong percent) => x + (x * (float)percent / 100);
 
     /// <summary>
-    /// Divides ushort from float
+    /// Adds percentage to float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float DividedBy(this float x, ushort y) => x / (float)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static float AddPercent(this float x, ushort percent) => x + (x * (float)percent / 100);
 
     /// <summary>
-    /// Peeks the average value of the numbers in the array
-    /// </summary>
-    /// <param name="array">The array</param>
-    /// <returns>The average value from the array</returns>
-    public static double GetAverage(this float[] array) => array.Average();
-
-    /// <summary>
-    /// Gets the first half of the array.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>An array of <see cref="float"/> values.</returns>
-    public static float[] GetFirstHalf(this float[] array) => [.. array.Take(array.Length / 2)];
-
-    /// <summary>
-    /// Gets the first number in the array
-    /// </summary>
-    /// <param name="array">The array <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static float GetFirstValue(this float[] array) => array[0];
-
-    /// <summary>
-    /// Gets the hightest value of the numbers in the array
-    /// </summary>
-    /// <param name="array">The array</param>
-    /// <returns>The hightest value in the array</returns>
-    public static float GetHighestValue(this float[] array) => array.Max();
-
-    /// <summary>
-    /// Gets the last half of the array.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>An array of <see cref="float"/> values.</returns>
-    public static float[] GetLastHalf(this float[] array) => [.. array.Skip(array.Length / 2).Take(array.Length / 2)];
-
-    /// <summary>
-    /// Gets the last number in the array
-    /// </summary>
-    /// <param name="array">The array <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static float GetLastValue(this float[] array) => array[^1];
-
-    /// <summary>
-    /// Peeks the lowest value in the array
-    /// </summary>
-    /// <param name="array">The array <see cref="float"/></param>
-    /// <returns>The lowest value i the array</returns>
-    public static float GetLowestValue(this float[] array) => array.Min();
-
-    /// <summary>
-    /// Gets the middle of both halves in the array.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>An array of <see cref="float"/> values.</returns>
-    public static float[] GetMiddle(this float[] array) => [.. array.Skip(array.Length / 4).Take(array.Length / 2)];
-
-    /// <summary>
-    /// Gets the number in the middle of the array
-    /// </summary>
-    /// <param name="array">The array <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static float GetMiddleValue(this float[] array) => array[(array.Length - 1) / 2];
-
-    /// <summary>
-    /// Peeks numbers higher than given value in the array
-    /// </summary>
-    /// <param name="array"></param>
-    /// <param name="x">The limit value</param>
-    /// <returns>Returns a new array with all numbers higher than x</returns>
-    public static float[] GetValuesHigherThan(this float[] array, float x) => [.. array.Where(y => y >= x)];
-
-    /// <summary>
-    /// Peeks numbers lower than given value in the array
-    /// </summary>
-    /// <param name="array"></param>
-    /// <param name="x">The limit value</param>
-    /// <returns>Returns a new array with all numbers lower than x</returns>
-    public static float[] GetValuesLowerThan(this float[] array, float x) => [.. array.Where(y => y <= x)];
-
-    /// <summary>
-    /// Gets a boolean True if float is greater than byte
+    /// Returns float if higher than byte, otherwise byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this float x, byte y) => x > (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static float ChooseIfHigher(this float x, byte other) => x > (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is greater than char
+    /// Returns float if higher than char, otherwise char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this float x, char y) => x > (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static float ChooseIfHigher(this float x, char other) => x > (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is greater than decimal
+    /// Returns float if higher than decimal, otherwise decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this float x, decimal y) => x > (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static float ChooseIfHigher(this float x, decimal other) => x > (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is greater than double
+    /// Returns float if higher than double, otherwise double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this float x, double y) => x > (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static float ChooseIfHigher(this float x, double other) => x > (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is greater than float
+    /// Returns float if higher than float, otherwise float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this float x, float y) => x > y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static float ChooseIfHigher(this float x, float other) => x > other ? x : other;
 
     /// <summary>
-    /// Gets a boolean True if float is greater than int
+    /// Returns float if higher than int, otherwise int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this float x, int y) => x > (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static float ChooseIfHigher(this float x, int other) => x > (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is greater than long
+    /// Returns float if higher than long, otherwise long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this float x, long y) => x > (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static float ChooseIfHigher(this float x, long other) => x > (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is greater than sbyte
+    /// Returns float if higher than sbyte, otherwise sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this float x, sbyte y) => x > (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static float ChooseIfHigher(this float x, sbyte other) => x > (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is greater than short
+    /// Returns float if higher than short, otherwise short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this float x, short y) => x > (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static float ChooseIfHigher(this float x, short other) => x > (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is greater than uint
+    /// Returns float if higher than uint, otherwise uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this float x, uint y) => x > (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static float ChooseIfHigher(this float x, uint other) => x > (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is greater than ulong
+    /// Returns float if higher than ulong, otherwise ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this float x, ulong y) => x > (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static float ChooseIfHigher(this float x, ulong other) => x > (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is greater than ushort
+    /// Returns float if higher than ushort, otherwise ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this float x, ushort y) => x > (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static float ChooseIfHigher(this float x, ushort other) => x > (float)other ? x : (float)other;
 
     /// <summary>
-    /// Increases all values with given value.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <param name="add">The value to add.</param>
-    /// <returns>The <see cref="float"/></returns>
-    public static float[] IncreaseAllValuesWith(this float[] array, float add) => [.. array.Select(x => x + add)];
-
-    /// <summary>
-    /// Gets boolean True if byte is equal to float
+    /// Returns float if lower than byte, otherwise byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this float x, byte y) => x == (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static float ChooseIfLower(this float x, byte other) => x < (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets boolean True if char is equal to float
+    /// Returns float if lower than char, otherwise char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this float x, char y) => x == (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static float ChooseIfLower(this float x, char other) => x < (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets boolean True if decimal is equal to float
+    /// Returns float if lower than decimal, otherwise decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this float x, decimal y) => x == (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static float ChooseIfLower(this float x, decimal other) => x < (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets boolean True if double is equal to float
+    /// Returns float if lower than double, otherwise double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this float x, double y) => x == (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static float ChooseIfLower(this float x, double other) => x < (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets boolean True if float is equal to float
+    /// Returns float if lower than float, otherwise float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this float x, float y) => x == y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static float ChooseIfLower(this float x, float other) => x < other ? x : other;
 
     /// <summary>
-    /// Gets boolean True if int is equal to float
+    /// Returns float if lower than int, otherwise int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this float x, int y) => x == (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static float ChooseIfLower(this float x, int other) => x < (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets boolean True if long is equal to float
+    /// Returns float if lower than long, otherwise long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this float x, long y) => x == (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static float ChooseIfLower(this float x, long other) => x < (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets boolean True if sbyte is equal to float
+    /// Returns float if lower than sbyte, otherwise sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this float x, sbyte y) => x == (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static float ChooseIfLower(this float x, sbyte other) => x < (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets boolean True if short is equal to float
+    /// Returns float if lower than short, otherwise short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this float x, short y) => x == (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static float ChooseIfLower(this float x, short other) => x < (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets boolean True if uint is equal to float
+    /// Returns float if lower than uint, otherwise uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this float x, uint y) => x == (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static float ChooseIfLower(this float x, uint other) => x < (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets boolean True if ulong is equal to float
+    /// Returns float if lower than ulong, otherwise ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this float x, ulong y) => x == (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static float ChooseIfLower(this float x, ulong other) => x < (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets boolean True if ushort is equal to float
+    /// Returns float if lower than ushort, otherwise ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this float x, ushort y) => x == (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static float ChooseIfLower(this float x, ushort other) => x < (float)other ? x : (float)other;
 
     /// <summary>
-    /// Gets boolean true if value is less than zero
+    /// Gets absolute difference between float and byte
     /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static float DiferenceFrom(this float x, byte other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static float DiferenceFrom(this float x, char other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static float DiferenceFrom(this float x, decimal other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static float DiferenceFrom(this float x, double other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static float DiferenceFrom(this float x, float other) => x > other ? x - other : x < other ? other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static float DiferenceFrom(this float x, int other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static float DiferenceFrom(this float x, long other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static float DiferenceFrom(this float x, sbyte other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static float DiferenceFrom(this float x, short other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static float DiferenceFrom(this float x, uint other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static float DiferenceFrom(this float x, ulong other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static float DiferenceFrom(this float x, ushort other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static float DifferenceFrom(this float x, byte other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static float DifferenceFrom(this float x, char other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static float DifferenceFrom(this float x, decimal other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static float DifferenceFrom(this float x, double other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static float DifferenceFrom(this float x, float other) => x > other ? x - other : x < other ? other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static float DifferenceFrom(this float x, int other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static float DifferenceFrom(this float x, long other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static float DifferenceFrom(this float x, sbyte other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static float DifferenceFrom(this float x, short other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static float DifferenceFrom(this float x, uint other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static float DifferenceFrom(this float x, ulong other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between float and ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static float DifferenceFrom(this float x, ushort other) => x > (float)other ? x - (float)other : x < (float)other ? (float)other - x : 0;
+
+    /// <summary>
+    /// Divides float by byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static float DividedBy(this float x, byte divisor) => x / (float)divisor;
+
+    /// <summary>
+    /// Divides float by char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static float DividedBy(this float x, char divisor) => x / (float)divisor;
+
+    /// <summary>
+    /// Divides float by decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static float DividedBy(this float x, decimal divisor) => x / (float)divisor;
+
+    /// <summary>
+    /// Divides float by double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static float DividedBy(this float x, double divisor) => x / (float)divisor;
+
+    /// <summary>
+    /// Divides float by float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static float DividedBy(this float x, float divisor) => x / divisor;
+
+    /// <summary>
+    /// Divides float by int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static float DividedBy(this float x, int divisor) => x / (float)divisor;
+
+    /// <summary>
+    /// Divides float by long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static float DividedBy(this float x, long divisor) => x / (float)divisor;
+
+    /// <summary>
+    /// Divides float by sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static float DividedBy(this float x, sbyte divisor) => x / (float)divisor;
+
+    /// <summary>
+    /// Divides float by short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static float DividedBy(this float x, short divisor) => x / (float)divisor;
+
+    /// <summary>
+    /// Divides float by uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static float DividedBy(this float x, uint divisor) => x / (float)divisor;
+
+    /// <summary>
+    /// Divides float by ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static float DividedBy(this float x, ulong divisor) => x / (float)divisor;
+
+    /// <summary>
+    /// Divides float by ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static float DividedBy(this float x, ushort divisor) => x / (float)divisor;
+
+    /// <summary>
+    /// Checks if float is greater than byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this float x, byte other) => x > (float)other;
+
+    /// <summary>
+    /// Checks if float is greater than char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this float x, char other) => x > (float)other;
+
+    /// <summary>
+    /// Checks if float is greater than decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this float x, decimal other) => x > (float)other;
+
+    /// <summary>
+    /// Checks if float is greater than double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this float x, double other) => x > (float)other;
+
+    /// <summary>
+    /// Checks if float is greater than float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this float x, float other) => x > other;
+
+    /// <summary>
+    /// Checks if float is greater than int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this float x, int other) => x > (float)other;
+
+    /// <summary>
+    /// Checks if float is greater than long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this float x, long other) => x > (float)other;
+
+    /// <summary>
+    /// Checks if float is greater than sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this float x, sbyte other) => x > (float)other;
+
+    /// <summary>
+    /// Checks if float is greater than short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this float x, short other) => x > (float)other;
+
+    /// <summary>
+    /// Checks if float is greater than uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this float x, uint other) => x > (float)other;
+
+    /// <summary>
+    /// Checks if float is greater than ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this float x, ulong other) => x > (float)other;
+
+    /// <summary>
+    /// Checks if float is greater than ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this float x, ushort other) => x > (float)other;
+
+    /// <summary>
+    /// Checks if float equals byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this float x, byte other) => x == (float)other;
+
+    /// <summary>
+    /// Checks if float equals char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this float x, char other) => x == (float)other;
+
+    /// <summary>
+    /// Checks if float equals decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this float x, decimal other) => x == (float)other;
+
+    /// <summary>
+    /// Checks if float equals double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this float x, double other) => x == (float)other;
+
+    /// <summary>
+    /// Checks if float equals float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this float x, float other) => x == other;
+
+    /// <summary>
+    /// Checks if float equals int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this float x, int other) => x == (float)other;
+
+    /// <summary>
+    /// Checks if float equals long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this float x, long other) => x == (float)other;
+
+    /// <summary>
+    /// Checks if float equals sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this float x, sbyte other) => x == (float)other;
+
+    /// <summary>
+    /// Checks if float equals short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this float x, short other) => x == (float)other;
+
+    /// <summary>
+    /// Checks if float equals uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this float x, uint other) => x == (float)other;
+
+    /// <summary>
+    /// Checks if float equals ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this float x, ulong other) => x == (float)other;
+
+    /// <summary>
+    /// Checks if float equals ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this float x, ushort other) => x == (float)other;
+
+    /// <summary>
+    /// Gets boolean true if float is less than zero
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <returns>True if the value is negative</returns>
     public static bool IsNegative(this float x) => x < 0;
 
     /// <summary>
-    /// Gets boolean True if byte is not equal to float
+    /// Checks if float does not equal byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this float x, byte y) => x != (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this float x, byte other) => x != (float)other;
 
     /// <summary>
-    /// Gets boolean True if char is not equal to float
+    /// Checks if float does not equal char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this float x, char y) => x != (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this float x, char other) => x != (float)other;
 
     /// <summary>
-    /// Gets boolean True if decimal is not equal to float
+    /// Checks if float does not equal decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this float x, decimal y) => x != (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this float x, decimal other) => x != (float)other;
 
     /// <summary>
-    /// Gets boolean True if double is not equal to float
+    /// Checks if float does not equal double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this float x, double y) => x != (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this float x, double other) => x != (float)other;
 
     /// <summary>
-    /// Gets boolean True if float is not equal to float
+    /// Checks if float does not equal float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this float x, float y) => x != y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this float x, float other) => x != other;
 
     /// <summary>
-    /// Gets boolean True if int is not equal to float
+    /// Checks if float does not equal int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this float x, int y) => x != (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this float x, int other) => x != (float)other;
 
     /// <summary>
-    /// Gets boolean True if long is not equal to float
+    /// Checks if float does not equal long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this float x, long y) => x != (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this float x, long other) => x != (float)other;
 
     /// <summary>
-    /// Gets boolean True if sbyte is not equal to float
+    /// Checks if float does not equal sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this float x, sbyte y) => x != (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this float x, sbyte other) => x != (float)other;
 
     /// <summary>
-    /// Gets boolean True if short is not equal to float
+    /// Checks if float does not equal short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this float x, short y) => x != (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this float x, short other) => x != (float)other;
 
     /// <summary>
-    /// Gets boolean True if uint is not equal to float
+    /// Checks if float does not equal uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this float x, uint y) => x != (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this float x, uint other) => x != (float)other;
 
     /// <summary>
-    /// Gets boolean True if ulong is not equal to float
+    /// Checks if float does not equal ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this float x, ulong y) => x != (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this float x, ulong other) => x != (float)other;
 
     /// <summary>
-    /// Gets boolean True if ushort is not equal to float
+    /// Checks if float does not equal ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this float x, ushort y) => x != (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this float x, ushort other) => x != (float)other;
 
     /// <summary>
-    /// Gets boolean true if value is more than zero
-    /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsPositive(this float x) => x >= 0;
-
-    /// <summary>
-    /// Checks if a number is prime
-    /// </summary>
-    /// <param name="number">The number</param>
-    /// <returns>True if the number is prime</returns>
-    public static bool IsPrime(this float number) => Enumerable.Range(2, (int)Math.Sqrt(number) - 1).All(divisor => number % divisor != 0);
-
-    /// <summary>
-    /// Gets a boolean True if float is less than byte
+    /// Gets boolean true if float is more than zero
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this float x, byte y) => x < (float)y;
+    /// <returns>True if the value is positive</returns>
+    public static bool IsPositive(this float x) => x > 0;
 
     /// <summary>
-    /// Gets a boolean True if float is less than char
+    /// Checks if float is less than byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this float x, char y) => x < (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this float x, byte other) => x < (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is less than decimal
+    /// Checks if float is less than char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this float x, decimal y) => x < (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this float x, char other) => x < (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is less than double
+    /// Checks if float is less than decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this float x, double y) => x < (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this float x, decimal other) => x < (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is less than float
+    /// Checks if float is less than double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this float x, float y) => x < y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this float x, double other) => x < (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is less than int
+    /// Checks if float is less than float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this float x, int y) => x < (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this float x, float other) => x < other;
 
     /// <summary>
-    /// Gets a boolean True if float is less than long
+    /// Checks if float is less than int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this float x, long y) => x < (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this float x, int other) => x < (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is less than sbyte
+    /// Checks if float is less than long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this float x, sbyte y) => x < (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this float x, long other) => x < (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is less than short
+    /// Checks if float is less than sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this float x, short y) => x < (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this float x, sbyte other) => x < (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is less than uint
+    /// Checks if float is less than short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this float x, uint y) => x < (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this float x, short other) => x < (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is less than ulong
+    /// Checks if float is less than uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this float x, ulong y) => x < (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this float x, uint other) => x < (float)other;
 
     /// <summary>
-    /// Gets a boolean True if float is less than ushort
+    /// Checks if float is less than ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this float x, ushort y) => x < (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this float x, ulong other) => x < (float)other;
 
     /// <summary>
-    /// Gets the remainder of byte from float
+    /// Checks if float is less than ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Modulus(this float x, byte y) => x % (float)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this float x, ushort other) => x < (float)other;
 
     /// <summary>
-    /// Gets the remainder of char from float
+    /// Gets remainder of float divided by byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Modulus(this float x, char y) => x % (float)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static float Modulus(this float x, byte divisor) => x % (float)divisor;
 
     /// <summary>
-    /// Gets the remainder of decimal from float
+    /// Gets remainder of float divided by char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Modulus(this float x, decimal y) => x % (float)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static float Modulus(this float x, char divisor) => x % (float)divisor;
 
     /// <summary>
-    /// Gets the remainder of double from float
+    /// Gets remainder of float divided by decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Modulus(this float x, double y) => x % (float)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static float Modulus(this float x, decimal divisor) => x % (float)divisor;
 
     /// <summary>
-    /// Gets the remainder of float from float
+    /// Gets remainder of float divided by double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Modulus(this float x, float y) => x % y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static float Modulus(this float x, double divisor) => x % (float)divisor;
 
     /// <summary>
-    /// Gets the remainder of int from float
+    /// Gets remainder of float divided by float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Modulus(this float x, int y) => x % (float)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static float Modulus(this float x, float divisor) => x % divisor;
 
     /// <summary>
-    /// Gets the remainder of long from float
+    /// Gets remainder of float divided by int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Modulus(this float x, long y) => x % (float)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static float Modulus(this float x, int divisor) => x % (float)divisor;
 
     /// <summary>
-    /// Gets the remainder of sbyte from float
+    /// Gets remainder of float divided by long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Modulus(this float x, sbyte y) => x % (float)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static float Modulus(this float x, long divisor) => x % (float)divisor;
 
     /// <summary>
-    /// Gets the remainder of short from float
+    /// Gets remainder of float divided by sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Modulus(this float x, short y) => x % (float)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static float Modulus(this float x, sbyte divisor) => x % (float)divisor;
 
     /// <summary>
-    /// Gets the remainder of uint from float
+    /// Gets remainder of float divided by short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Modulus(this float x, uint y) => x % (float)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static float Modulus(this float x, short divisor) => x % (float)divisor;
 
     /// <summary>
-    /// Gets the remainder of ulong from float
+    /// Gets remainder of float divided by uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Modulus(this float x, ulong y) => x % (float)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static float Modulus(this float x, uint divisor) => x % (float)divisor;
 
     /// <summary>
-    /// Gets the remainder of ushort from float
+    /// Gets remainder of float divided by ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Modulus(this float x, ushort y) => x % (float)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static float Modulus(this float x, ulong divisor) => x % (float)divisor;
 
     /// <summary>
-    /// Multiplies byte with float
+    /// Gets remainder of float divided by ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float MultipliedWith(this float x, byte y) => x * (float)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static float Modulus(this float x, ushort divisor) => x % (float)divisor;
 
     /// <summary>
-    /// Multiplies char with float
+    /// Multiplies float with byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float MultipliedWith(this float x, char y) => x * (float)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static float MultipliedWith(this float x, byte multiplier) => x * (float)multiplier;
 
     /// <summary>
-    /// Multiplies decimal with float
+    /// Multiplies float with char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float MultipliedWith(this float x, decimal y) => x * (float)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static float MultipliedWith(this float x, char multiplier) => x * (float)multiplier;
 
     /// <summary>
-    /// Multiplies double with float
+    /// Multiplies float with decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float MultipliedWith(this float x, double y) => x * (float)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static float MultipliedWith(this float x, decimal multiplier) => x * (float)multiplier;
+
+    /// <summary>
+    /// Multiplies float with double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static float MultipliedWith(this float x, double multiplier) => x * (float)multiplier;
 
     /// <summary>
     /// Multiplies float with float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float MultipliedWith(this float x, float y) => x * y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static float MultipliedWith(this float x, float multiplier) => x * multiplier;
 
     /// <summary>
-    /// Multiplies int with float
+    /// Multiplies float with int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float MultipliedWith(this float x, int y) => x * (float)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static float MultipliedWith(this float x, int multiplier) => x * (float)multiplier;
 
     /// <summary>
-    /// Multiplies long with float
+    /// Multiplies float with long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float MultipliedWith(this float x, long y) => x * (float)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static float MultipliedWith(this float x, long multiplier) => x * (float)multiplier;
 
     /// <summary>
-    /// Multiplies sbyte with float
+    /// Multiplies float with sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float MultipliedWith(this float x, sbyte y) => x * (float)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static float MultipliedWith(this float x, sbyte multiplier) => x * (float)multiplier;
 
     /// <summary>
-    /// Multiplies short with float
+    /// Multiplies float with short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float MultipliedWith(this float x, short y) => x * (float)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static float MultipliedWith(this float x, short multiplier) => x * (float)multiplier;
 
     /// <summary>
-    /// Multiplies uint with float
+    /// Multiplies float with uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float MultipliedWith(this float x, uint y) => x * (float)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static float MultipliedWith(this float x, uint multiplier) => x * (float)multiplier;
 
     /// <summary>
-    /// Multiplies ulong with float
+    /// Multiplies float with ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float MultipliedWith(this float x, ulong y) => x * (float)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static float MultipliedWith(this float x, ulong multiplier) => x * (float)multiplier;
 
     /// <summary>
-    /// Multiplies ushort with float
+    /// Multiplies float with ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float MultipliedWith(this float x, ushort y) => x * (float)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static float MultipliedWith(this float x, ushort multiplier) => x * (float)multiplier;
 
     /// <summary>
-    /// Gets the NOT of float
+    /// Calculates float percent of byte
     /// </summary>
-    /// <param name="x">The x <see cref="float"/></param>
-    /// <returns>The result of the operation</returns>
-    public static float Not(this float x) => (float)~(int)x;
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static float PercentOf(this float x, byte number) => x / 100 * (float)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates float percent of char
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static float PercentOf(this float percent, byte value) => (float)(((float)percent) / ((float)100) * ((float)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static float PercentOf(this float x, char number) => x / 100 * (float)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates float percent of decimal
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static float PercentOf(this float percent, char value) => (float)(((float)percent) / ((float)100) * ((float)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static float PercentOf(this float x, decimal number) => x / 100 * (float)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates float percent of double
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static float PercentOf(this float percent, decimal value) => (float)(((float)percent) / ((float)100) * ((float)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static float PercentOf(this float x, double number) => x / 100 * (float)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates float percent of float
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static float PercentOf(this float percent, double value) => (float)(((float)percent) / ((float)100) * ((float)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static float PercentOf(this float x, float number) => x / 100 * number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates float percent of int
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static float PercentOf(this float percent, float value) => (float)(((float)percent) / ((float)100) * ((float)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static float PercentOf(this float x, int number) => x / 100 * (float)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates float percent of long
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static float PercentOf(this float percent, int value) => (float)(((float)percent) / ((float)100) * ((float)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static float PercentOf(this float x, long number) => x / 100 * (float)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates float percent of sbyte
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static float PercentOf(this float percent, long value) => (float)(((float)percent) / ((float)100) * ((float)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static float PercentOf(this float x, sbyte number) => x / 100 * (float)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates float percent of short
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static float PercentOf(this float percent, sbyte value) => (float)(((float)percent) / ((float)100) * ((float)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static float PercentOf(this float x, short number) => x / 100 * (float)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates float percent of uint
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static float PercentOf(this float percent, short value) => (float)(((float)percent) / ((float)100) * ((float)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static float PercentOf(this float x, uint number) => x / 100 * (float)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates float percent of ulong
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static float PercentOf(this float percent, uint value) => (float)(((float)percent) / ((float)100) * ((float)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static float PercentOf(this float x, ulong number) => x / 100 * (float)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates float percent of ushort
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static float PercentOf(this float percent, ulong value) => (float)(((float)percent) / ((float)100) * ((float)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static float PercentOf(this float percent, ushort value) => (float)(((float)percent) / ((float)100) * ((float)value));
-
-    /// <summary>
-    /// Rotates the numbers to the left.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="float"/></returns>
-    public static float[] RotateLeft(this float[] array)
-    {
-        var first = array.GetFirstValue();
-        Array.Copy(array, 1, array, 0, array.Length - 1);
-        array[^1] = first;
-        return array;
-    }
-
-    /// <summary>
-    /// Rotates the numbers to the right.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="float"/></returns>
-    public static float[] RotateRight(this float[] array)
-    {
-        var last = array.GetLastValue();
-        Array.Copy(array, 0, array, 1, array.Length - 1);
-        array[0] = last;
-        return array;
-    }
-
-    /// <summary>
-    /// Compare original and second number and set the variable with the highest
-    /// </summary>
-    /// <param name="first">The variable</param>
-    /// <param name="second">The number to compare</param>
-    /// <param name="third">The number to compare with</param>
-    /// <returns>Sets the variable to the highest of the two numbers</returns>
-    public static ref float SetHighestValueOf(this ref float first, float second, float third)
-    {
-        first = second > third ? second : third;
-        return ref first;
-    }
-
-    /// <summary>
-    /// Compare original and second number and set the variable with the lowest
-    /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <param name="third">The third <see cref="float"/></param>
-    /// <returns>Sets the variable to the lowest of the two numbers</returns>
-    public static ref float SetLowestValueOf(this ref float first, float second, float third)
-    {
-        first = second < third ? second : third;
-        return ref first;
-    }
-
-    /// <summary>
-    /// Get the current size of the array
-    /// </summary>
-    /// <param name="array">The array <see cref="float"/></param>
-    /// <param name="size">The size <see cref="int"/></param>
-    /// <returns>An array of <see cref="float"/> values.</returns>
-    public static float[] SetNewArraySize(this float[] array, int size)
-    {
-        var newArr = new float[size];
-        Array.Copy(array, 0, newArr, 0, array.Length);
-        return newArr;
-    }
-
-    /// <summary>
-    /// Sorts array from lowest to highest
-    /// </summary>
-    /// <param name="array">The array <see cref="float"/></param>
-    /// <returns>A sorted array</returns>
-    public static float[] SortArrayAsc(this float[] array) => [.. array.OrderBy(x => x)];
-
-    /// <summary>
-    /// Sorts array from highest to lowest
-    /// </summary>
-    /// <param name="array">The array <see cref="float"/></param>
-    /// <returns>A sorted array</returns>
-    public static float[] SortArrayDesc(this float[] array) => [.. array.OrderByDescending(x => x)];
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static float PercentOf(this float x, ushort number) => x / 100 * (float)number;
 
     /// <summary>
     /// Subtracts byte from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(float,byte) instead.", false)]
-    public static float Substract(this float x, byte y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static float Substract(this float x, byte subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts char from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(float,char) instead.", false)]
-    public static float Substract(this float x, char y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static float Substract(this float x, char subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts decimal from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(float,decimal) instead.", false)]
-    public static float Substract(this float x, decimal y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static float Substract(this float x, decimal subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts double from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(float,double) instead.", false)]
-    public static float Substract(this float x, double y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static float Substract(this float x, double subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts float from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(float,float) instead.", false)]
-    public static float Substract(this float x, float y) => x - y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static float Substract(this float x, float subtrahend) => x - subtrahend;
 
     /// <summary>
     /// Subtracts int from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(float,int) instead.", false)]
-    public static float Substract(this float x, int y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static float Substract(this float x, int subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts long from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(float,long) instead.", false)]
-    public static float Substract(this float x, long y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static float Substract(this float x, long subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts sbyte from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(float,sbyte) instead.", false)]
-    public static float Substract(this float x, sbyte y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static float Substract(this float x, sbyte subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts short from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(float,short) instead.", false)]
-    public static float Substract(this float x, short y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static float Substract(this float x, short subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts uint from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(float,uint) instead.", false)]
-    public static float Substract(this float x, uint y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static float Substract(this float x, uint subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts ulong from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(float,ulong) instead.", false)]
-    public static float Substract(this float x, ulong y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static float Substract(this float x, ulong subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts ushort from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(float,ushort) instead.", false)]
-    public static float Substract(this float x, ushort y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static float Substract(this float x, ushort subtrahend) => x - (float)subtrahend;
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(byte) instead.", false)]
-    public static float SubstractPercent(this float value, byte percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static float SubstractPercent(this float x, byte percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(char) instead.", false)]
-    public static float SubstractPercent(this float value, char percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static float SubstractPercent(this float x, char percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(decimal) instead.", false)]
-    public static float SubstractPercent(this float value, decimal percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static float SubstractPercent(this float x, decimal percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(double) instead.", false)]
-    public static float SubstractPercent(this float value, double percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static float SubstractPercent(this float x, double percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(float) instead.", false)]
-    public static float SubstractPercent(this float value, float percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static float SubstractPercent(this float x, float percent) => x - (x * percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(int) instead.", false)]
-    public static float SubstractPercent(this float value, int percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static float SubstractPercent(this float x, int percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(long) instead.", false)]
-    public static float SubstractPercent(this float value, long percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static float SubstractPercent(this float x, long percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(sbyte) instead.", false)]
-    public static float SubstractPercent(this float value, sbyte percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static float SubstractPercent(this float x, sbyte percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(short) instead.", false)]
-    public static float SubstractPercent(this float value, short percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static float SubstractPercent(this float x, short percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(uint) instead.", false)]
-    public static float SubstractPercent(this float value, uint percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static float SubstractPercent(this float x, uint percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ulong) instead.", false)]
-    public static float SubstractPercent(this float value, ulong percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static float SubstractPercent(this float x, ulong percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ushort) instead.", false)]
-    public static float SubstractPercent(this float value, ushort percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static float SubstractPercent(this float x, ushort percent) => x - (x * (float)percent / 100);
 
     /// <summary>
     /// Subtracts byte from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Subtract(this float x, byte y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static float Subtract(this float x, byte subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts char from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Subtract(this float x, char y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static float Subtract(this float x, char subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts decimal from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Subtract(this float x, decimal y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static float Subtract(this float x, decimal subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts double from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Subtract(this float x, double y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static float Subtract(this float x, double subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts float from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Subtract(this float x, float y) => x - y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static float Subtract(this float x, float subtrahend) => x - subtrahend;
 
     /// <summary>
     /// Subtracts int from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Subtract(this float x, int y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static float Subtract(this float x, int subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts long from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Subtract(this float x, long y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static float Subtract(this float x, long subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts sbyte from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Subtract(this float x, sbyte y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static float Subtract(this float x, sbyte subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts short from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Subtract(this float x, short y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static float Subtract(this float x, short subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts uint from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Subtract(this float x, uint y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static float Subtract(this float x, uint subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts ulong from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Subtract(this float x, ulong y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static float Subtract(this float x, ulong subtrahend) => x - (float)subtrahend;
 
     /// <summary>
     /// Subtracts ushort from float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static float Subtract(this float x, ushort y) => x - (float)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static float Subtract(this float x, ushort subtrahend) => x - (float)subtrahend;
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float SubtractPercent(this float value, byte percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static float SubtractPercent(this float x, byte percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float SubtractPercent(this float value, char percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static float SubtractPercent(this float x, char percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float SubtractPercent(this float value, decimal percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static float SubtractPercent(this float x, decimal percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float SubtractPercent(this float value, double percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static float SubtractPercent(this float x, double percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float SubtractPercent(this float value, float percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static float SubtractPercent(this float x, float percent) => x - (x * percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float SubtractPercent(this float value, int percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static float SubtractPercent(this float x, int percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float SubtractPercent(this float value, long percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static float SubtractPercent(this float x, long percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float SubtractPercent(this float value, sbyte percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static float SubtractPercent(this float x, sbyte percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float SubtractPercent(this float value, short percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static float SubtractPercent(this float x, short percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float SubtractPercent(this float value, uint percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static float SubtractPercent(this float x, uint percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float SubtractPercent(this float value, ulong percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static float SubtractPercent(this float x, ulong percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static float SubtractPercent(this float value, ushort percent) => (float)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static float SubtractPercent(this float x, ushort percent) => x - (x * (float)percent / 100);
 
     /// <summary>
-    /// Sums all numbers in the array
+    /// Decreases all values in the array by the specified amount
     /// </summary>
-    /// <param name="array">The array <see cref="float"/></param>
-    /// <returns>A sum of all the numbers in the array</returns>
-    public static float SumAllValues(this float[] array) => array.Sum();
+    /// <param name="array">The array</param>
+    /// <param name="dec">The amount to subtract</param>
+    /// <returns>Array with all values decreased</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.DecreaseAllValuesWith(). This method will be removed in v2.0.", false)]
+    public static float[] DecreaseAllValuesWith(this float[] array, float dec) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.DecreaseAllValuesWith(array, dec);
 
     /// <summary>
-    /// Swaps two variables
+    /// Peeks the average value of the numbers in the array
     /// </summary>
-    /// <param name="first">The main variable</param>
-    /// <param name="second">The variable to switch with</param>
-    /// <returns>
-    /// The value from the second variable and sets second variable to original value
-    /// </returns>
-    public static ref float SwapWith(this ref float first, ref float second)
-    {
-        (first, second) = (second, first);
-        return ref first;
-    }
+    /// <param name="array">The array</param>
+    /// <returns>The average value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetAverage(). This method will be removed in v2.0.", false)]
+    public static double GetAverage(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetAverage(array);
+
+    /// <summary>
+    /// Gets the first half of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The first half of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetFirstHalf(). This method will be removed in v2.0.", false)]
+    public static float[] GetFirstHalf(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetFirstHalf(array);
+
+    /// <summary>
+    /// Gets the first value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The first value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetFirstValue(). This method will be removed in v2.0.", false)]
+    public static float GetFirstValue(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetFirstValue(array);
+
+    /// <summary>
+    /// Gets the highest value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The highest value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetHighestValue(). This method will be removed in v2.0.", false)]
+    public static float GetHighestValue(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetHighestValue(array);
+
+    /// <summary>
+    /// Gets the last half of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The last half of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetLastHalf(). This method will be removed in v2.0.", false)]
+    public static float[] GetLastHalf(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetLastHalf(array);
+
+    /// <summary>
+    /// Gets the last value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The last value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetLastValue(). This method will be removed in v2.0.", false)]
+    public static float GetLastValue(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetLastValue(array);
+
+    /// <summary>
+    /// Gets the lowest value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The lowest value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetLowestValue(). This method will be removed in v2.0.", false)]
+    public static float GetLowestValue(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetLowestValue(array);
+
+    /// <summary>
+    /// Gets the middle portion of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The middle portion of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetMiddle(). This method will be removed in v2.0.", false)]
+    public static float[] GetMiddle(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetMiddle(array);
+
+    /// <summary>
+    /// Gets the middle value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The middle value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetMiddleValue(). This method will be removed in v2.0.", false)]
+    public static float GetMiddleValue(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetMiddleValue(array);
+
+    /// <summary>
+    /// Gets all values higher than or equal to the specified value
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="x">The threshold value</param>
+    /// <returns>Array of values higher than or equal to threshold</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetValuesHigherThan(). This method will be removed in v2.0.", false)]
+    public static float[] GetValuesHigherThan(this float[] array, float x) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetValuesHigherThan(array, x);
+
+    /// <summary>
+    /// Gets all values lower than or equal to the specified value
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="x">The threshold value</param>
+    /// <returns>Array of values lower than or equal to threshold</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetValuesLowerThan(). This method will be removed in v2.0.", false)]
+    public static float[] GetValuesLowerThan(this float[] array, float x) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.GetValuesLowerThan(array, x);
+
+    /// <summary>
+    /// Increases all values in the array by the specified amount
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="add">The amount to add</param>
+    /// <returns>Array with all values increased</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.IncreaseAllValuesWith(). This method will be removed in v2.0.", false)]
+    public static float[] IncreaseAllValuesWith(this float[] array, float add) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.IncreaseAllValuesWith(array, add);
+
+    /// <summary>
+    /// Rotates the numbers to the left
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The rotated array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.RotateLeft(). This method will be removed in v2.0.", false)]
+    public static float[] RotateLeft(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.RotateLeft(array);
+
+    /// <summary>
+    /// Rotates the numbers to the right
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The rotated array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.RotateRight(). This method will be removed in v2.0.", false)]
+    public static float[] RotateRight(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.RotateRight(array);
+
+    /// <summary>
+    /// Sets a new size for the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="size">The new size</param>
+    /// <returns>Array with new size</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.SetNewArraySize(). This method will be removed in v2.0.", false)]
+    public static float[] SetNewArraySize(this float[] array, int size) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.SetNewArraySize(array, size);
+
+    /// <summary>
+    /// Sorts the array in ascending order
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>Array sorted in ascending order</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.SortArrayAsc(). This method will be removed in v2.0.", false)]
+    public static float[] SortArrayAsc(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.SortArrayAsc(array);
+
+    /// <summary>
+    /// Sorts the array in descending order
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>Array sorted in descending order</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.SortArrayDesc(). This method will be removed in v2.0.", false)]
+    public static float[] SortArrayDesc(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.SortArrayDesc(array);
+
+    /// <summary>
+    /// Sums all values in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The sum of all values</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.SumAllValues(). This method will be removed in v2.0.", false)]
+    public static float SumAllValues(this float[] array) =>
+        MarcusMedinaPro.TypedMath.FloatCollections.TypedMathFloatCollections.SumAllValues(array);
 }

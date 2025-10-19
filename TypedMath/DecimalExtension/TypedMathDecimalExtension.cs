@@ -4,9 +4,6 @@
 //     conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
-// Credits for borrowed code: LinQ Primenumbers, Zoran Horvat, at
-// http://www.codinghelmet.com/articles/linq-all-primes/ Increase/Decrease array values, mgp -
-// https://stackoverflow.com/users/55943/mqp, at https://stackoverflow.com/a/823537 ----------------------------------------------------------------------------------------------
 
 namespace MarcusMedinaPro.TypedMath.DecimalExtension;
 
@@ -18,1695 +15,1958 @@ using System.Linq;
 /// </summary>
 public static class TypedMathDecimalExtension
 {
+
     /// <summary>
     /// Adds byte to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Add(this decimal x, byte y) => x + (decimal)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static decimal Add(this decimal x, byte addend) => x + (decimal)addend;
 
     /// <summary>
     /// Adds char to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Add(this decimal x, char y) => x + (decimal)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static decimal Add(this decimal x, char addend) => x + (decimal)addend;
 
     /// <summary>
     /// Adds decimal to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Add(this decimal x, decimal y) => x + y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static decimal Add(this decimal x, decimal addend) => x + addend;
 
     /// <summary>
     /// Adds double to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Add(this decimal x, double y) => x + (decimal)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static decimal Add(this decimal x, double addend) => x + (decimal)addend;
 
     /// <summary>
     /// Adds float to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Add(this decimal x, float y) => x + (decimal)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static decimal Add(this decimal x, float addend) => x + (decimal)addend;
 
     /// <summary>
     /// Adds int to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Add(this decimal x, int y) => x + (decimal)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static decimal Add(this decimal x, int addend) => x + (decimal)addend;
 
     /// <summary>
     /// Adds long to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Add(this decimal x, long y) => x + (decimal)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static decimal Add(this decimal x, long addend) => x + (decimal)addend;
 
     /// <summary>
     /// Adds sbyte to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Add(this decimal x, sbyte y) => x + (decimal)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static decimal Add(this decimal x, sbyte addend) => x + (decimal)addend;
 
     /// <summary>
     /// Adds short to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Add(this decimal x, short y) => x + (decimal)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static decimal Add(this decimal x, short addend) => x + (decimal)addend;
 
     /// <summary>
     /// Adds uint to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Add(this decimal x, uint y) => x + (decimal)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static decimal Add(this decimal x, uint addend) => x + (decimal)addend;
 
     /// <summary>
     /// Adds ulong to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Add(this decimal x, ulong y) => x + (decimal)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static decimal Add(this decimal x, ulong addend) => x + (decimal)addend;
 
     /// <summary>
     /// Adds ushort to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Add(this decimal x, ushort y) => x + (decimal)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static decimal Add(this decimal x, ushort addend) => x + (decimal)addend;
 
     /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal AddPercent(this decimal value, byte percent) => (decimal)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal AddPercent(this decimal value, char percent) => (decimal)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal AddPercent(this decimal value, decimal percent) => (decimal)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal AddPercent(this decimal value, double percent) => (decimal)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal AddPercent(this decimal value, float percent) => (decimal)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal AddPercent(this decimal value, int percent) => (decimal)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal AddPercent(this decimal value, long percent) => (decimal)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal AddPercent(this decimal value, sbyte percent) => (decimal)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal AddPercent(this decimal value, short percent) => (decimal)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal AddPercent(this decimal value, uint percent) => (decimal)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal AddPercent(this decimal value, ulong percent) => (decimal)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal AddPercent(this decimal value, ushort percent) => (decimal)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Tries to cast decimal to byte, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static byte CastDecimalToByte(this decimal x) => (byte)x;
-
-    /// <summary>
-    /// Tries to cast decimal to char, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static char CastDecimalToChar(this decimal x) => (char)x;
-
-    /// <summary>
-    /// Tries to cast decimal to double, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static double CastDecimalToDouble(this decimal x) => (double)x;
-
-    /// <summary>
-    /// Tries to cast decimal to float, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static float CastDecimalToFloat(this decimal x) => (float)x;
-
-    /// <summary>
-    /// Tries to cast decimal to int, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static int CastDecimalToInt(this decimal x) => (int)x;
-
-    /// <summary>
-    /// Tries to cast decimal to long, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static long CastDecimalToLong(this decimal x) => (long)x;
-
-    /// <summary>
-    /// Tries to cast decimal to sbyte, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte CastDecimalToSbyte(this decimal x) => (sbyte)x;
-
-    /// <summary>
-    /// Tries to cast decimal to short, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static short CastDecimalToShort(this decimal x) => (short)x;
-
-    /// <summary>
-    /// Tries to cast decimal to uint, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static uint CastDecimalToUint(this decimal x) => (uint)x;
-
-    /// <summary>
-    /// Tries to cast decimal to ulong, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static ulong CastDecimalToUlong(this decimal x) => (ulong)x;
-
-    /// <summary>
-    /// Tries to cast decimal to ushort, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static ushort CastDecimalToUshort(this decimal x) => (ushort)x;
-
-    /// <summary>
-    /// Compare original and second number
-    /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <returns>The highest of the two numbers</returns>
-    public static decimal ChooseIfHigher(this decimal first, decimal second) => first > second ? first : second;
-
-    /// <summary>
-    /// Compare original and second number
-    /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <returns>The lowest of the two numbers</returns>
-    public static decimal ChooseIfLower(this decimal first, decimal second) => first < second ? first : second;
-
-    /// <summary>
-    /// Converts the array to int.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>An array of <see cref="int"/> values.</returns>
-    public static int[] ConvertArrayToInt(this decimal[] array) => [.. array.Select(x => (int)x)];
-
-    /// <summary>
-    /// Decreases all values with given value.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <param name="dec">The value to add.</param>
-    /// <returns>The <see cref="decimal"/></returns>
-    public static decimal[] DecreaseAllValuesWith(this decimal[] array, decimal dec) => [.. array.Select(x => x - dec)];
-
-    /// <summary>
-    /// Gets the differnce between two numbers
-    /// </summary>
-    /// <param name="original">The original.</param>
-    /// <param name="compareTo">The compare to.</param>
-    /// <returns></returns>
-    public static decimal DiferenceFrom(this decimal original, decimal compareTo) => original > compareTo ? original - compareTo : original < compareTo ? compareTo - original : 0;
-
-    /// <summary>
-    /// Divides byte from decimal
+    /// Adds percentage to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal DividedBy(this decimal x, byte y) => x / (decimal)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static decimal AddPercent(this decimal x, byte percent) => x + (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Divides char from decimal
+    /// Adds percentage to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal DividedBy(this decimal x, char y) => x / (decimal)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static decimal AddPercent(this decimal x, char percent) => x + (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Divides decimal from decimal
+    /// Adds percentage to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal DividedBy(this decimal x, decimal y) => x / y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static decimal AddPercent(this decimal x, decimal percent) => x + (x * percent / 100);
 
     /// <summary>
-    /// Divides double from decimal
+    /// Adds percentage to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal DividedBy(this decimal x, double y) => x / (decimal)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static decimal AddPercent(this decimal x, double percent) => x + (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Divides float from decimal
+    /// Adds percentage to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal DividedBy(this decimal x, float y) => x / (decimal)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static decimal AddPercent(this decimal x, float percent) => x + (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Divides int from decimal
+    /// Adds percentage to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal DividedBy(this decimal x, int y) => x / (decimal)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static decimal AddPercent(this decimal x, int percent) => x + (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Divides long from decimal
+    /// Adds percentage to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal DividedBy(this decimal x, long y) => x / (decimal)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static decimal AddPercent(this decimal x, long percent) => x + (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Divides sbyte from decimal
+    /// Adds percentage to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal DividedBy(this decimal x, sbyte y) => x / (decimal)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static decimal AddPercent(this decimal x, sbyte percent) => x + (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Divides short from decimal
+    /// Adds percentage to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal DividedBy(this decimal x, short y) => x / (decimal)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static decimal AddPercent(this decimal x, short percent) => x + (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Divides uint from decimal
+    /// Adds percentage to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal DividedBy(this decimal x, uint y) => x / (decimal)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static decimal AddPercent(this decimal x, uint percent) => x + (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Divides ulong from decimal
+    /// Adds percentage to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal DividedBy(this decimal x, ulong y) => x / (decimal)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static decimal AddPercent(this decimal x, ulong percent) => x + (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Divides ushort from decimal
+    /// Adds percentage to decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal DividedBy(this decimal x, ushort y) => x / (decimal)y;
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static decimal AddPercent(this decimal x, ushort percent) => x + (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Peeks the average value of the numbers in the array
-    /// </summary>
-    /// <param name="array">The array</param>
-    /// <returns>The average value from the array</returns>
-    public static decimal GetAverage(this decimal[] array) => array.Average();
-
-    /// <summary>
-    /// Gets the first half of the array.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="decimal"/></returns>
-    public static decimal[] GetFirstHalf(this decimal[] array) => [.. array.Take(array.Length / 2)];
-
-    /// <summary>
-    /// Gets the first number in the array
-    /// </summary>
-    /// <param name="array">The array <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static decimal GetFirstValue(this decimal[] array) => array[0];
-
-    /// <summary>
-    /// Gets the hightest value of the numbers in the array
-    /// </summary>
-    /// <param name="array">The array</param>
-    /// <returns>The hightest value in the array</returns>
-    public static decimal GetHighestValue(this decimal[] array) => array.Max();
-
-    /// <summary>
-    /// Gets the last half of the array.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="decimal"/></returns>
-    public static decimal[] GetLastHalf(this decimal[] array) => [.. array.Skip(array.Length / 2).Take(array.Length / 2)];
-
-    /// <summary>
-    /// Gets the last number in the array
-    /// </summary>
-    /// <param name="array">The array <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static decimal GetLastValue(this decimal[] array) => array[^1];
-
-    /// <summary>
-    /// Peeks the lowest value in the array
-    /// </summary>
-    /// <param name="array">The array <see cref="decimal"/></param>
-    /// <returns>The lowest value i the array</returns>
-    public static decimal GetLowestValue(this decimal[] array) => array.Min();
-
-    /// <summary>
-    /// Gets the middle of both halves in the array.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="decimal"/></returns>
-    public static decimal[] GetMiddle(this decimal[] array) => [.. array.Skip(array.Length / 4).Take(array.Length / 2)];
-
-    /// <summary>
-    /// Gets the number in the middle of the array
-    /// </summary>
-    /// <param name="array">The array <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static decimal GetMiddleValue(this decimal[] array) => array[(array.Length - 1) / 2];
-
-    /// <summary>
-    /// Peeks numbers higher than given value in the array
-    /// </summary>
-    /// <param name="array"></param>
-    /// <param name="x">The limit value</param>
-    /// <returns>Returns a new array with all numbers higher than x</returns>
-    public static decimal[] GetValuesHigherThan(this decimal[] array, decimal x) => [.. array.Where(y => y >= x)];
-
-    /// <summary>
-    /// Peeks numbers lower than given value in the array
-    /// </summary>
-    /// <param name="array"></param>
-    /// <param name="x">The limit value</param>
-    /// <returns>Returns a new array with all numbers lower than x</returns>
-    public static decimal[] GetValuesLowerThan(this decimal[] array, decimal x) => [.. array.Where(y => y <= x)];
-
-    /// <summary>
-    /// Gets a boolean True if decimal is greater than byte
+    /// Returns decimal if higher than byte, otherwise byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this decimal x, byte y) => x > (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static decimal ChooseIfHigher(this decimal x, byte other) => x > (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is greater than char
+    /// Returns decimal if higher than char, otherwise char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this decimal x, char y) => x > (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static decimal ChooseIfHigher(this decimal x, char other) => x > (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is greater than decimal
+    /// Returns decimal if higher than decimal, otherwise decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this decimal x, decimal y) => x > y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static decimal ChooseIfHigher(this decimal x, decimal other) => x > other ? x : other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is greater than double
+    /// Returns decimal if higher than double, otherwise double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this decimal x, double y) => x > (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static decimal ChooseIfHigher(this decimal x, double other) => x > (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is greater than float
+    /// Returns decimal if higher than float, otherwise float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this decimal x, float y) => x > (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static decimal ChooseIfHigher(this decimal x, float other) => x > (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is greater than int
+    /// Returns decimal if higher than int, otherwise int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this decimal x, int y) => x > (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static decimal ChooseIfHigher(this decimal x, int other) => x > (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is greater than long
+    /// Returns decimal if higher than long, otherwise long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this decimal x, long y) => x > (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static decimal ChooseIfHigher(this decimal x, long other) => x > (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is greater than sbyte
+    /// Returns decimal if higher than sbyte, otherwise sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this decimal x, sbyte y) => x > (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static decimal ChooseIfHigher(this decimal x, sbyte other) => x > (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is greater than short
+    /// Returns decimal if higher than short, otherwise short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this decimal x, short y) => x > (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static decimal ChooseIfHigher(this decimal x, short other) => x > (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is greater than uint
+    /// Returns decimal if higher than uint, otherwise uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this decimal x, uint y) => x > (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static decimal ChooseIfHigher(this decimal x, uint other) => x > (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is greater than ulong
+    /// Returns decimal if higher than ulong, otherwise ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this decimal x, ulong y) => x > (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static decimal ChooseIfHigher(this decimal x, ulong other) => x > (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is greater than ushort
+    /// Returns decimal if higher than ushort, otherwise ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this decimal x, ushort y) => x > (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static decimal ChooseIfHigher(this decimal x, ushort other) => x > (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Increases all values with given value.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <param name="add">The value to add.</param>
-    /// <returns>The <see cref="decimal"/></returns>
-    public static decimal[] IncreaseAllValuesWith(this decimal[] array, decimal add) => [.. array.Select(x => x + add)];
-
-    /// <summary>
-    /// Gets boolean True if byte is equal to decimal
+    /// Returns decimal if lower than byte, otherwise byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this decimal x, byte y) => x == (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static decimal ChooseIfLower(this decimal x, byte other) => x < (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if char is equal to decimal
+    /// Returns decimal if lower than char, otherwise char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this decimal x, char y) => x == (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static decimal ChooseIfLower(this decimal x, char other) => x < (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if decimal is equal to decimal
+    /// Returns decimal if lower than decimal, otherwise decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this decimal x, decimal y) => x == y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static decimal ChooseIfLower(this decimal x, decimal other) => x < other ? x : other;
 
     /// <summary>
-    /// Gets boolean True if double is equal to decimal
+    /// Returns decimal if lower than double, otherwise double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this decimal x, double y) => x == (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static decimal ChooseIfLower(this decimal x, double other) => x < (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if float is equal to decimal
+    /// Returns decimal if lower than float, otherwise float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this decimal x, float y) => x == (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static decimal ChooseIfLower(this decimal x, float other) => x < (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if int is equal to decimal
+    /// Returns decimal if lower than int, otherwise int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this decimal x, int y) => x == (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static decimal ChooseIfLower(this decimal x, int other) => x < (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if long is equal to decimal
+    /// Returns decimal if lower than long, otherwise long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this decimal x, long y) => x == (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static decimal ChooseIfLower(this decimal x, long other) => x < (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if sbyte is equal to decimal
+    /// Returns decimal if lower than sbyte, otherwise sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this decimal x, sbyte y) => x == (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static decimal ChooseIfLower(this decimal x, sbyte other) => x < (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if short is equal to decimal
+    /// Returns decimal if lower than short, otherwise short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this decimal x, short y) => x == (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static decimal ChooseIfLower(this decimal x, short other) => x < (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if uint is equal to decimal
+    /// Returns decimal if lower than uint, otherwise uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this decimal x, uint y) => x == (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static decimal ChooseIfLower(this decimal x, uint other) => x < (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if ulong is equal to decimal
+    /// Returns decimal if lower than ulong, otherwise ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this decimal x, ulong y) => x == (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static decimal ChooseIfLower(this decimal x, ulong other) => x < (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if ushort is equal to decimal
+    /// Returns decimal if lower than ushort, otherwise ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this decimal x, ushort y) => x == (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static decimal ChooseIfLower(this decimal x, ushort other) => x < (decimal)other ? x : (decimal)other;
 
     /// <summary>
-    /// Gets boolean true if value is less than zero
+    /// Gets absolute difference between decimal and byte
     /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static decimal DiferenceFrom(this decimal x, byte other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static decimal DiferenceFrom(this decimal x, char other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static decimal DiferenceFrom(this decimal x, decimal other) => x > other ? x - other : x < other ? other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static decimal DiferenceFrom(this decimal x, double other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static decimal DiferenceFrom(this decimal x, float other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static decimal DiferenceFrom(this decimal x, int other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static decimal DiferenceFrom(this decimal x, long other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static decimal DiferenceFrom(this decimal x, sbyte other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static decimal DiferenceFrom(this decimal x, short other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static decimal DiferenceFrom(this decimal x, uint other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static decimal DiferenceFrom(this decimal x, ulong other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static decimal DiferenceFrom(this decimal x, ushort other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static decimal DifferenceFrom(this decimal x, byte other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static decimal DifferenceFrom(this decimal x, char other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static decimal DifferenceFrom(this decimal x, decimal other) => x > other ? x - other : x < other ? other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static decimal DifferenceFrom(this decimal x, double other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static decimal DifferenceFrom(this decimal x, float other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static decimal DifferenceFrom(this decimal x, int other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static decimal DifferenceFrom(this decimal x, long other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static decimal DifferenceFrom(this decimal x, sbyte other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static decimal DifferenceFrom(this decimal x, short other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static decimal DifferenceFrom(this decimal x, uint other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static decimal DifferenceFrom(this decimal x, ulong other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Gets absolute difference between decimal and ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static decimal DifferenceFrom(this decimal x, ushort other) => x > (decimal)other ? x - (decimal)other : x < (decimal)other ? (decimal)other - x : 0;
+
+    /// <summary>
+    /// Divides decimal by byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static decimal DividedBy(this decimal x, byte divisor) => x / (decimal)divisor;
+
+    /// <summary>
+    /// Divides decimal by char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static decimal DividedBy(this decimal x, char divisor) => x / (decimal)divisor;
+
+    /// <summary>
+    /// Divides decimal by decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static decimal DividedBy(this decimal x, decimal divisor) => x / divisor;
+
+    /// <summary>
+    /// Divides decimal by double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static decimal DividedBy(this decimal x, double divisor) => x / (decimal)divisor;
+
+    /// <summary>
+    /// Divides decimal by float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static decimal DividedBy(this decimal x, float divisor) => x / (decimal)divisor;
+
+    /// <summary>
+    /// Divides decimal by int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static decimal DividedBy(this decimal x, int divisor) => x / (decimal)divisor;
+
+    /// <summary>
+    /// Divides decimal by long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static decimal DividedBy(this decimal x, long divisor) => x / (decimal)divisor;
+
+    /// <summary>
+    /// Divides decimal by sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static decimal DividedBy(this decimal x, sbyte divisor) => x / (decimal)divisor;
+
+    /// <summary>
+    /// Divides decimal by short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static decimal DividedBy(this decimal x, short divisor) => x / (decimal)divisor;
+
+    /// <summary>
+    /// Divides decimal by uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static decimal DividedBy(this decimal x, uint divisor) => x / (decimal)divisor;
+
+    /// <summary>
+    /// Divides decimal by ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static decimal DividedBy(this decimal x, ulong divisor) => x / (decimal)divisor;
+
+    /// <summary>
+    /// Divides decimal by ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static decimal DividedBy(this decimal x, ushort divisor) => x / (decimal)divisor;
+
+    /// <summary>
+    /// Checks if decimal is greater than byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this decimal x, byte other) => x > (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal is greater than char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this decimal x, char other) => x > (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal is greater than decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this decimal x, decimal other) => x > other;
+
+    /// <summary>
+    /// Checks if decimal is greater than double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this decimal x, double other) => x > (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal is greater than float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this decimal x, float other) => x > (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal is greater than int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this decimal x, int other) => x > (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal is greater than long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this decimal x, long other) => x > (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal is greater than sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this decimal x, sbyte other) => x > (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal is greater than short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this decimal x, short other) => x > (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal is greater than uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this decimal x, uint other) => x > (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal is greater than ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this decimal x, ulong other) => x > (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal is greater than ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this decimal x, ushort other) => x > (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal equals byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this decimal x, byte other) => x == (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal equals char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this decimal x, char other) => x == (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal equals decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this decimal x, decimal other) => x == other;
+
+    /// <summary>
+    /// Checks if decimal equals double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this decimal x, double other) => x == (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal equals float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this decimal x, float other) => x == (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal equals int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this decimal x, int other) => x == (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal equals long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this decimal x, long other) => x == (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal equals sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this decimal x, sbyte other) => x == (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal equals short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this decimal x, short other) => x == (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal equals uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this decimal x, uint other) => x == (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal equals ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this decimal x, ulong other) => x == (decimal)other;
+
+    /// <summary>
+    /// Checks if decimal equals ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this decimal x, ushort other) => x == (decimal)other;
+
+    /// <summary>
+    /// Gets boolean true if decimal is less than zero
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <returns>True if the value is negative</returns>
     public static bool IsNegative(this decimal x) => x < 0;
 
     /// <summary>
-    /// Gets boolean True if byte is not equal to decimal
+    /// Checks if decimal does not equal byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this decimal x, byte y) => x != (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this decimal x, byte other) => x != (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if char is not equal to decimal
+    /// Checks if decimal does not equal char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this decimal x, char y) => x != (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this decimal x, char other) => x != (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if decimal is not equal to decimal
+    /// Checks if decimal does not equal decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this decimal x, decimal y) => x != y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this decimal x, decimal other) => x != other;
 
     /// <summary>
-    /// Gets boolean True if double is not equal to decimal
+    /// Checks if decimal does not equal double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this decimal x, double y) => x != (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this decimal x, double other) => x != (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if float is not equal to decimal
+    /// Checks if decimal does not equal float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this decimal x, float y) => x != (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this decimal x, float other) => x != (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if int is not equal to decimal
+    /// Checks if decimal does not equal int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this decimal x, int y) => x != (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this decimal x, int other) => x != (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if long is not equal to decimal
+    /// Checks if decimal does not equal long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this decimal x, long y) => x != (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this decimal x, long other) => x != (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if sbyte is not equal to decimal
+    /// Checks if decimal does not equal sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this decimal x, sbyte y) => x != (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this decimal x, sbyte other) => x != (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if short is not equal to decimal
+    /// Checks if decimal does not equal short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this decimal x, short y) => x != (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this decimal x, short other) => x != (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if uint is not equal to decimal
+    /// Checks if decimal does not equal uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this decimal x, uint y) => x != (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this decimal x, uint other) => x != (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if ulong is not equal to decimal
+    /// Checks if decimal does not equal ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this decimal x, ulong y) => x != (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this decimal x, ulong other) => x != (decimal)other;
 
     /// <summary>
-    /// Gets boolean True if ushort is not equal to decimal
+    /// Checks if decimal does not equal ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this decimal x, ushort y) => x != (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this decimal x, ushort other) => x != (decimal)other;
 
     /// <summary>
-    /// Gets boolean true if value is more than zero
-    /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsPositive(this decimal x) => x >= 0;
-
-    /// <summary>
-    /// Gets a boolean True if decimal is less than byte
+    /// Gets boolean true if decimal is more than zero
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this decimal x, byte y) => x < (decimal)y;
+    /// <returns>True if the value is positive</returns>
+    public static bool IsPositive(this decimal x) => x > 0;
 
     /// <summary>
-    /// Gets a boolean True if decimal is less than char
+    /// Checks if decimal is less than byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this decimal x, char y) => x < (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this decimal x, byte other) => x < (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is less than decimal
+    /// Checks if decimal is less than char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this decimal x, decimal y) => x < y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this decimal x, char other) => x < (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is less than double
+    /// Checks if decimal is less than decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this decimal x, double y) => x < (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this decimal x, decimal other) => x < other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is less than float
+    /// Checks if decimal is less than double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this decimal x, float y) => x < (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this decimal x, double other) => x < (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is less than int
+    /// Checks if decimal is less than float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this decimal x, int y) => x < (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this decimal x, float other) => x < (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is less than long
+    /// Checks if decimal is less than int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this decimal x, long y) => x < (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this decimal x, int other) => x < (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is less than sbyte
+    /// Checks if decimal is less than long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this decimal x, sbyte y) => x < (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this decimal x, long other) => x < (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is less than short
+    /// Checks if decimal is less than sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this decimal x, short y) => x < (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this decimal x, sbyte other) => x < (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is less than uint
+    /// Checks if decimal is less than short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this decimal x, uint y) => x < (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this decimal x, short other) => x < (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is less than ulong
+    /// Checks if decimal is less than uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this decimal x, ulong y) => x < (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this decimal x, uint other) => x < (decimal)other;
 
     /// <summary>
-    /// Gets a boolean True if decimal is less than ushort
+    /// Checks if decimal is less than ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this decimal x, ushort y) => x < (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this decimal x, ulong other) => x < (decimal)other;
 
     /// <summary>
-    /// Gets the remainder of byte from decimal
+    /// Checks if decimal is less than ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Modulus(this decimal x, byte y) => x % (decimal)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this decimal x, ushort other) => x < (decimal)other;
 
     /// <summary>
-    /// Gets the remainder of char from decimal
+    /// Gets remainder of decimal divided by byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Modulus(this decimal x, char y) => x % (decimal)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static decimal Modulus(this decimal x, byte divisor) => x % (decimal)divisor;
 
     /// <summary>
-    /// Gets the remainder of decimal from decimal
+    /// Gets remainder of decimal divided by char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Modulus(this decimal x, decimal y) => x % y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static decimal Modulus(this decimal x, char divisor) => x % (decimal)divisor;
 
     /// <summary>
-    /// Gets the remainder of double from decimal
+    /// Gets remainder of decimal divided by decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Modulus(this decimal x, double y) => x % (decimal)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static decimal Modulus(this decimal x, decimal divisor) => x % divisor;
 
     /// <summary>
-    /// Gets the remainder of float from decimal
+    /// Gets remainder of decimal divided by double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Modulus(this decimal x, float y) => x % (decimal)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static decimal Modulus(this decimal x, double divisor) => x % (decimal)divisor;
 
     /// <summary>
-    /// Gets the remainder of int from decimal
+    /// Gets remainder of decimal divided by float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Modulus(this decimal x, int y) => x % (decimal)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static decimal Modulus(this decimal x, float divisor) => x % (decimal)divisor;
 
     /// <summary>
-    /// Gets the remainder of long from decimal
+    /// Gets remainder of decimal divided by int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Modulus(this decimal x, long y) => x % (decimal)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static decimal Modulus(this decimal x, int divisor) => x % (decimal)divisor;
 
     /// <summary>
-    /// Gets the remainder of sbyte from decimal
+    /// Gets remainder of decimal divided by long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Modulus(this decimal x, sbyte y) => x % (decimal)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static decimal Modulus(this decimal x, long divisor) => x % (decimal)divisor;
 
     /// <summary>
-    /// Gets the remainder of short from decimal
+    /// Gets remainder of decimal divided by sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Modulus(this decimal x, short y) => x % (decimal)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static decimal Modulus(this decimal x, sbyte divisor) => x % (decimal)divisor;
 
     /// <summary>
-    /// Gets the remainder of uint from decimal
+    /// Gets remainder of decimal divided by short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Modulus(this decimal x, uint y) => x % (decimal)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static decimal Modulus(this decimal x, short divisor) => x % (decimal)divisor;
 
     /// <summary>
-    /// Gets the remainder of ulong from decimal
+    /// Gets remainder of decimal divided by uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Modulus(this decimal x, ulong y) => x % (decimal)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static decimal Modulus(this decimal x, uint divisor) => x % (decimal)divisor;
 
     /// <summary>
-    /// Gets the remainder of ushort from decimal
+    /// Gets remainder of decimal divided by ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Modulus(this decimal x, ushort y) => x % (decimal)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static decimal Modulus(this decimal x, ulong divisor) => x % (decimal)divisor;
 
     /// <summary>
-    /// Multiplies byte with decimal
+    /// Gets remainder of decimal divided by ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal MultipliedWith(this decimal x, byte y) => x * (decimal)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static decimal Modulus(this decimal x, ushort divisor) => x % (decimal)divisor;
 
     /// <summary>
-    /// Multiplies char with decimal
+    /// Multiplies decimal with byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal MultipliedWith(this decimal x, char y) => x * (decimal)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static decimal MultipliedWith(this decimal x, byte multiplier) => x * (decimal)multiplier;
+
+    /// <summary>
+    /// Multiplies decimal with char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static decimal MultipliedWith(this decimal x, char multiplier) => x * (decimal)multiplier;
 
     /// <summary>
     /// Multiplies decimal with decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal MultipliedWith(this decimal x, decimal y) => x * y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static decimal MultipliedWith(this decimal x, decimal multiplier) => x * multiplier;
 
     /// <summary>
-    /// Multiplies double with decimal
+    /// Multiplies decimal with double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal MultipliedWith(this decimal x, double y) => x * (decimal)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static decimal MultipliedWith(this decimal x, double multiplier) => x * (decimal)multiplier;
 
     /// <summary>
-    /// Multiplies float with decimal
+    /// Multiplies decimal with float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal MultipliedWith(this decimal x, float y) => x * (decimal)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static decimal MultipliedWith(this decimal x, float multiplier) => x * (decimal)multiplier;
 
     /// <summary>
-    /// Multiplies int with decimal
+    /// Multiplies decimal with int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal MultipliedWith(this decimal x, int y) => x * (decimal)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static decimal MultipliedWith(this decimal x, int multiplier) => x * (decimal)multiplier;
 
     /// <summary>
-    /// Multiplies long with decimal
+    /// Multiplies decimal with long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal MultipliedWith(this decimal x, long y) => x * (decimal)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static decimal MultipliedWith(this decimal x, long multiplier) => x * (decimal)multiplier;
 
     /// <summary>
-    /// Multiplies sbyte with decimal
+    /// Multiplies decimal with sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal MultipliedWith(this decimal x, sbyte y) => x * (decimal)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static decimal MultipliedWith(this decimal x, sbyte multiplier) => x * (decimal)multiplier;
 
     /// <summary>
-    /// Multiplies short with decimal
+    /// Multiplies decimal with short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal MultipliedWith(this decimal x, short y) => x * (decimal)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static decimal MultipliedWith(this decimal x, short multiplier) => x * (decimal)multiplier;
 
     /// <summary>
-    /// Multiplies uint with decimal
+    /// Multiplies decimal with uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal MultipliedWith(this decimal x, uint y) => x * (decimal)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static decimal MultipliedWith(this decimal x, uint multiplier) => x * (decimal)multiplier;
 
     /// <summary>
-    /// Multiplies ulong with decimal
+    /// Multiplies decimal with ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal MultipliedWith(this decimal x, ulong y) => x * (decimal)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static decimal MultipliedWith(this decimal x, ulong multiplier) => x * (decimal)multiplier;
 
     /// <summary>
-    /// Multiplies ushort with decimal
+    /// Multiplies decimal with ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal MultipliedWith(this decimal x, ushort y) => x * (decimal)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static decimal MultipliedWith(this decimal x, ushort multiplier) => x * (decimal)multiplier;
 
     /// <summary>
-    /// Gets the NOT of decimal
+    /// Calculates decimal percent of byte
     /// </summary>
-    /// <param name="x">The x <see cref="decimal"/></param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Not(this decimal x) => (decimal)~(int)x;
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static decimal PercentOf(this decimal x, byte number) => x / 100 * (decimal)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates decimal percent of char
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static decimal PercentOf(this decimal percent, byte value) => (decimal)(((decimal)percent) / ((decimal)100) * ((decimal)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static decimal PercentOf(this decimal x, char number) => x / 100 * (decimal)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates decimal percent of decimal
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static decimal PercentOf(this decimal percent, char value) => (decimal)(((decimal)percent) / ((decimal)100) * ((decimal)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static decimal PercentOf(this decimal x, decimal number) => x / 100 * number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates decimal percent of double
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static decimal PercentOf(this decimal percent, decimal value) => (decimal)(((decimal)percent) / ((decimal)100) * ((decimal)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static decimal PercentOf(this decimal x, double number) => x / 100 * (decimal)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates decimal percent of float
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static decimal PercentOf(this decimal percent, double value) => (decimal)(((decimal)percent) / ((decimal)100) * ((decimal)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static decimal PercentOf(this decimal x, float number) => x / 100 * (decimal)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates decimal percent of int
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static decimal PercentOf(this decimal percent, float value) => (decimal)(((decimal)percent) / ((decimal)100) * ((decimal)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static decimal PercentOf(this decimal x, int number) => x / 100 * (decimal)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates decimal percent of long
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static decimal PercentOf(this decimal percent, int value) => (decimal)(((decimal)percent) / ((decimal)100) * ((decimal)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static decimal PercentOf(this decimal x, long number) => x / 100 * (decimal)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates decimal percent of sbyte
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static decimal PercentOf(this decimal percent, long value) => (decimal)(((decimal)percent) / ((decimal)100) * ((decimal)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static decimal PercentOf(this decimal x, sbyte number) => x / 100 * (decimal)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates decimal percent of short
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static decimal PercentOf(this decimal percent, sbyte value) => (decimal)(((decimal)percent) / ((decimal)100) * ((decimal)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static decimal PercentOf(this decimal x, short number) => x / 100 * (decimal)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates decimal percent of uint
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static decimal PercentOf(this decimal percent, short value) => (decimal)(((decimal)percent) / ((decimal)100) * ((decimal)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static decimal PercentOf(this decimal x, uint number) => x / 100 * (decimal)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates decimal percent of ulong
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static decimal PercentOf(this decimal percent, uint value) => (decimal)(((decimal)percent) / ((decimal)100) * ((decimal)value));
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static decimal PercentOf(this decimal x, ulong number) => x / 100 * (decimal)number;
 
     /// <summary>
-    /// Gets the percent of the value
+    /// Calculates decimal percent of ushort
     /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static decimal PercentOf(this decimal percent, ulong value) => (decimal)(((decimal)percent) / ((decimal)100) * ((decimal)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static decimal PercentOf(this decimal percent, ushort value) => (decimal)(((decimal)percent) / ((decimal)100) * ((decimal)value));
-
-    /// <summary>
-    /// Rotates the numbers to the left.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="decimal"/></returns>
-    public static decimal[] RotateLeft(this decimal[] array)
-    {
-        var first = array.GetFirstValue();
-        Array.Copy(array, 1, array, 0, array.Length - 1);
-        array[^1] = first;
-        return array;
-    }
-
-    /// <summary>
-    /// Rotates the numbers to the right.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="decimal"/></returns>
-    public static decimal[] RotateRight(this decimal[] array)
-    {
-        var last = array.GetLastValue();
-        Array.Copy(array, 0, array, 1, array.Length - 1);
-        array[0] = last;
-        return array;
-    }
-
-    /// <summary>
-    /// Compare original and second number and set the variable with the highest
-    /// </summary>
-    /// <param name="first">The variable</param>
-    /// <param name="second">The number to compare</param>
-    /// <param name="third">The number to compare with</param>
-    /// <returns>Sets the variable to the highest of the two numbers</returns>
-    public static ref decimal SetHighestValueOf(this ref decimal first, decimal second, decimal third)
-    {
-        first = second > third ? second : third;
-        return ref first;
-    }
-
-    /// <summary>
-    /// Compare original and second number and set the variable with the lowest
-    /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <param name="third">The third <see cref="decimal"/></param>
-    /// <returns>Sets the variable to the lowest of the two numbers</returns>
-    public static ref decimal SetLowestValueOf(this ref decimal first, decimal second, decimal third)
-    {
-        first = second < third ? second : third;
-        return ref first;
-    }
-
-    /// <summary>
-    /// Get the current size of the array
-    /// </summary>
-    /// <param name="array">The array <see cref="decimal"/></param>
-    /// <param name="size">The size <see cref="int"/></param>
-    /// <returns>The size of the array</returns>
-    public static decimal[] SetNewArraySize(this decimal[] array, int size)
-    {
-        var newArr = new decimal[size];
-        Array.Copy(array, 0, newArr, 0, array.Length);
-        return newArr;
-    }
-
-    /// <summary>
-    /// Sorts array from lowest to highest
-    /// </summary>
-    /// <param name="array">The array <see cref="decimal"/></param>
-    /// <returns>A sorted array</returns>
-    public static decimal[] SortArrayAsc(this decimal[] array) => [.. array.OrderBy(x => x)];
-
-    /// <summary>
-    /// Sorts array from highest to lowest
-    /// </summary>
-    /// <param name="array">The array <see cref="decimal"/></param>
-    /// <returns>A sorted array</returns>
-    public static decimal[] SortArrayDesc(this decimal[] array) => [.. array.OrderByDescending(x => x)];
+    /// <param name="x">The original value</param>
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static decimal PercentOf(this decimal x, ushort number) => x / 100 * (decimal)number;
 
     /// <summary>
     /// Subtracts byte from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(decimal,byte) instead.", false)]
-    public static decimal Substract(this decimal x, byte y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static decimal Substract(this decimal x, byte subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts char from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(decimal,char) instead.", false)]
-    public static decimal Substract(this decimal x, char y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static decimal Substract(this decimal x, char subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts decimal from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(decimal,decimal) instead.", false)]
-    public static decimal Substract(this decimal x, decimal y) => x - y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static decimal Substract(this decimal x, decimal subtrahend) => x - subtrahend;
 
     /// <summary>
     /// Subtracts double from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(decimal,double) instead.", false)]
-    public static decimal Substract(this decimal x, double y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static decimal Substract(this decimal x, double subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts float from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(decimal,float) instead.", false)]
-    public static decimal Substract(this decimal x, float y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static decimal Substract(this decimal x, float subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts int from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(decimal,int) instead.", false)]
-    public static decimal Substract(this decimal x, int y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static decimal Substract(this decimal x, int subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts long from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(decimal,long) instead.", false)]
-    public static decimal Substract(this decimal x, long y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static decimal Substract(this decimal x, long subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts sbyte from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(decimal,sbyte) instead.", false)]
-    public static decimal Substract(this decimal x, sbyte y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static decimal Substract(this decimal x, sbyte subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts short from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(decimal,short) instead.", false)]
-    public static decimal Substract(this decimal x, short y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static decimal Substract(this decimal x, short subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts uint from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(decimal,uint) instead.", false)]
-    public static decimal Substract(this decimal x, uint y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static decimal Substract(this decimal x, uint subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts ulong from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(decimal,ulong) instead.", false)]
-    public static decimal Substract(this decimal x, ulong y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static decimal Substract(this decimal x, ulong subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts ushort from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(decimal,ushort) instead.", false)]
-    public static decimal Substract(this decimal x, ushort y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static decimal Substract(this decimal x, ushort subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(byte) instead.", false)]
-    public static decimal SubstractPercent(this decimal value, byte percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static decimal SubstractPercent(this decimal x, byte percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(char) instead.", false)]
-    public static decimal SubstractPercent(this decimal value, char percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static decimal SubstractPercent(this decimal x, char percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(decimal) instead.", false)]
-    public static decimal SubstractPercent(this decimal value, decimal percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static decimal SubstractPercent(this decimal x, decimal percent) => x - (x * percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(double) instead.", false)]
-    public static decimal SubstractPercent(this decimal value, double percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static decimal SubstractPercent(this decimal x, double percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(float) instead.", false)]
-    public static decimal SubstractPercent(this decimal value, float percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static decimal SubstractPercent(this decimal x, float percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(int) instead.", false)]
-    public static decimal SubstractPercent(this decimal value, int percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static decimal SubstractPercent(this decimal x, int percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(long) instead.", false)]
-    public static decimal SubstractPercent(this decimal value, long percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static decimal SubstractPercent(this decimal x, long percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(sbyte) instead.", false)]
-    public static decimal SubstractPercent(this decimal value, sbyte percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static decimal SubstractPercent(this decimal x, sbyte percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(short) instead.", false)]
-    public static decimal SubstractPercent(this decimal value, short percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static decimal SubstractPercent(this decimal x, short percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(uint) instead.", false)]
-    public static decimal SubstractPercent(this decimal value, uint percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static decimal SubstractPercent(this decimal x, uint percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ulong) instead.", false)]
-    public static decimal SubstractPercent(this decimal value, ulong percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static decimal SubstractPercent(this decimal x, ulong percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ushort) instead.", false)]
-    public static decimal SubstractPercent(this decimal value, ushort percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static decimal SubstractPercent(this decimal x, ushort percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
     /// Subtracts byte from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Subtract(this decimal x, byte y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static decimal Subtract(this decimal x, byte subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts char from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Subtract(this decimal x, char y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static decimal Subtract(this decimal x, char subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts decimal from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Subtract(this decimal x, decimal y) => x - y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static decimal Subtract(this decimal x, decimal subtrahend) => x - subtrahend;
 
     /// <summary>
     /// Subtracts double from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Subtract(this decimal x, double y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static decimal Subtract(this decimal x, double subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts float from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Subtract(this decimal x, float y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static decimal Subtract(this decimal x, float subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts int from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Subtract(this decimal x, int y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static decimal Subtract(this decimal x, int subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts long from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Subtract(this decimal x, long y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static decimal Subtract(this decimal x, long subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts sbyte from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Subtract(this decimal x, sbyte y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static decimal Subtract(this decimal x, sbyte subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts short from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Subtract(this decimal x, short y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static decimal Subtract(this decimal x, short subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts uint from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Subtract(this decimal x, uint y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static decimal Subtract(this decimal x, uint subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts ulong from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Subtract(this decimal x, ulong y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static decimal Subtract(this decimal x, ulong subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
     /// Subtracts ushort from decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static decimal Subtract(this decimal x, ushort y) => x - (decimal)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static decimal Subtract(this decimal x, ushort subtrahend) => x - (decimal)subtrahend;
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal SubtractPercent(this decimal value, byte percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static decimal SubtractPercent(this decimal x, byte percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal SubtractPercent(this decimal value, char percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static decimal SubtractPercent(this decimal x, char percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal SubtractPercent(this decimal value, decimal percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static decimal SubtractPercent(this decimal x, decimal percent) => x - (x * percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal SubtractPercent(this decimal value, double percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static decimal SubtractPercent(this decimal x, double percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal SubtractPercent(this decimal value, float percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static decimal SubtractPercent(this decimal x, float percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal SubtractPercent(this decimal value, int percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static decimal SubtractPercent(this decimal x, int percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal SubtractPercent(this decimal value, long percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static decimal SubtractPercent(this decimal x, long percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal SubtractPercent(this decimal value, sbyte percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static decimal SubtractPercent(this decimal x, sbyte percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal SubtractPercent(this decimal value, short percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static decimal SubtractPercent(this decimal x, short percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal SubtractPercent(this decimal value, uint percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static decimal SubtractPercent(this decimal x, uint percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal SubtractPercent(this decimal value, ulong percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static decimal SubtractPercent(this decimal x, ulong percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value
+    /// Subtracts percentage from decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static decimal SubtractPercent(this decimal value, ushort percent) => (decimal)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static decimal SubtractPercent(this decimal x, ushort percent) => x - (x * (decimal)percent / 100);
 
     /// <summary>
-    /// Sums all numbers in the array
+    /// Decreases all values in the array by the specified amount
     /// </summary>
-    /// <param name="array">The array <see cref="decimal"/></param>
-    /// <returns>A sum of all the numbers in the array</returns>
-    public static decimal SumAllValues(this decimal[] array) => array.Sum();
+    /// <param name="array">The array</param>
+    /// <param name="dec">The amount to subtract</param>
+    /// <returns>Array with all values decreased</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.DecreaseAllValuesWith(). This method will be removed in v2.0.", false)]
+    public static decimal[] DecreaseAllValuesWith(this decimal[] array, decimal dec) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.DecreaseAllValuesWith(array, dec);
 
     /// <summary>
-    /// Swaps two variables
+    /// Peeks the average value of the numbers in the array
     /// </summary>
-    /// <param name="first">The main variable</param>
-    /// <param name="second">The variable to switch with</param>
-    /// <returns>
-    /// The value from the second variable and sets second variable to original value
-    /// </returns>
-    public static ref decimal SwapWith(this ref decimal first, ref decimal second)
-    {
-        (first, second) = (second, first);
-        return ref first;
-    }
+    /// <param name="array">The array</param>
+    /// <returns>The average value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetAverage(). This method will be removed in v2.0.", false)]
+    public static double GetAverage(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetAverage(array);
+
+    /// <summary>
+    /// Gets the first half of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The first half of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetFirstHalf(). This method will be removed in v2.0.", false)]
+    public static decimal[] GetFirstHalf(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetFirstHalf(array);
+
+    /// <summary>
+    /// Gets the first value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The first value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetFirstValue(). This method will be removed in v2.0.", false)]
+    public static decimal GetFirstValue(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetFirstValue(array);
+
+    /// <summary>
+    /// Gets the highest value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The highest value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetHighestValue(). This method will be removed in v2.0.", false)]
+    public static decimal GetHighestValue(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetHighestValue(array);
+
+    /// <summary>
+    /// Gets the last half of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The last half of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetLastHalf(). This method will be removed in v2.0.", false)]
+    public static decimal[] GetLastHalf(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetLastHalf(array);
+
+    /// <summary>
+    /// Gets the last value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The last value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetLastValue(). This method will be removed in v2.0.", false)]
+    public static decimal GetLastValue(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetLastValue(array);
+
+    /// <summary>
+    /// Gets the lowest value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The lowest value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetLowestValue(). This method will be removed in v2.0.", false)]
+    public static decimal GetLowestValue(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetLowestValue(array);
+
+    /// <summary>
+    /// Gets the middle portion of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The middle portion of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetMiddle(). This method will be removed in v2.0.", false)]
+    public static decimal[] GetMiddle(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetMiddle(array);
+
+    /// <summary>
+    /// Gets the middle value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The middle value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetMiddleValue(). This method will be removed in v2.0.", false)]
+    public static decimal GetMiddleValue(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetMiddleValue(array);
+
+    /// <summary>
+    /// Gets all values higher than or equal to the specified value
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="x">The threshold value</param>
+    /// <returns>Array of values higher than or equal to threshold</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetValuesHigherThan(). This method will be removed in v2.0.", false)]
+    public static decimal[] GetValuesHigherThan(this decimal[] array, decimal x) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetValuesHigherThan(array, x);
+
+    /// <summary>
+    /// Gets all values lower than or equal to the specified value
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="x">The threshold value</param>
+    /// <returns>Array of values lower than or equal to threshold</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetValuesLowerThan(). This method will be removed in v2.0.", false)]
+    public static decimal[] GetValuesLowerThan(this decimal[] array, decimal x) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.GetValuesLowerThan(array, x);
+
+    /// <summary>
+    /// Increases all values in the array by the specified amount
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="add">The amount to add</param>
+    /// <returns>Array with all values increased</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.IncreaseAllValuesWith(). This method will be removed in v2.0.", false)]
+    public static decimal[] IncreaseAllValuesWith(this decimal[] array, decimal add) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.IncreaseAllValuesWith(array, add);
+
+    /// <summary>
+    /// Rotates the numbers to the left
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The rotated array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.RotateLeft(). This method will be removed in v2.0.", false)]
+    public static decimal[] RotateLeft(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.RotateLeft(array);
+
+    /// <summary>
+    /// Rotates the numbers to the right
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The rotated array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.RotateRight(). This method will be removed in v2.0.", false)]
+    public static decimal[] RotateRight(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.RotateRight(array);
+
+    /// <summary>
+    /// Sets a new size for the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="size">The new size</param>
+    /// <returns>Array with new size</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.SetNewArraySize(). This method will be removed in v2.0.", false)]
+    public static decimal[] SetNewArraySize(this decimal[] array, int size) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.SetNewArraySize(array, size);
+
+    /// <summary>
+    /// Sorts the array in ascending order
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>Array sorted in ascending order</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.SortArrayAsc(). This method will be removed in v2.0.", false)]
+    public static decimal[] SortArrayAsc(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.SortArrayAsc(array);
+
+    /// <summary>
+    /// Sorts the array in descending order
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>Array sorted in descending order</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.SortArrayDesc(). This method will be removed in v2.0.", false)]
+    public static decimal[] SortArrayDesc(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.SortArrayDesc(array);
+
+    /// <summary>
+    /// Sums all values in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The sum of all values</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.SumAllValues(). This method will be removed in v2.0.", false)]
+    public static decimal SumAllValues(this decimal[] array) =>
+        MarcusMedinaPro.TypedMath.DecimalCollections.TypedMathDecimalCollections.SumAllValues(array);
 }

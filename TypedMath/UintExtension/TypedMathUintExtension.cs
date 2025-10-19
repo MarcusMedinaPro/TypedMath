@@ -4,9 +4,6 @@
 //     conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
-// Credits for borrowed code: LinQ Primenumbers, Zoran Horvat, at
-// http://www.codinghelmet.com/articles/linq-all-primes/ Increase/Decrease array values, mgp -
-// https://stackoverflow.com/users/55943/mqp, at https://stackoverflow.com/a/823537 ----------------------------------------------------------------------------------------------
 
 namespace MarcusMedinaPro.TypedMath.UintExtension;
 
@@ -18,1946 +15,1958 @@ using System.Linq;
 /// </summary>
 public static class TypedMathUintExtension
 {
+
     /// <summary>
     /// Adds byte to uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Add(this uint x, byte y) => x + (uint)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static uint Add(this uint x, byte addend) => x + (uint)addend;
 
     /// <summary>
     /// Adds char to uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Add(this uint x, char y) => x + (uint)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static uint Add(this uint x, char addend) => x + (uint)addend;
 
     /// <summary>
     /// Adds decimal to uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Add(this uint x, decimal y) => x + (uint)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static uint Add(this uint x, decimal addend) => x + (uint)addend;
 
     /// <summary>
     /// Adds double to uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Add(this uint x, double y) => x + (uint)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static uint Add(this uint x, double addend) => x + (uint)addend;
 
     /// <summary>
     /// Adds float to uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Add(this uint x, float y) => x + (uint)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static uint Add(this uint x, float addend) => x + (uint)addend;
 
     /// <summary>
     /// Adds int to uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Add(this uint x, int y) => x + (uint)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static uint Add(this uint x, int addend) => x + (uint)addend;
 
     /// <summary>
     /// Adds long to uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Add(this uint x, long y) => x + (uint)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static uint Add(this uint x, long addend) => x + (uint)addend;
 
     /// <summary>
     /// Adds sbyte to uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Add(this uint x, sbyte y) => x + (uint)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static uint Add(this uint x, sbyte addend) => x + (uint)addend;
 
     /// <summary>
     /// Adds short to uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Add(this uint x, short y) => x + (uint)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static uint Add(this uint x, short addend) => x + (uint)addend;
 
     /// <summary>
     /// Adds uint to uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Add(this uint x, uint y) => x + y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static uint Add(this uint x, uint addend) => x + addend;
 
     /// <summary>
     /// Adds ulong to uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Add(this uint x, ulong y) => x + (uint)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static uint Add(this uint x, ulong addend) => x + (uint)addend;
 
     /// <summary>
     /// Adds ushort to uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Add(this uint x, ushort y) => x + (uint)y;
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static uint Add(this uint x, ushort addend) => x + (uint)addend;
 
     /// <summary>
-    /// Adds the percent of the value
+    /// Adds percentage to uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint AddPercent(this uint value, byte percent) => (uint)(value + value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static uint AddPercent(this uint x, byte percent) => x + (x * (uint)percent / 100);
+
+    /// <summary>
+    /// Adds percentage to uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static uint AddPercent(this uint x, char percent) => x + (x * (uint)percent / 100);
+
+    /// <summary>
+    /// Adds percentage to uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static uint AddPercent(this uint x, decimal percent) => x + (x * (uint)percent / 100);
+
+    /// <summary>
+    /// Adds percentage to uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static uint AddPercent(this uint x, double percent) => x + (x * (uint)percent / 100);
+
+    /// <summary>
+    /// Adds percentage to uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static uint AddPercent(this uint x, float percent) => x + (x * (uint)percent / 100);
+
+    /// <summary>
+    /// Adds percentage to uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static uint AddPercent(this uint x, int percent) => x + (x * (uint)percent / 100);
+
+    /// <summary>
+    /// Adds percentage to uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static uint AddPercent(this uint x, long percent) => x + (x * (uint)percent / 100);
+
+    /// <summary>
+    /// Adds percentage to uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static uint AddPercent(this uint x, sbyte percent) => x + (x * (uint)percent / 100);
+
+    /// <summary>
+    /// Adds percentage to uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static uint AddPercent(this uint x, short percent) => x + (x * (uint)percent / 100);
+
+    /// <summary>
+    /// Adds percentage to uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static uint AddPercent(this uint x, uint percent) => x + (x * percent / 100);
+
+    /// <summary>
+    /// Adds percentage to uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static uint AddPercent(this uint x, ulong percent) => x + (x * (uint)percent / 100);
+
+    /// <summary>
+    /// Adds percentage to uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static uint AddPercent(this uint x, ushort percent) => x + (x * (uint)percent / 100);
+
+    /// <summary>
+    /// Returns uint if higher than byte, otherwise byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static uint ChooseIfHigher(this uint x, byte other) => x > (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Adds the percent of the value
+    /// Returns uint if higher than char, otherwise char
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint AddPercent(this uint value, char percent) => (uint)(value + value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static uint ChooseIfHigher(this uint x, char other) => x > (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Adds the percent of the value
+    /// Returns uint if higher than decimal, otherwise decimal
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint AddPercent(this uint value, decimal percent) => (uint)(value + value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static uint ChooseIfHigher(this uint x, decimal other) => x > (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Adds the percent of the value
+    /// Returns uint if higher than double, otherwise double
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint AddPercent(this uint value, double percent) => (uint)(value + value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static uint ChooseIfHigher(this uint x, double other) => x > (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Adds the percent of the value
+    /// Returns uint if higher than float, otherwise float
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint AddPercent(this uint value, float percent) => (uint)(value + value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static uint ChooseIfHigher(this uint x, float other) => x > (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Adds the percent of the value
+    /// Returns uint if higher than int, otherwise int
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint AddPercent(this uint value, int percent) => (uint)(value + value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static uint ChooseIfHigher(this uint x, int other) => x > (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Adds the percent of the value
+    /// Returns uint if higher than long, otherwise long
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint AddPercent(this uint value, long percent) => (uint)(value + value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static uint ChooseIfHigher(this uint x, long other) => x > (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Adds the percent of the value
+    /// Returns uint if higher than sbyte, otherwise sbyte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint AddPercent(this uint value, sbyte percent) => (uint)(value + value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static uint ChooseIfHigher(this uint x, sbyte other) => x > (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Adds the percent of the value
+    /// Returns uint if higher than short, otherwise short
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint AddPercent(this uint value, short percent) => (uint)(value + value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static uint ChooseIfHigher(this uint x, short other) => x > (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Adds the percent of the value
+    /// Returns uint if higher than uint, otherwise uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint AddPercent(this uint value, uint percent) => (uint)(value + value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static uint ChooseIfHigher(this uint x, uint other) => x > other ? x : other;
 
     /// <summary>
-    /// Adds the percent of the value
+    /// Returns uint if higher than ulong, otherwise ulong
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint AddPercent(this uint value, ulong percent) => (uint)(value + value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static uint ChooseIfHigher(this uint x, ulong other) => x > (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Adds the percent of the value
+    /// Returns uint if higher than ushort, otherwise ushort
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint AddPercent(this uint value, ushort percent) => (uint)(value + value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static uint ChooseIfHigher(this uint x, ushort other) => x > (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Gets the AND of byte and uint
+    /// Returns uint if lower than byte, otherwise byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint And(this uint x, byte y) => x & (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static uint ChooseIfLower(this uint x, byte other) => x < (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Gets the AND of char and uint
+    /// Returns uint if lower than char, otherwise char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint And(this uint x, char y) => x & (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static uint ChooseIfLower(this uint x, char other) => x < (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Gets the AND of decimal and uint
+    /// Returns uint if lower than decimal, otherwise decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint And(this uint x, decimal y) => x & (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static uint ChooseIfLower(this uint x, decimal other) => x < (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Gets the AND of double and uint
+    /// Returns uint if lower than double, otherwise double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint And(this uint x, double y) => x & (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static uint ChooseIfLower(this uint x, double other) => x < (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Gets the AND of float and uint
+    /// Returns uint if lower than float, otherwise float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint And(this uint x, float y) => x & (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static uint ChooseIfLower(this uint x, float other) => x < (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Gets the AND of int and uint
+    /// Returns uint if lower than int, otherwise int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint And(this uint x, int y) => x & (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static uint ChooseIfLower(this uint x, int other) => x < (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Gets the AND of long and uint
+    /// Returns uint if lower than long, otherwise long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint And(this uint x, long y) => x & (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static uint ChooseIfLower(this uint x, long other) => x < (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Gets the AND of sbyte and uint
+    /// Returns uint if lower than sbyte, otherwise sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint And(this uint x, sbyte y) => x & (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static uint ChooseIfLower(this uint x, sbyte other) => x < (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Gets the AND of short and uint
+    /// Returns uint if lower than short, otherwise short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint And(this uint x, short y) => x & (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static uint ChooseIfLower(this uint x, short other) => x < (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Gets the AND of uint and uint
+    /// Returns uint if lower than uint, otherwise uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint And(this uint x, uint y) => x & y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static uint ChooseIfLower(this uint x, uint other) => x < other ? x : other;
 
     /// <summary>
-    /// Gets the AND of ulong and uint
+    /// Returns uint if lower than ulong, otherwise ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint And(this uint x, ulong y) => x & (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static uint ChooseIfLower(this uint x, ulong other) => x < (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Gets the AND of ushort and uint
+    /// Returns uint if lower than ushort, otherwise ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint And(this uint x, ushort y) => x & (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static uint ChooseIfLower(this uint x, ushort other) => x < (uint)other ? x : (uint)other;
 
     /// <summary>
-    /// Tries to cast uint to byte, this can get ugly though
+    /// Gets absolute difference between uint and byte
     /// </summary>
-    /// <param name="x">The x <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static byte CastUintToByte(this uint x) => (byte)x;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static uint DiferenceFrom(this uint x, byte other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Tries to cast uint to char, this can get ugly though
+    /// Gets absolute difference between uint and char
     /// </summary>
-    /// <param name="x">The x <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static char CastUintToChar(this uint x) => (char)x;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static uint DiferenceFrom(this uint x, char other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Tries to cast uint to decimal, this can get ugly though
+    /// Gets absolute difference between uint and decimal
     /// </summary>
-    /// <param name="x">The x <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static decimal CastUintToDecimal(this uint x) => (decimal)x;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static uint DiferenceFrom(this uint x, decimal other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Tries to cast uint to double, this can get ugly though
+    /// Gets absolute difference between uint and double
     /// </summary>
-    /// <param name="x">The x <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static double CastUintToDouble(this uint x) => (double)x;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static uint DiferenceFrom(this uint x, double other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Tries to cast uint to float, this can get ugly though
+    /// Gets absolute difference between uint and float
     /// </summary>
-    /// <param name="x">The x <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static float CastUintToFloat(this uint x) => (float)x;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static uint DiferenceFrom(this uint x, float other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Tries to cast uint to int, this can get ugly though
+    /// Gets absolute difference between uint and int
     /// </summary>
-    /// <param name="x">The x <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static int CastUintToInt(this uint x) => (int)x;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static uint DiferenceFrom(this uint x, int other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Tries to cast uint to long, this can get ugly though
+    /// Gets absolute difference between uint and long
     /// </summary>
-    /// <param name="x">The x <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static long CastUintToLong(this uint x) => (long)x;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static uint DiferenceFrom(this uint x, long other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Tries to cast uint to sbyte, this can get ugly though
+    /// Gets absolute difference between uint and sbyte
     /// </summary>
-    /// <param name="x">The x <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte CastUintToSbyte(this uint x) => (sbyte)x;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static uint DiferenceFrom(this uint x, sbyte other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Tries to cast uint to short, this can get ugly though
+    /// Gets absolute difference between uint and short
     /// </summary>
-    /// <param name="x">The x <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static short CastUintToShort(this uint x) => (short)x;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static uint DiferenceFrom(this uint x, short other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Tries to cast uint to ulong, this can get ugly though
+    /// Gets absolute difference between uint and uint
     /// </summary>
-    /// <param name="x">The x <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static ulong CastUintToUlong(this uint x) => (ulong)x;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static uint DiferenceFrom(this uint x, uint other) => x > other ? x - other : x < other ? other - x : 0;
 
     /// <summary>
-    /// Tries to cast uint to ushort, this can get ugly though
+    /// Gets absolute difference between uint and ulong
     /// </summary>
-    /// <param name="x">The x <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static ushort CastUintToUshort(this uint x) => (ushort)x;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static uint DiferenceFrom(this uint x, ulong other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Compare original and second number
+    /// Gets absolute difference between uint and ushort
     /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <returns>The highest of the two numbers</returns>
-    public static uint ChooseIfHigher(this uint first, uint second) => first > second ? first : second;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static uint DiferenceFrom(this uint x, ushort other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Compare original and second number
+    /// Gets absolute difference between uint and byte
     /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <returns>The lowest of the two numbers</returns>
-    public static uint ChooseIfLower(this uint first, uint second) => first < second ? first : second;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static uint DifferenceFrom(this uint x, byte other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Converts the array to int.
+    /// Gets absolute difference between uint and char
     /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>An array of <see cref="int"/> values.</returns>
-    public static int[] ConvertArrayToInt(this uint[] array) => [.. array.Select(x => (int)x)];
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static uint DifferenceFrom(this uint x, char other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Gets the differnce between two numbers
+    /// Gets absolute difference between uint and decimal
     /// </summary>
-    /// <param name="original">The original.</param>
-    /// <param name="compareTo">The compare to.</param>
-    /// <returns></returns>
-    public static uint DiferenceFrom(this uint original, uint compareTo) => original > compareTo ? original - compareTo : original < compareTo ? compareTo - original : 0;
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static uint DifferenceFrom(this uint x, decimal other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Divides byte from uint
+    /// Gets absolute difference between uint and double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint DividedBy(this uint x, byte y) => x / (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static uint DifferenceFrom(this uint x, double other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Divides char from uint
+    /// Gets absolute difference between uint and float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint DividedBy(this uint x, char y) => x / (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static uint DifferenceFrom(this uint x, float other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Divides decimal from uint
+    /// Gets absolute difference between uint and int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint DividedBy(this uint x, decimal y) => x / (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static uint DifferenceFrom(this uint x, int other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Divides double from uint
+    /// Gets absolute difference between uint and long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint DividedBy(this uint x, double y) => x / (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static uint DifferenceFrom(this uint x, long other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Divides float from uint
+    /// Gets absolute difference between uint and sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint DividedBy(this uint x, float y) => x / (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static uint DifferenceFrom(this uint x, sbyte other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Divides int from uint
+    /// Gets absolute difference between uint and short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint DividedBy(this uint x, int y) => x / (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static uint DifferenceFrom(this uint x, short other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Divides long from uint
+    /// Gets absolute difference between uint and uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint DividedBy(this uint x, long y) => x / (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static uint DifferenceFrom(this uint x, uint other) => x > other ? x - other : x < other ? other - x : 0;
 
     /// <summary>
-    /// Divides sbyte from uint
+    /// Gets absolute difference between uint and ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint DividedBy(this uint x, sbyte y) => x / (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static uint DifferenceFrom(this uint x, ulong other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Divides short from uint
+    /// Gets absolute difference between uint and ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint DividedBy(this uint x, short y) => x / (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static uint DifferenceFrom(this uint x, ushort other) => x > (uint)other ? x - (uint)other : x < (uint)other ? (uint)other - x : 0;
 
     /// <summary>
-    /// Divides uint from uint
+    /// Divides uint by byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint DividedBy(this uint x, uint y) => x / y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static uint DividedBy(this uint x, byte divisor) => x / (uint)divisor;
 
     /// <summary>
-    /// Divides ulong from uint
+    /// Divides uint by char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint DividedBy(this uint x, ulong y) => x / (uint)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static uint DividedBy(this uint x, char divisor) => x / (uint)divisor;
 
     /// <summary>
-    /// Divides ushort from uint
+    /// Divides uint by decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint DividedBy(this uint x, ushort y) => x / (uint)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static uint DividedBy(this uint x, decimal divisor) => x / (uint)divisor;
 
     /// <summary>
-    /// Gets the first half of the array.
+    /// Divides uint by double
     /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="uint"/></returns>
-    public static uint[] GetFirstHalf(this uint[] array) => [.. array.Take(array.Length / 2)];
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static uint DividedBy(this uint x, double divisor) => x / (uint)divisor;
 
     /// <summary>
-    /// Gets the first number in the array
+    /// Divides uint by float
     /// </summary>
-    /// <param name="array">The array <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static uint GetFirstValue(this uint[] array) => array[0];
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static uint DividedBy(this uint x, float divisor) => x / (uint)divisor;
 
     /// <summary>
-    /// Gets the hightest value of the numbers in the array
+    /// Divides uint by int
     /// </summary>
-    /// <param name="array">The array</param>
-    /// <returns>The hightest value in the array</returns>
-    public static uint GetHighestValue(this uint[] array) => array.Max();
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static uint DividedBy(this uint x, int divisor) => x / (uint)divisor;
 
     /// <summary>
-    /// Gets the last half of the array.
+    /// Divides uint by long
     /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="uint"/></returns>
-    public static uint[] GetLastHalf(this uint[] array) => [.. array.Skip(array.Length / 2).Take(array.Length / 2)];
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static uint DividedBy(this uint x, long divisor) => x / (uint)divisor;
 
     /// <summary>
-    /// Gets the last number in the array
+    /// Divides uint by sbyte
     /// </summary>
-    /// <param name="array">The array <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static uint GetLastValue(this uint[] array) => array[^1];
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static uint DividedBy(this uint x, sbyte divisor) => x / (uint)divisor;
 
     /// <summary>
-    /// Peeks the lowest value in the array
+    /// Divides uint by short
     /// </summary>
-    /// <param name="array">The array <see cref="uint"/></param>
-    /// <returns>The lowest value i the array</returns>
-    public static uint GetLowestValue(this uint[] array) => array.Min();
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static uint DividedBy(this uint x, short divisor) => x / (uint)divisor;
 
     /// <summary>
-    /// Gets the middle of both halves in the array.
+    /// Divides uint by uint
     /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="uint"/></returns>
-    public static uint[] GetMiddle(this uint[] array) => [.. array.Skip(array.Length / 4).Take(array.Length / 2)];
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static uint DividedBy(this uint x, uint divisor) => x / divisor;
 
     /// <summary>
-    /// Gets the number in the middle of the array
+    /// Divides uint by ulong
     /// </summary>
-    /// <param name="array">The array <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static uint GetMiddleValue(this uint[] array) => array[(array.Length - 1) / 2];
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static uint DividedBy(this uint x, ulong divisor) => x / (uint)divisor;
 
     /// <summary>
-    /// Peeks numbers higher than given value in the array
+    /// Divides uint by ushort
     /// </summary>
-    /// <param name="array"></param>
-    /// <param name="x">The limit value</param>
-    /// <returns>Returns a new array with all numbers higher than x</returns>
-    public static uint[] GetValuesHigherThan(this uint[] array, uint x) => [.. array.Where(y => y >= x)];
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static uint DividedBy(this uint x, ushort divisor) => x / (uint)divisor;
 
     /// <summary>
-    /// Peeks numbers lower than given value in the array
+    /// Checks if uint is greater than byte
     /// </summary>
-    /// <param name="array"></param>
-    /// <param name="x">The limit value</param>
-    /// <returns>Returns a new array with all numbers lower than x</returns>
-    public static uint[] GetValuesLowerThan(this uint[] array, uint x) => [.. array.Where(y => y <= x)];
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this uint x, byte other) => x > (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is greater than byte
+    /// Checks if uint is greater than char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this uint x, byte y) => x > (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this uint x, char other) => x > (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is greater than char
+    /// Checks if uint is greater than decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this uint x, char y) => x > (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this uint x, decimal other) => x > (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is greater than decimal
+    /// Checks if uint is greater than double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this uint x, decimal y) => x > (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this uint x, double other) => x > (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is greater than double
+    /// Checks if uint is greater than float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this uint x, double y) => x > (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this uint x, float other) => x > (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is greater than float
+    /// Checks if uint is greater than int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this uint x, float y) => x > (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this uint x, int other) => x > (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is greater than int
+    /// Checks if uint is greater than long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this uint x, int y) => x > (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this uint x, long other) => x > (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is greater than long
+    /// Checks if uint is greater than sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this uint x, long y) => x > (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this uint x, sbyte other) => x > (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is greater than sbyte
+    /// Checks if uint is greater than short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this uint x, sbyte y) => x > (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this uint x, short other) => x > (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is greater than short
+    /// Checks if uint is greater than uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this uint x, short y) => x > (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this uint x, uint other) => x > other;
 
     /// <summary>
-    /// Gets a boolean True if uint is greater than uint
+    /// Checks if uint is greater than ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this uint x, uint y) => x > y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this uint x, ulong other) => x > (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is greater than ulong
+    /// Checks if uint is greater than ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this uint x, ulong y) => x > (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this uint x, ushort other) => x > (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is greater than ushort
+    /// Checks if uint equals byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this uint x, ushort y) => x > (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this uint x, byte other) => x == (uint)other;
 
     /// <summary>
-    /// Gets boolean True if byte is equal to uint
+    /// Checks if uint equals char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this uint x, byte y) => x == (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this uint x, char other) => x == (uint)other;
 
     /// <summary>
-    /// Gets boolean True if char is equal to uint
+    /// Checks if uint equals decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this uint x, char y) => x == (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this uint x, decimal other) => x == (uint)other;
 
     /// <summary>
-    /// Gets boolean True if decimal is equal to uint
+    /// Checks if uint equals double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this uint x, decimal y) => x == (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this uint x, double other) => x == (uint)other;
 
     /// <summary>
-    /// Gets boolean True if double is equal to uint
+    /// Checks if uint equals float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this uint x, double y) => x == (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this uint x, float other) => x == (uint)other;
 
     /// <summary>
-    /// Gets boolean True if float is equal to uint
+    /// Checks if uint equals int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this uint x, float y) => x == (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this uint x, int other) => x == (uint)other;
 
     /// <summary>
-    /// Gets boolean True if int is equal to uint
+    /// Checks if uint equals long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this uint x, int y) => x == (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this uint x, long other) => x == (uint)other;
 
     /// <summary>
-    /// Gets boolean True if long is equal to uint
+    /// Checks if uint equals sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this uint x, long y) => x == (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this uint x, sbyte other) => x == (uint)other;
 
     /// <summary>
-    /// Gets boolean True if sbyte is equal to uint
+    /// Checks if uint equals short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this uint x, sbyte y) => x == (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this uint x, short other) => x == (uint)other;
 
     /// <summary>
-    /// Gets boolean True if short is equal to uint
+    /// Checks if uint equals uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this uint x, short y) => x == (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this uint x, uint other) => x == other;
 
     /// <summary>
-    /// Gets boolean True if uint is equal to uint
+    /// Checks if uint equals ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this uint x, uint y) => x == y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this uint x, ulong other) => x == (uint)other;
 
     /// <summary>
-    /// Gets boolean True if ulong is equal to uint
+    /// Checks if uint equals ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this uint x, ulong y) => x == (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this uint x, ushort other) => x == (uint)other;
 
     /// <summary>
-    /// Gets boolean True if ushort is equal to uint
+    /// Gets boolean true if uint is less than zero
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this uint x, ushort y) => x == (uint)y;
+    /// <returns>True if the value is negative</returns>
+    public static bool IsNegative(this uint x) => x < 0;
 
     /// <summary>
-    /// Gets boolean True if byte is not equal to uint
+    /// Checks if uint does not equal byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this uint x, byte y) => x != (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this uint x, byte other) => x != (uint)other;
 
     /// <summary>
-    /// Gets boolean True if char is not equal to uint
+    /// Checks if uint does not equal char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this uint x, char y) => x != (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this uint x, char other) => x != (uint)other;
 
     /// <summary>
-    /// Gets boolean True if decimal is not equal to uint
+    /// Checks if uint does not equal decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this uint x, decimal y) => x != (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this uint x, decimal other) => x != (uint)other;
 
     /// <summary>
-    /// Gets boolean True if double is not equal to uint
+    /// Checks if uint does not equal double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this uint x, double y) => x != (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this uint x, double other) => x != (uint)other;
 
     /// <summary>
-    /// Gets boolean True if float is not equal to uint
+    /// Checks if uint does not equal float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this uint x, float y) => x != (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this uint x, float other) => x != (uint)other;
 
     /// <summary>
-    /// Gets boolean True if int is not equal to uint
+    /// Checks if uint does not equal int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this uint x, int y) => x != (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this uint x, int other) => x != (uint)other;
 
     /// <summary>
-    /// Gets boolean True if long is not equal to uint
+    /// Checks if uint does not equal long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this uint x, long y) => x != (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this uint x, long other) => x != (uint)other;
 
     /// <summary>
-    /// Gets boolean True if sbyte is not equal to uint
+    /// Checks if uint does not equal sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this uint x, sbyte y) => x != (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this uint x, sbyte other) => x != (uint)other;
 
     /// <summary>
-    /// Gets boolean True if short is not equal to uint
+    /// Checks if uint does not equal short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this uint x, short y) => x != (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this uint x, short other) => x != (uint)other;
 
     /// <summary>
-    /// Gets boolean True if uint is not equal to uint
+    /// Checks if uint does not equal uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this uint x, uint y) => x != y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this uint x, uint other) => x != other;
 
     /// <summary>
-    /// Gets boolean True if ulong is not equal to uint
+    /// Checks if uint does not equal ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this uint x, ulong y) => x != (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this uint x, ulong other) => x != (uint)other;
 
     /// <summary>
-    /// Gets boolean True if ushort is not equal to uint
+    /// Checks if uint does not equal ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this uint x, ushort y) => x != (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this uint x, ushort other) => x != (uint)other;
 
     /// <summary>
-    /// Checks if a number is prime
+    /// Gets boolean true if uint is more than zero
     /// </summary>
-    /// <param name="number">The number</param>
-    /// <returns>True if the number is prime</returns>
-    public static bool IsPrime(this uint number) => Enumerable.Range(2, (int)Math.Sqrt(number) - 1).All(divisor => (int)number % divisor != 0);
+    /// <param name="x">The original value</param>
+    /// <returns>True if the value is positive</returns>
+    public static bool IsPositive(this uint x) => x > 0;
 
     /// <summary>
-    /// Gets a boolean True if uint is less than byte
+    /// Checks if uint is less than byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this uint x, byte y) => x < (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this uint x, byte other) => x < (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is less than char
+    /// Checks if uint is less than char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this uint x, char y) => x < (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this uint x, char other) => x < (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is less than decimal
+    /// Checks if uint is less than decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this uint x, decimal y) => x < (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this uint x, decimal other) => x < (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is less than double
+    /// Checks if uint is less than double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this uint x, double y) => x < (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this uint x, double other) => x < (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is less than float
+    /// Checks if uint is less than float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this uint x, float y) => x < (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this uint x, float other) => x < (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is less than int
+    /// Checks if uint is less than int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this uint x, int y) => x < (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this uint x, int other) => x < (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is less than long
+    /// Checks if uint is less than long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this uint x, long y) => x < (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this uint x, long other) => x < (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is less than sbyte
+    /// Checks if uint is less than sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this uint x, sbyte y) => x < (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this uint x, sbyte other) => x < (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is less than short
+    /// Checks if uint is less than short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this uint x, short y) => x < (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this uint x, short other) => x < (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is less than uint
+    /// Checks if uint is less than uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this uint x, uint y) => x < y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this uint x, uint other) => x < other;
 
     /// <summary>
-    /// Gets a boolean True if uint is less than ulong
+    /// Checks if uint is less than ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this uint x, ulong y) => x < (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this uint x, ulong other) => x < (uint)other;
 
     /// <summary>
-    /// Gets a boolean True if uint is less than ushort
+    /// Checks if uint is less than ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this uint x, ushort y) => x < (uint)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this uint x, ushort other) => x < (uint)other;
 
     /// <summary>
-    /// Gets the remainder of byte from uint
+    /// Gets remainder of uint divided by byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Modulus(this uint x, byte y) => x % (uint)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static uint Modulus(this uint x, byte divisor) => x % (uint)divisor;
 
     /// <summary>
-    /// Gets the remainder of char from uint
+    /// Gets remainder of uint divided by char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Modulus(this uint x, char y) => x % (uint)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static uint Modulus(this uint x, char divisor) => x % (uint)divisor;
 
     /// <summary>
-    /// Gets the remainder of decimal from uint
+    /// Gets remainder of uint divided by decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Modulus(this uint x, decimal y) => x % (uint)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static uint Modulus(this uint x, decimal divisor) => x % (uint)divisor;
 
     /// <summary>
-    /// Gets the remainder of double from uint
+    /// Gets remainder of uint divided by double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Modulus(this uint x, double y) => x % (uint)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static uint Modulus(this uint x, double divisor) => x % (uint)divisor;
 
     /// <summary>
-    /// Gets the remainder of float from uint
+    /// Gets remainder of uint divided by float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Modulus(this uint x, float y) => x % (uint)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static uint Modulus(this uint x, float divisor) => x % (uint)divisor;
 
     /// <summary>
-    /// Gets the remainder of int from uint
+    /// Gets remainder of uint divided by int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Modulus(this uint x, int y) => x % (uint)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static uint Modulus(this uint x, int divisor) => x % (uint)divisor;
 
     /// <summary>
-    /// Gets the remainder of long from uint
+    /// Gets remainder of uint divided by long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Modulus(this uint x, long y) => x % (uint)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static uint Modulus(this uint x, long divisor) => x % (uint)divisor;
 
     /// <summary>
-    /// Gets the remainder of sbyte from uint
+    /// Gets remainder of uint divided by sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Modulus(this uint x, sbyte y) => x % (uint)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static uint Modulus(this uint x, sbyte divisor) => x % (uint)divisor;
 
     /// <summary>
-    /// Gets the remainder of short from uint
+    /// Gets remainder of uint divided by short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Modulus(this uint x, short y) => x % (uint)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static uint Modulus(this uint x, short divisor) => x % (uint)divisor;
 
     /// <summary>
-    /// Gets the remainder of uint from uint
+    /// Gets remainder of uint divided by uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Modulus(this uint x, uint y) => x % y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static uint Modulus(this uint x, uint divisor) => x % divisor;
 
     /// <summary>
-    /// Gets the remainder of ulong from uint
+    /// Gets remainder of uint divided by ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Modulus(this uint x, ulong y) => x % (uint)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static uint Modulus(this uint x, ulong divisor) => x % (uint)divisor;
 
     /// <summary>
-    /// Gets the remainder of ushort from uint
+    /// Gets remainder of uint divided by ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Modulus(this uint x, ushort y) => x % (uint)y;
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static uint Modulus(this uint x, ushort divisor) => x % (uint)divisor;
 
     /// <summary>
-    /// Multiplies byte with uint
+    /// Multiplies uint with byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint MultipliedWith(this uint x, byte y) => x * (uint)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static uint MultipliedWith(this uint x, byte multiplier) => x * (uint)multiplier;
 
     /// <summary>
-    /// Multiplies char with uint
+    /// Multiplies uint with char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint MultipliedWith(this uint x, char y) => x * (uint)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static uint MultipliedWith(this uint x, char multiplier) => x * (uint)multiplier;
 
     /// <summary>
-    /// Multiplies decimal with uint
+    /// Multiplies uint with decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint MultipliedWith(this uint x, decimal y) => x * (uint)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static uint MultipliedWith(this uint x, decimal multiplier) => x * (uint)multiplier;
 
     /// <summary>
-    /// Multiplies double with uint
+    /// Multiplies uint with double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint MultipliedWith(this uint x, double y) => x * (uint)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static uint MultipliedWith(this uint x, double multiplier) => x * (uint)multiplier;
 
     /// <summary>
-    /// Multiplies float with uint
+    /// Multiplies uint with float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint MultipliedWith(this uint x, float y) => x * (uint)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static uint MultipliedWith(this uint x, float multiplier) => x * (uint)multiplier;
 
     /// <summary>
-    /// Multiplies int with uint
+    /// Multiplies uint with int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint MultipliedWith(this uint x, int y) => x * (uint)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static uint MultipliedWith(this uint x, int multiplier) => x * (uint)multiplier;
 
     /// <summary>
-    /// Multiplies long with uint
+    /// Multiplies uint with long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint MultipliedWith(this uint x, long y) => x * (uint)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static uint MultipliedWith(this uint x, long multiplier) => x * (uint)multiplier;
 
     /// <summary>
-    /// Multiplies sbyte with uint
+    /// Multiplies uint with sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint MultipliedWith(this uint x, sbyte y) => x * (uint)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static uint MultipliedWith(this uint x, sbyte multiplier) => x * (uint)multiplier;
 
     /// <summary>
-    /// Multiplies short with uint
+    /// Multiplies uint with short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint MultipliedWith(this uint x, short y) => x * (uint)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static uint MultipliedWith(this uint x, short multiplier) => x * (uint)multiplier;
 
     /// <summary>
     /// Multiplies uint with uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint MultipliedWith(this uint x, uint y) => x * y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static uint MultipliedWith(this uint x, uint multiplier) => x * multiplier;
 
     /// <summary>
-    /// Multiplies ulong with uint
+    /// Multiplies uint with ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint MultipliedWith(this uint x, ulong y) => x * (uint)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static uint MultipliedWith(this uint x, ulong multiplier) => x * (uint)multiplier;
 
     /// <summary>
-    /// Multiplies ushort with uint
+    /// Multiplies uint with ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint MultipliedWith(this uint x, ushort y) => x * (uint)y;
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static uint MultipliedWith(this uint x, ushort multiplier) => x * (uint)multiplier;
 
     /// <summary>
-    /// Gets the NOT of uint
-    /// </summary>
-    /// <param name="x">The x <see cref="uint"/></param>
-    /// <returns>The result of the operation</returns>
-    public static uint Not(this uint x) => (uint)~(int)x;
-
-    /// <summary>
-    /// Gets the OR of byte and uint
+    /// Calculates uint percent of byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Or(this uint x, byte y) => (uint)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static uint PercentOf(this uint x, byte number) => x / 100 * (uint)number;
 
     /// <summary>
-    /// Gets the OR of char and uint
+    /// Calculates uint percent of char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Or(this uint x, char y) => (uint)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static uint PercentOf(this uint x, char number) => x / 100 * (uint)number;
 
     /// <summary>
-    /// Gets the OR of decimal and uint
+    /// Calculates uint percent of decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Or(this uint x, decimal y) => (uint)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static uint PercentOf(this uint x, decimal number) => x / 100 * (uint)number;
 
     /// <summary>
-    /// Gets the OR of double and uint
+    /// Calculates uint percent of double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Or(this uint x, double y) => (uint)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static uint PercentOf(this uint x, double number) => x / 100 * (uint)number;
 
     /// <summary>
-    /// Gets the OR of float and uint
+    /// Calculates uint percent of float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Or(this uint x, float y) => (uint)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static uint PercentOf(this uint x, float number) => x / 100 * (uint)number;
 
     /// <summary>
-    /// Gets the OR of int and uint
+    /// Calculates uint percent of int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Or(this uint x, int y) => (uint)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static uint PercentOf(this uint x, int number) => x / 100 * (uint)number;
 
     /// <summary>
-    /// Gets the OR of long and uint
+    /// Calculates uint percent of long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Or(this uint x, long y) => (uint)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static uint PercentOf(this uint x, long number) => x / 100 * (uint)number;
 
     /// <summary>
-    /// Gets the OR of sbyte and uint
+    /// Calculates uint percent of sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Or(this uint x, sbyte y) => (uint)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static uint PercentOf(this uint x, sbyte number) => x / 100 * (uint)number;
 
     /// <summary>
-    /// Gets the OR of short and uint
+    /// Calculates uint percent of short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Or(this uint x, short y) => (uint)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static uint PercentOf(this uint x, short number) => x / 100 * (uint)number;
 
     /// <summary>
-    /// Gets the OR of uint and uint
+    /// Calculates uint percent of uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Or(this uint x, uint y) => (uint)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static uint PercentOf(this uint x, uint number) => x / 100 * number;
 
     /// <summary>
-    /// Gets the OR of ulong and uint
+    /// Calculates uint percent of ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Or(this uint x, ulong y) => (uint)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static uint PercentOf(this uint x, ulong number) => x / 100 * (uint)number;
 
     /// <summary>
-    /// Gets the OR of ushort and uint
+    /// Calculates uint percent of ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Or(this uint x, ushort y) => (uint)((int)x | (int)y);
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static uint PercentOf(this uint percent, byte value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static uint PercentOf(this uint percent, char value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static uint PercentOf(this uint percent, decimal value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static uint PercentOf(this uint percent, double value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static uint PercentOf(this uint percent, float value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static uint PercentOf(this uint percent, int value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static uint PercentOf(this uint percent, long value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static uint PercentOf(this uint percent, sbyte value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static uint PercentOf(this uint percent, short value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static uint PercentOf(this uint percent, uint value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static uint PercentOf(this uint percent, ulong value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static uint PercentOf(this uint percent, ushort value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
-
-    /// <summary>
-    /// Rotates the numbers to the left.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="uint"/></returns>
-    public static uint[] RotateLeft(this uint[] array)
-    {
-        var first = array.GetFirstValue();
-        Array.Copy(array, 1, array, 0, array.Length - 1);
-        array[^1] = first;
-        return array;
-    }
-
-    /// <summary>
-    /// Rotates the numbers to the right.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="uint"/></returns>
-    public static uint[] RotateRight(this uint[] array)
-    {
-        var last = array.GetLastValue();
-        Array.Copy(array, 0, array, 1, array.Length - 1);
-        array[0] = last;
-        return array;
-    }
-
-    /// <summary>
-    /// Compare original and second number and set the variable with the highest
-    /// </summary>
-    /// <param name="first">The variable</param>
-    /// <param name="second">The number to compare</param>
-    /// <param name="third">The number to compare with</param>
-    /// <returns>Sets the variable to the highest of the two numbers</returns>
-    public static ref uint SetHighestValueOf(this ref uint first, uint second, uint third)
-    {
-        first = second > third ? second : third;
-        return ref first;
-    }
-
-    /// <summary>
-    /// Compare original and second number and set the variable with the lowest
-    /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <param name="third">The third <see cref="uint"/></param>
-    /// <returns>Sets the variable to the lowest of the two numbers</returns>
-    public static ref uint SetLowestValueOf(this ref uint first, uint second, uint third)
-    {
-        first = second < third ? second : third;
-        return ref first;
-    }
-
-    /// <summary>
-    /// Get the current size of the array
-    /// </summary>
-    /// <param name="array">The array <see cref="uint"/></param>
-    /// <param name="size">The size <see cref="int"/></param>
-    /// <returns>The size of the array</returns>
-    public static uint[] SetNewArraySize(this uint[] array, int size)
-    {
-        var newArr = new uint[size];
-        Array.Copy(array, 0, newArr, 0, array.Length);
-        return newArr;
-    }
-
-    /// <summary>
-    /// Sorts array from lowest to highest
-    /// </summary>
-    /// <param name="array">The array <see cref="uint"/></param>
-    /// <returns>A sorted array</returns>
-    public static uint[] SortArrayAsc(this uint[] array) => [.. array.OrderBy(x => x)];
-
-    /// <summary>
-    /// Sorts array from highest to lowest
-    /// </summary>
-    /// <param name="array">The array <see cref="uint"/></param>
-    /// <returns>A sorted array</returns>
-    public static uint[] SortArrayDesc(this uint[] array) => [.. array.OrderByDescending(x => x)];
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static uint PercentOf(this uint x, ushort number) => x / 100 * (uint)number;
 
     /// <summary>
     /// Subtracts byte from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,byte) instead.", false)]
-    public static uint Substract(this uint x, byte y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static uint Substract(this uint x, byte subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts char from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,char) instead.", false)]
-    public static uint Substract(this uint x, char y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static uint Substract(this uint x, char subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts decimal from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,decimal) instead.", false)]
-    public static uint Substract(this uint x, decimal y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static uint Substract(this uint x, decimal subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts double from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,double) instead.", false)]
-    public static uint Substract(this uint x, double y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static uint Substract(this uint x, double subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts float from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,float) instead.", false)]
-    public static uint Substract(this uint x, float y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static uint Substract(this uint x, float subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts int from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,int) instead.", false)]
-    public static uint Substract(this uint x, int y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static uint Substract(this uint x, int subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts long from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,long) instead.", false)]
-    public static uint Substract(this uint x, long y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static uint Substract(this uint x, long subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts sbyte from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,sbyte) instead.", false)]
-    public static uint Substract(this uint x, sbyte y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static uint Substract(this uint x, sbyte subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts short from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,short) instead.", false)]
-    public static uint Substract(this uint x, short y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static uint Substract(this uint x, short subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts uint from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,uint) instead.", false)]
-    public static uint Substract(this uint x, uint y) => x - y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static uint Substract(this uint x, uint subtrahend) => x - subtrahend;
 
     /// <summary>
     /// Subtracts ulong from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,ulong) instead.", false)]
-    public static uint Substract(this uint x, ulong y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static uint Substract(this uint x, ulong subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts ushort from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,ushort) instead.", false)]
-    public static uint Substract(this uint x, ushort y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static uint Substract(this uint x, ushort subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(byte) instead.", false)]
-    public static uint SubstractPercent(this uint value, byte percent) => (uint)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static uint SubstractPercent(this uint x, byte percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(char) instead.", false)]
-    public static uint SubstractPercent(this uint value, char percent) => (uint)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static uint SubstractPercent(this uint x, char percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(decimal) instead.", false)]
-    public static uint SubstractPercent(this uint value, decimal percent) => (uint)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static uint SubstractPercent(this uint x, decimal percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(double) instead.", false)]
-    public static uint SubstractPercent(this uint value, double percent) => (uint)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static uint SubstractPercent(this uint x, double percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(float) instead.", false)]
-    public static uint SubstractPercent(this uint value, float percent) => (uint)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static uint SubstractPercent(this uint x, float percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(int) instead.", false)]
-    public static uint SubstractPercent(this uint value, int percent) => (uint)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static uint SubstractPercent(this uint x, int percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(long) instead.", false)]
-    public static uint SubstractPercent(this uint value, long percent) => (uint)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static uint SubstractPercent(this uint x, long percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(sbyte) instead.", false)]
-    public static uint SubstractPercent(this uint value, sbyte percent) => (uint)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static uint SubstractPercent(this uint x, sbyte percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(short) instead.", false)]
-    public static uint SubstractPercent(this uint value, short percent) => (uint)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static uint SubstractPercent(this uint x, short percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(uint) instead.", false)]
-    public static uint SubstractPercent(this uint value, uint percent) => (uint)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static uint SubstractPercent(this uint x, uint percent) => x - (x * percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ulong) instead.", false)]
-    public static uint SubstractPercent(this uint value, ulong percent) => (uint)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static uint SubstractPercent(this uint x, ulong percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of uint
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ushort) instead.", false)]
-    public static uint SubstractPercent(this uint value, ushort percent) => (uint)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static uint SubstractPercent(this uint x, ushort percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
     /// Subtracts byte from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Subtract(this uint x, byte y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static uint Subtract(this uint x, byte subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts char from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Subtract(this uint x, char y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static uint Subtract(this uint x, char subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts decimal from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Subtract(this uint x, decimal y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static uint Subtract(this uint x, decimal subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts double from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Subtract(this uint x, double y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static uint Subtract(this uint x, double subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts float from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Subtract(this uint x, float y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static uint Subtract(this uint x, float subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts int from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Subtract(this uint x, int y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static uint Subtract(this uint x, int subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts long from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Subtract(this uint x, long y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static uint Subtract(this uint x, long subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts sbyte from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Subtract(this uint x, sbyte y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static uint Subtract(this uint x, sbyte subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts short from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Subtract(this uint x, short y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static uint Subtract(this uint x, short subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts uint from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Subtract(this uint x, uint y) => x - y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static uint Subtract(this uint x, uint subtrahend) => x - subtrahend;
 
     /// <summary>
     /// Subtracts ulong from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Subtract(this uint x, ulong y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static uint Subtract(this uint x, ulong subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
     /// Subtracts ushort from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Subtract(this uint x, ushort y) => x - (uint)y;
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static uint Subtract(this uint x, ushort subtrahend) => x - (uint)subtrahend;
 
     /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint SubtractPercent(this uint value, byte percent) => (uint)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint SubtractPercent(this uint value, char percent) => (uint)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint SubtractPercent(this uint value, decimal percent) => (uint)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint SubtractPercent(this uint value, double percent) => (uint)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint SubtractPercent(this uint value, float percent) => (uint)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint SubtractPercent(this uint value, int percent) => (uint)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint SubtractPercent(this uint value, long percent) => (uint)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint SubtractPercent(this uint value, sbyte percent) => (uint)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint SubtractPercent(this uint value, short percent) => (uint)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint SubtractPercent(this uint value, uint percent) => (uint)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint SubtractPercent(this uint value, ulong percent) => (uint)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static uint SubtractPercent(this uint value, ushort percent) => (uint)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Swaps two variables
-    /// </summary>
-    /// <param name="first">The main variable</param>
-    /// <param name="second">The variable to switch with</param>
-    /// <returns>
-    /// The value from the second variable and sets second variable to original value
-    /// </returns>
-    public static ref uint SwapWith(this ref uint first, ref uint second)
-    {
-        (first, second) = (second, first);
-        return ref first;
-    }
-
-    /// <summary>
-    /// Gets XOR of byte of uint
+    /// Subtracts percentage from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Xor(this uint x, byte y) => x ^ (uint)y;
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static uint SubtractPercent(this uint x, byte percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Gets XOR of char of uint
+    /// Subtracts percentage from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Xor(this uint x, char y) => x ^ (uint)y;
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static uint SubtractPercent(this uint x, char percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Gets XOR of decimal of uint
+    /// Subtracts percentage from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Xor(this uint x, decimal y) => x ^ (uint)y;
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static uint SubtractPercent(this uint x, decimal percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Gets XOR of double of uint
+    /// Subtracts percentage from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Xor(this uint x, double y) => x ^ (uint)y;
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static uint SubtractPercent(this uint x, double percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Gets XOR of float of uint
+    /// Subtracts percentage from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Xor(this uint x, float y) => x ^ (uint)y;
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static uint SubtractPercent(this uint x, float percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Gets XOR of int of uint
+    /// Subtracts percentage from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Xor(this uint x, int y) => x ^ (uint)y;
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static uint SubtractPercent(this uint x, int percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Gets XOR of long of uint
+    /// Subtracts percentage from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Xor(this uint x, long y) => x ^ (uint)y;
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static uint SubtractPercent(this uint x, long percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Gets XOR of sbyte of uint
+    /// Subtracts percentage from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Xor(this uint x, sbyte y) => x ^ (uint)y;
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static uint SubtractPercent(this uint x, sbyte percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Gets XOR of short of uint
+    /// Subtracts percentage from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Xor(this uint x, short y) => x ^ (uint)y;
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static uint SubtractPercent(this uint x, short percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Gets XOR of uint of uint
+    /// Subtracts percentage from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Xor(this uint x, uint y) => x ^ y;
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static uint SubtractPercent(this uint x, uint percent) => x - (x * percent / 100);
 
     /// <summary>
-    /// Gets XOR of ulong of uint
+    /// Subtracts percentage from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Xor(this uint x, ulong y) => x ^ (uint)y;
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static uint SubtractPercent(this uint x, ulong percent) => x - (x * (uint)percent / 100);
 
     /// <summary>
-    /// Gets XOR of ushort of uint
+    /// Subtracts percentage from uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static uint Xor(this uint x, ushort y) => x ^ (uint)y;
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static uint SubtractPercent(this uint x, ushort percent) => x - (x * (uint)percent / 100);
+
+    /// <summary>
+    /// Decreases all values in the array by the specified amount
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="dec">The amount to subtract</param>
+    /// <returns>Array with all values decreased</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.DecreaseAllValuesWith(). This method will be removed in v2.0.", false)]
+    public static uint[] DecreaseAllValuesWith(this uint[] array, uint dec) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.DecreaseAllValuesWith(array, dec);
+
+    /// <summary>
+    /// Peeks the average value of the numbers in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The average value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetAverage(). This method will be removed in v2.0.", false)]
+    public static double GetAverage(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetAverage(array);
+
+    /// <summary>
+    /// Gets the first half of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The first half of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetFirstHalf(). This method will be removed in v2.0.", false)]
+    public static uint[] GetFirstHalf(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetFirstHalf(array);
+
+    /// <summary>
+    /// Gets the first value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The first value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetFirstValue(). This method will be removed in v2.0.", false)]
+    public static uint GetFirstValue(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetFirstValue(array);
+
+    /// <summary>
+    /// Gets the highest value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The highest value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetHighestValue(). This method will be removed in v2.0.", false)]
+    public static uint GetHighestValue(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetHighestValue(array);
+
+    /// <summary>
+    /// Gets the last half of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The last half of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetLastHalf(). This method will be removed in v2.0.", false)]
+    public static uint[] GetLastHalf(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetLastHalf(array);
+
+    /// <summary>
+    /// Gets the last value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The last value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetLastValue(). This method will be removed in v2.0.", false)]
+    public static uint GetLastValue(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetLastValue(array);
+
+    /// <summary>
+    /// Gets the lowest value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The lowest value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetLowestValue(). This method will be removed in v2.0.", false)]
+    public static uint GetLowestValue(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetLowestValue(array);
+
+    /// <summary>
+    /// Gets the middle portion of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The middle portion of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetMiddle(). This method will be removed in v2.0.", false)]
+    public static uint[] GetMiddle(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetMiddle(array);
+
+    /// <summary>
+    /// Gets the middle value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The middle value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetMiddleValue(). This method will be removed in v2.0.", false)]
+    public static uint GetMiddleValue(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetMiddleValue(array);
+
+    /// <summary>
+    /// Gets all values higher than or equal to the specified value
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="x">The threshold value</param>
+    /// <returns>Array of values higher than or equal to threshold</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetValuesHigherThan(). This method will be removed in v2.0.", false)]
+    public static uint[] GetValuesHigherThan(this uint[] array, uint x) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetValuesHigherThan(array, x);
+
+    /// <summary>
+    /// Gets all values lower than or equal to the specified value
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="x">The threshold value</param>
+    /// <returns>Array of values lower than or equal to threshold</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetValuesLowerThan(). This method will be removed in v2.0.", false)]
+    public static uint[] GetValuesLowerThan(this uint[] array, uint x) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.GetValuesLowerThan(array, x);
+
+    /// <summary>
+    /// Increases all values in the array by the specified amount
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="add">The amount to add</param>
+    /// <returns>Array with all values increased</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.IncreaseAllValuesWith(). This method will be removed in v2.0.", false)]
+    public static uint[] IncreaseAllValuesWith(this uint[] array, uint add) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.IncreaseAllValuesWith(array, add);
+
+    /// <summary>
+    /// Rotates the numbers to the left
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The rotated array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.RotateLeft(). This method will be removed in v2.0.", false)]
+    public static uint[] RotateLeft(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.RotateLeft(array);
+
+    /// <summary>
+    /// Rotates the numbers to the right
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The rotated array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.RotateRight(). This method will be removed in v2.0.", false)]
+    public static uint[] RotateRight(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.RotateRight(array);
+
+    /// <summary>
+    /// Sets a new size for the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="size">The new size</param>
+    /// <returns>Array with new size</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SetNewArraySize(). This method will be removed in v2.0.", false)]
+    public static uint[] SetNewArraySize(this uint[] array, int size) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SetNewArraySize(array, size);
+
+    /// <summary>
+    /// Sorts the array in ascending order
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>Array sorted in ascending order</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SortArrayAsc(). This method will be removed in v2.0.", false)]
+    public static uint[] SortArrayAsc(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SortArrayAsc(array);
+
+    /// <summary>
+    /// Sorts the array in descending order
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>Array sorted in descending order</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SortArrayDesc(). This method will be removed in v2.0.", false)]
+    public static uint[] SortArrayDesc(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SortArrayDesc(array);
+
+    /// <summary>
+    /// Sums all values in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The sum of all values</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SumAllValues(). This method will be removed in v2.0.", false)]
+    public static uint SumAllValues(this uint[] array) =>
+        MarcusMedinaPro.TypedMath.UintCollections.TypedMathUintCollections.SumAllValues(array);
 }

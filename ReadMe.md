@@ -3,6 +3,8 @@
 [![NuGet](https://img.shields.io/nuget/v/TypedMath.svg)](https://www.nuget.org/packages/TypedMath/)
 [![.NET](https://img.shields.io/badge/.NET-8.0+-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Made with ❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)](https://github.com/MarcusMedina)
 
 Verbose math operations for better code readability. Perfect for developers dealing with dyscalculia or anyone who prefers explicit, readable calculations.
 
@@ -12,20 +14,27 @@ Sometimes when working with calculations, I tend to get a touch of Dyscalculia. 
 
 To avoid visits from the ghost of Dyscalculia, I created TypedMath. At first it seemed pretty meaningless, but soon I realized this could be useful for others too!
 
+### Learning-first design
+TypedMath is built with students in mind. Every extension is written so younger learners, newcomers to programming, and people who struggle with dyscalculia can read, reason about, and explain calculations without stumbling over symbols. Each method name follows the same storytelling style (`Add`, `MultiplyWith`, `PercentOf`, …), making it easy to narrate solutions in classrooms or study sessions. Even the supporting generator in `../TypedMathGenerator` exists to keep this experience consistent across every numeric type so nobody hits an unexpected gap while practicing.
+
 ## The Problem
 
-Traditional math operators can be hard to read in complex calculations:
+Traditional operators get dense once you mix scaling, percentages, and offsets:
 
 ```csharp
-var x = 10 * 32 + y;
+var finalScore = baseScore * difficulty + bonus - penalties + (int)Math.Round(baseScore * 0.15);
 ```
 
 ## The Solution
 
-TypedMath makes calculations explicit and readable:
+TypedMath spells out each step so you can narrate the intent line by line:
 
 ```csharp
-var x = 10.MultipliedWith(32).Add(y);
+var finalScore = baseScore
+    .MultipliedWith(difficulty)
+    .Add(bonus)
+    .Subtract(penalties)
+    .Add(15.PercentOf(baseScore));
 ```
 
 ## Features
@@ -95,6 +104,35 @@ if (17.IsPrime())
 // Value selection
 var highest = 50.ChooseIfHigher(32);   // Returns 50
 var lowest = 32.ChooseIfLower(50);     // Returns 32
+```
+
+### Scenario: Budgeting with explicit math
+
+```csharp
+using MarcusMedinaPro.TypedMath.DecimalExtension;
+using MarcusMedinaPro.TypedMath.IntExtension;
+
+var monthlyBudget = 7_500.00m;
+var rent = 4_200.00m;
+var groceries = 1_250.00m;
+var transportTickets = 650.00m;
+
+// Calculate total expenses and savings rate without symbols
+var expenses = rent.Add(groceries).Add(transportTickets);
+var savings = monthlyBudget.Subtract(expenses);
+
+var savingsPercent = savings.PercentOf(monthlyBudget);          // 22.67%
+var goalPercent = 20.PercentOf(monthlyBudget);                   // Target savings goal
+
+if (savings.GreaterThan(goalPercent))
+{
+    Console.WriteLine("Great job! You're above your savings target.");
+}
+else
+{
+    var shortfall = goalPercent.Subtract(savings);
+    Console.WriteLine($"You're short by {shortfall} this month.");
+}
 ```
 
 ## Supported Types

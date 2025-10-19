@@ -4,9 +4,6 @@
 //     conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
-// Credits for borrowed code: LinQ Primenumbers, Zoran Horvat, at
-// http://www.codinghelmet.com/articles/linq-all-primes/ Increase/Decrease array values, mgp -
-// https://stackoverflow.com/users/55943/mqp, at https://stackoverflow.com/a/823537 ----------------------------------------------------------------------------------------------
 
 namespace MarcusMedinaPro.TypedMath.ByteExtension;
 
@@ -18,1946 +15,1958 @@ using System.Linq;
 /// </summary>
 public static class TypedMathByteExtension
 {
+
     /// <summary>
     /// Adds byte to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Add(this byte x, byte y) => (byte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static byte Add(this byte x, byte addend) => (byte)(x + addend);
 
     /// <summary>
     /// Adds char to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Add(this byte x, char y) => (byte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static byte Add(this byte x, char addend) => (byte)(x + (byte)addend);
 
     /// <summary>
     /// Adds decimal to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Add(this byte x, decimal y) => (byte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static byte Add(this byte x, decimal addend) => (byte)(x + (byte)addend);
 
     /// <summary>
     /// Adds double to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Add(this byte x, double y) => (byte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static byte Add(this byte x, double addend) => (byte)(x + (byte)addend);
 
     /// <summary>
     /// Adds float to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Add(this byte x, float y) => (byte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static byte Add(this byte x, float addend) => (byte)(x + (byte)addend);
 
     /// <summary>
     /// Adds int to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Add(this byte x, int y) => (byte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static byte Add(this byte x, int addend) => (byte)(x + (byte)addend);
 
     /// <summary>
     /// Adds long to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Add(this byte x, long y) => (byte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static byte Add(this byte x, long addend) => (byte)(x + (byte)addend);
 
     /// <summary>
     /// Adds sbyte to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Add(this byte x, sbyte y) => (byte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static byte Add(this byte x, sbyte addend) => (byte)(x + (byte)addend);
 
     /// <summary>
     /// Adds short to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Add(this byte x, short y) => (byte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static byte Add(this byte x, short addend) => (byte)(x + (byte)addend);
 
     /// <summary>
     /// Adds uint to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Add(this byte x, uint y) => (byte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static byte Add(this byte x, uint addend) => (byte)(x + (byte)addend);
 
     /// <summary>
     /// Adds ulong to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Add(this byte x, ulong y) => (byte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static byte Add(this byte x, ulong addend) => (byte)(x + (byte)addend);
 
     /// <summary>
     /// Adds ushort to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Add(this byte x, ushort y) => (byte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static byte Add(this byte x, ushort addend) => (byte)(x + (byte)addend);
 
     /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte AddPercent(this byte value, byte percent) => (byte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte AddPercent(this byte value, char percent) => (byte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte AddPercent(this byte value, decimal percent) => (byte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte AddPercent(this byte value, double percent) => (byte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte AddPercent(this byte value, float percent) => (byte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte AddPercent(this byte value, int percent) => (byte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte AddPercent(this byte value, long percent) => (byte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte AddPercent(this byte value, sbyte percent) => (byte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte AddPercent(this byte value, short percent) => (byte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte AddPercent(this byte value, uint percent) => (byte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte AddPercent(this byte value, ulong percent) => (byte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte AddPercent(this byte value, ushort percent) => (byte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Gets the AND of byte and byte
+    /// Adds percentage to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte And(this byte x, byte y) => (byte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static byte AddPercent(this byte x, byte percent) => (byte)(x + (x * percent / 100));
 
     /// <summary>
-    /// Gets the AND of char and byte
+    /// Adds percentage to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte And(this byte x, char y) => (byte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static byte AddPercent(this byte x, char percent) => (byte)(x + (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of decimal and byte
+    /// Adds percentage to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte And(this byte x, decimal y) => (byte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static byte AddPercent(this byte x, decimal percent) => (byte)(x + (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of double and byte
+    /// Adds percentage to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte And(this byte x, double y) => (byte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static byte AddPercent(this byte x, double percent) => (byte)(x + (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of float and byte
+    /// Adds percentage to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte And(this byte x, float y) => (byte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static byte AddPercent(this byte x, float percent) => (byte)(x + (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of int and byte
+    /// Adds percentage to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte And(this byte x, int y) => (byte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static byte AddPercent(this byte x, int percent) => (byte)(x + (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of long and byte
+    /// Adds percentage to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte And(this byte x, long y) => (byte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static byte AddPercent(this byte x, long percent) => (byte)(x + (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of sbyte and byte
+    /// Adds percentage to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte And(this byte x, sbyte y) => (byte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static byte AddPercent(this byte x, sbyte percent) => (byte)(x + (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of short and byte
+    /// Adds percentage to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte And(this byte x, short y) => (byte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static byte AddPercent(this byte x, short percent) => (byte)(x + (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of uint and byte
+    /// Adds percentage to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte And(this byte x, uint y) => (byte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static byte AddPercent(this byte x, uint percent) => (byte)(x + (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of ulong and byte
+    /// Adds percentage to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte And(this byte x, ulong y) => (byte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static byte AddPercent(this byte x, ulong percent) => (byte)(x + (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of ushort and byte
+    /// Adds percentage to byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte And(this byte x, ushort y) => (byte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static byte AddPercent(this byte x, ushort percent) => (byte)(x + (x * (byte)percent / 100));
 
     /// <summary>
-    /// Tries to cast byte to char, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="byte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static char CastByteToChar(this byte x) => (char)x;
-
-    /// <summary>
-    /// Tries to cast byte to decimal, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="byte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static decimal CastByteToDecimal(this byte x) => (decimal)x;
-
-    /// <summary>
-    /// Tries to cast byte to double, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="byte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static double CastByteToDouble(this byte x) => (double)x;
-
-    /// <summary>
-    /// Tries to cast byte to float, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="byte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static float CastByteToFloat(this byte x) => (float)x;
-
-    /// <summary>
-    /// Tries to cast byte to int, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="byte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static int CastByteToInt(this byte x) => (int)x;
-
-    /// <summary>
-    /// Tries to cast byte to long, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="byte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static long CastByteToLong(this byte x) => (long)x;
-
-    /// <summary>
-    /// Tries to cast byte to sbyte, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="byte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte CastByteToSbyte(this byte x) => (sbyte)x;
-
-    /// <summary>
-    /// Tries to cast byte to short, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="byte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static short CastByteToShort(this byte x) => (short)x;
-
-    /// <summary>
-    /// Tries to cast byte to uint, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="byte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static uint CastByteToUint(this byte x) => (uint)x;
-
-    /// <summary>
-    /// Tries to cast byte to ulong, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="byte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static ulong CastByteToUlong(this byte x) => (ulong)x;
-
-    /// <summary>
-    /// Tries to cast byte to ushort, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="byte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static ushort CastByteToUshort(this byte x) => (ushort)x;
-
-    /// <summary>
-    /// Compare original and second number
-    /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <returns>The highest of the two numbers</returns>
-    public static byte ChooseIfHigher(this byte first, byte second) => first > second ? first : second;
-
-    /// <summary>
-    /// Compare original and second number
-    /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <returns>The lowest of the two numbers</returns>
-    public static byte ChooseIfLower(this byte first, byte second) => first < second ? first : second;
-
-    /// <summary>
-    /// Converts the array to int.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>An array of <see cref="int"/> values.</returns>
-    public static int[] ConvertArrayToInt(this byte[] array) => [.. array.Select(x => (int)x)];
-
-    /// <summary>
-    /// Gets the differnce between two numbers
-    /// </summary>
-    /// <param name="original">The original.</param>
-    /// <param name="compareTo">The compare to.</param>
-    /// <returns></returns>
-    public static byte DiferenceFrom(this byte original, byte compareTo) => (byte)(original > compareTo ? original - compareTo : original < compareTo ? compareTo - original : 0);
-
-    /// <summary>
-    /// Divides byte from byte
+    /// Returns byte if higher than byte, otherwise byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte DividedBy(this byte x, byte y) => (byte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static byte ChooseIfHigher(this byte x, byte other) => (byte)(x > other ? x : other);
 
     /// <summary>
-    /// Divides char from byte
+    /// Returns byte if higher than char, otherwise char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte DividedBy(this byte x, char y) => (byte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static byte ChooseIfHigher(this byte x, char other) => (byte)(x > (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Divides decimal from byte
+    /// Returns byte if higher than decimal, otherwise decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte DividedBy(this byte x, decimal y) => (byte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static byte ChooseIfHigher(this byte x, decimal other) => (byte)(x > (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Divides double from byte
+    /// Returns byte if higher than double, otherwise double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte DividedBy(this byte x, double y) => (byte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static byte ChooseIfHigher(this byte x, double other) => (byte)(x > (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Divides float from byte
+    /// Returns byte if higher than float, otherwise float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte DividedBy(this byte x, float y) => (byte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static byte ChooseIfHigher(this byte x, float other) => (byte)(x > (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Divides int from byte
+    /// Returns byte if higher than int, otherwise int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte DividedBy(this byte x, int y) => (byte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static byte ChooseIfHigher(this byte x, int other) => (byte)(x > (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Divides long from byte
+    /// Returns byte if higher than long, otherwise long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte DividedBy(this byte x, long y) => (byte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static byte ChooseIfHigher(this byte x, long other) => (byte)(x > (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Divides sbyte from byte
+    /// Returns byte if higher than sbyte, otherwise sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte DividedBy(this byte x, sbyte y) => (byte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static byte ChooseIfHigher(this byte x, sbyte other) => (byte)(x > (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Divides short from byte
+    /// Returns byte if higher than short, otherwise short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte DividedBy(this byte x, short y) => (byte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static byte ChooseIfHigher(this byte x, short other) => (byte)(x > (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Divides uint from byte
+    /// Returns byte if higher than uint, otherwise uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte DividedBy(this byte x, uint y) => (byte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static byte ChooseIfHigher(this byte x, uint other) => (byte)(x > (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Divides ulong from byte
+    /// Returns byte if higher than ulong, otherwise ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte DividedBy(this byte x, ulong y) => (byte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static byte ChooseIfHigher(this byte x, ulong other) => (byte)(x > (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Divides ushort from byte
+    /// Returns byte if higher than ushort, otherwise ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte DividedBy(this byte x, ushort y) => (byte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static byte ChooseIfHigher(this byte x, ushort other) => (byte)(x > (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Gets the first half of the array.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>An array of <see cref="byte"/> values.</returns>
-    public static byte[] GetFirstHalf(this byte[] array) => [.. array.Take(array.Length / 2)];
-
-    /// <summary>
-    /// Gets the first number in the array
-    /// </summary>
-    /// <param name="array">The array (<c>byte[]</c>)/></param>
-    /// <returns>The result of the operation</returns>
-    public static byte GetFirstValue(this byte[] array) => array[0];
-
-    /// <summary>
-    /// Gets the hightest value of the numbers in the array
-    /// </summary>
-    /// <param name="array">The array</param>
-    /// <returns>The hightest value in the array</returns>
-    public static byte GetHighestValue(this byte[] array) => array.Max();
-
-    /// <summary>
-    /// Gets the last half of the array.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>An array of <see cref="byte"/> values.</returns>
-    public static byte[] GetLastHalf(this byte[] array) => [.. array.Skip(array.Length / 2).Take(array.Length / 2)];
-
-    /// <summary>
-    /// Gets the last number in the array
-    /// </summary>
-    /// <param name="array">The array (<c>byte[]</c>)/></param>
-    /// <returns>The result of the operation</returns>
-    public static byte GetLastValue(this byte[] array) => array[^1];
-
-    /// <summary>
-    /// Peeks the lowest value in the array
-    /// </summary>
-    /// <param name="array">The array (<c>byte[]</c>)/></param>
-    /// <returns>The lowest value i the array</returns>
-    public static byte GetLowestValue(this byte[] array) => array.Min();
-
-    /// <summary>
-    /// Gets the middle of both halves in the array.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>An array of <see cref="byte"/> values.</returns>
-    public static byte[] GetMiddle(this byte[] array) => [.. array.Skip(array.Length / 4).Take(array.Length / 2)];
-
-    /// <summary>
-    /// Gets the number in the middle of the array
-    /// </summary>
-    /// <param name="array">The array (<c>byte[]</c>)/></param>
-    /// <returns>The result of the operation</returns>
-    public static byte GetMiddleValue(this byte[] array) => array[(array.Length - 1) / 2];
-
-    /// <summary>
-    /// Peeks numbers higher than given value in the array
-    /// </summary>
-    /// <param name="array"></param>
-    /// <param name="x">The limit value</param>
-    /// <returns>Returns a new array with all numbers higher than x</returns>
-    public static byte[] GetValuesHigherThan(this byte[] array, byte x) => [.. array.Where(y => y >= x)];
-
-    /// <summary>
-    /// Peeks numbers lower than given value in the array
-    /// </summary>
-    /// <param name="array"></param>
-    /// <param name="x">The limit value</param>
-    /// <returns>Returns a new array with all numbers lower than x</returns>
-    public static byte[] GetValuesLowerThan(this byte[] array, byte x) => [.. array.Where(y => y <= x)];
-
-    /// <summary>
-    /// Gets boolean True if byte is equal to byte
+    /// Returns byte if lower than byte, otherwise byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this byte x, byte y) => x == y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static byte ChooseIfLower(this byte x, byte other) => (byte)(x < other ? x : other);
 
     /// <summary>
-    /// Gets boolean True if char is equal to byte
+    /// Returns byte if lower than char, otherwise char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this byte x, char y) => x == (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static byte ChooseIfLower(this byte x, char other) => (byte)(x < (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Gets boolean True if decimal is equal to byte
+    /// Returns byte if lower than decimal, otherwise decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this byte x, decimal y) => x == (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static byte ChooseIfLower(this byte x, decimal other) => (byte)(x < (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Gets boolean True if double is equal to byte
+    /// Returns byte if lower than double, otherwise double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this byte x, double y) => x == (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static byte ChooseIfLower(this byte x, double other) => (byte)(x < (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Gets boolean True if float is equal to byte
+    /// Returns byte if lower than float, otherwise float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this byte x, float y) => x == (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static byte ChooseIfLower(this byte x, float other) => (byte)(x < (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Gets boolean True if int is equal to byte
+    /// Returns byte if lower than int, otherwise int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this byte x, int y) => x == (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static byte ChooseIfLower(this byte x, int other) => (byte)(x < (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Gets boolean True if long is equal to byte
+    /// Returns byte if lower than long, otherwise long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this byte x, long y) => x == (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static byte ChooseIfLower(this byte x, long other) => (byte)(x < (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Gets boolean True if sbyte is equal to byte
+    /// Returns byte if lower than sbyte, otherwise sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this byte x, sbyte y) => x == (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static byte ChooseIfLower(this byte x, sbyte other) => (byte)(x < (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Gets boolean True if short is equal to byte
+    /// Returns byte if lower than short, otherwise short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this byte x, short y) => x == (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static byte ChooseIfLower(this byte x, short other) => (byte)(x < (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Gets boolean True if uint is equal to byte
+    /// Returns byte if lower than uint, otherwise uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this byte x, uint y) => x == (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static byte ChooseIfLower(this byte x, uint other) => (byte)(x < (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Gets boolean True if ulong is equal to byte
+    /// Returns byte if lower than ulong, otherwise ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this byte x, ulong y) => x == (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static byte ChooseIfLower(this byte x, ulong other) => (byte)(x < (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Gets boolean True if ushort is equal to byte
+    /// Returns byte if lower than ushort, otherwise ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this byte x, ushort y) => x == (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static byte ChooseIfLower(this byte x, ushort other) => (byte)(x < (byte)other ? x : (byte)other);
 
     /// <summary>
-    /// Gets boolean True if byte is not equal to byte
+    /// Gets absolute difference between byte and byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this byte x, byte y) => x != y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static byte DiferenceFrom(this byte x, byte other) => (byte)(x > other ? x - other : x < other ? other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if char is not equal to byte
+    /// Gets absolute difference between byte and char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this byte x, char y) => x != (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static byte DiferenceFrom(this byte x, char other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if decimal is not equal to byte
+    /// Gets absolute difference between byte and decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this byte x, decimal y) => x != (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static byte DiferenceFrom(this byte x, decimal other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if double is not equal to byte
+    /// Gets absolute difference between byte and double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this byte x, double y) => x != (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static byte DiferenceFrom(this byte x, double other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if float is not equal to byte
+    /// Gets absolute difference between byte and float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this byte x, float y) => x != (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static byte DiferenceFrom(this byte x, float other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if int is not equal to byte
+    /// Gets absolute difference between byte and int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this byte x, int y) => x != (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static byte DiferenceFrom(this byte x, int other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if long is not equal to byte
+    /// Gets absolute difference between byte and long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this byte x, long y) => x != (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static byte DiferenceFrom(this byte x, long other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if sbyte is not equal to byte
+    /// Gets absolute difference between byte and sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this byte x, sbyte y) => x != (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static byte DiferenceFrom(this byte x, sbyte other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if short is not equal to byte
+    /// Gets absolute difference between byte and short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this byte x, short y) => x != (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static byte DiferenceFrom(this byte x, short other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if uint is not equal to byte
+    /// Gets absolute difference between byte and uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this byte x, uint y) => x != (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static byte DiferenceFrom(this byte x, uint other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if ulong is not equal to byte
+    /// Gets absolute difference between byte and ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this byte x, ulong y) => x != (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static byte DiferenceFrom(this byte x, ulong other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if ushort is not equal to byte
+    /// Gets absolute difference between byte and ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this byte x, ushort y) => x != (byte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static byte DiferenceFrom(this byte x, ushort other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Checks if a number is prime
-    /// </summary>
-    /// <param name="number">The number</param>
-    /// <returns>True if the number is prime</returns>
-    public static bool IsPrime(this byte number) => Enumerable.Range(2, (int)Math.Sqrt(number) - 1).All(divisor => number % divisor != 0);
-
-    /// <summary>
-    /// Gets the remainder of byte from byte
+    /// Gets absolute difference between byte and byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Modulus(this byte x, byte y) => (byte)((int)x % (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static byte DifferenceFrom(this byte x, byte other) => (byte)(x > other ? x - other : x < other ? other - x : 0);
 
     /// <summary>
-    /// Gets the remainder of char from byte
+    /// Gets absolute difference between byte and char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Modulus(this byte x, char y) => (byte)((int)x % (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static byte DifferenceFrom(this byte x, char other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets the remainder of decimal from byte
+    /// Gets absolute difference between byte and decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Modulus(this byte x, decimal y) => (byte)((int)x % (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static byte DifferenceFrom(this byte x, decimal other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets the remainder of double from byte
+    /// Gets absolute difference between byte and double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Modulus(this byte x, double y) => (byte)((int)x % (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static byte DifferenceFrom(this byte x, double other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets the remainder of float from byte
+    /// Gets absolute difference between byte and float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Modulus(this byte x, float y) => (byte)((int)x % (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static byte DifferenceFrom(this byte x, float other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets the remainder of int from byte
+    /// Gets absolute difference between byte and int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Modulus(this byte x, int y) => (byte)((int)x % (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static byte DifferenceFrom(this byte x, int other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets the remainder of long from byte
+    /// Gets absolute difference between byte and long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Modulus(this byte x, long y) => (byte)((int)x % (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static byte DifferenceFrom(this byte x, long other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets the remainder of sbyte from byte
+    /// Gets absolute difference between byte and sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Modulus(this byte x, sbyte y) => (byte)((int)x % (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static byte DifferenceFrom(this byte x, sbyte other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets the remainder of short from byte
+    /// Gets absolute difference between byte and short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Modulus(this byte x, short y) => (byte)((int)x % (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static byte DifferenceFrom(this byte x, short other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets the remainder of uint from byte
+    /// Gets absolute difference between byte and uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Modulus(this byte x, uint y) => (byte)((int)x % (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static byte DifferenceFrom(this byte x, uint other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets the remainder of ulong from byte
+    /// Gets absolute difference between byte and ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Modulus(this byte x, ulong y) => (byte)((int)x % (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static byte DifferenceFrom(this byte x, ulong other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
 
     /// <summary>
-    /// Gets the remainder of ushort from byte
+    /// Gets absolute difference between byte and ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Modulus(this byte x, ushort y) => (byte)((int)x % (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static byte DifferenceFrom(this byte x, ushort other) => (byte)(x > (byte)other ? x - (byte)other : x < (byte)other ? (byte)other - x : 0);
+
+    /// <summary>
+    /// Divides byte by byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static byte DividedBy(this byte x, byte divisor) => (byte)(x / divisor);
+
+    /// <summary>
+    /// Divides byte by char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static byte DividedBy(this byte x, char divisor) => (byte)(x / (byte)divisor);
+
+    /// <summary>
+    /// Divides byte by decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static byte DividedBy(this byte x, decimal divisor) => (byte)(x / (byte)divisor);
+
+    /// <summary>
+    /// Divides byte by double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static byte DividedBy(this byte x, double divisor) => (byte)(x / (byte)divisor);
+
+    /// <summary>
+    /// Divides byte by float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static byte DividedBy(this byte x, float divisor) => (byte)(x / (byte)divisor);
+
+    /// <summary>
+    /// Divides byte by int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static byte DividedBy(this byte x, int divisor) => (byte)(x / (byte)divisor);
+
+    /// <summary>
+    /// Divides byte by long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static byte DividedBy(this byte x, long divisor) => (byte)(x / (byte)divisor);
+
+    /// <summary>
+    /// Divides byte by sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static byte DividedBy(this byte x, sbyte divisor) => (byte)(x / (byte)divisor);
+
+    /// <summary>
+    /// Divides byte by short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static byte DividedBy(this byte x, short divisor) => (byte)(x / (byte)divisor);
+
+    /// <summary>
+    /// Divides byte by uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static byte DividedBy(this byte x, uint divisor) => (byte)(x / (byte)divisor);
+
+    /// <summary>
+    /// Divides byte by ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static byte DividedBy(this byte x, ulong divisor) => (byte)(x / (byte)divisor);
+
+    /// <summary>
+    /// Divides byte by ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static byte DividedBy(this byte x, ushort divisor) => (byte)(x / (byte)divisor);
+
+    /// <summary>
+    /// Checks if byte is greater than byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this byte x, byte other) => x > other;
+
+    /// <summary>
+    /// Checks if byte is greater than char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this byte x, char other) => x > (byte)other;
+
+    /// <summary>
+    /// Checks if byte is greater than decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this byte x, decimal other) => x > (byte)other;
+
+    /// <summary>
+    /// Checks if byte is greater than double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this byte x, double other) => x > (byte)other;
+
+    /// <summary>
+    /// Checks if byte is greater than float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this byte x, float other) => x > (byte)other;
+
+    /// <summary>
+    /// Checks if byte is greater than int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this byte x, int other) => x > (byte)other;
+
+    /// <summary>
+    /// Checks if byte is greater than long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this byte x, long other) => x > (byte)other;
+
+    /// <summary>
+    /// Checks if byte is greater than sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this byte x, sbyte other) => x > (byte)other;
+
+    /// <summary>
+    /// Checks if byte is greater than short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this byte x, short other) => x > (byte)other;
+
+    /// <summary>
+    /// Checks if byte is greater than uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this byte x, uint other) => x > (byte)other;
+
+    /// <summary>
+    /// Checks if byte is greater than ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this byte x, ulong other) => x > (byte)other;
+
+    /// <summary>
+    /// Checks if byte is greater than ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this byte x, ushort other) => x > (byte)other;
+
+    /// <summary>
+    /// Checks if byte equals byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this byte x, byte other) => x == other;
+
+    /// <summary>
+    /// Checks if byte equals char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this byte x, char other) => x == (byte)other;
+
+    /// <summary>
+    /// Checks if byte equals decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this byte x, decimal other) => x == (byte)other;
+
+    /// <summary>
+    /// Checks if byte equals double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this byte x, double other) => x == (byte)other;
+
+    /// <summary>
+    /// Checks if byte equals float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this byte x, float other) => x == (byte)other;
+
+    /// <summary>
+    /// Checks if byte equals int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this byte x, int other) => x == (byte)other;
+
+    /// <summary>
+    /// Checks if byte equals long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this byte x, long other) => x == (byte)other;
+
+    /// <summary>
+    /// Checks if byte equals sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this byte x, sbyte other) => x == (byte)other;
+
+    /// <summary>
+    /// Checks if byte equals short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this byte x, short other) => x == (byte)other;
+
+    /// <summary>
+    /// Checks if byte equals uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this byte x, uint other) => x == (byte)other;
+
+    /// <summary>
+    /// Checks if byte equals ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this byte x, ulong other) => x == (byte)other;
+
+    /// <summary>
+    /// Checks if byte equals ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this byte x, ushort other) => x == (byte)other;
+
+    /// <summary>
+    /// Gets boolean true if byte is less than zero
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <returns>True if the value is negative</returns>
+    public static bool IsNegative(this byte x) => x < 0;
+
+    /// <summary>
+    /// Checks if byte does not equal byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this byte x, byte other) => x != other;
+
+    /// <summary>
+    /// Checks if byte does not equal char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this byte x, char other) => x != (byte)other;
+
+    /// <summary>
+    /// Checks if byte does not equal decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this byte x, decimal other) => x != (byte)other;
+
+    /// <summary>
+    /// Checks if byte does not equal double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this byte x, double other) => x != (byte)other;
+
+    /// <summary>
+    /// Checks if byte does not equal float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this byte x, float other) => x != (byte)other;
+
+    /// <summary>
+    /// Checks if byte does not equal int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this byte x, int other) => x != (byte)other;
+
+    /// <summary>
+    /// Checks if byte does not equal long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this byte x, long other) => x != (byte)other;
+
+    /// <summary>
+    /// Checks if byte does not equal sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this byte x, sbyte other) => x != (byte)other;
+
+    /// <summary>
+    /// Checks if byte does not equal short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this byte x, short other) => x != (byte)other;
+
+    /// <summary>
+    /// Checks if byte does not equal uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this byte x, uint other) => x != (byte)other;
+
+    /// <summary>
+    /// Checks if byte does not equal ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this byte x, ulong other) => x != (byte)other;
+
+    /// <summary>
+    /// Checks if byte does not equal ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this byte x, ushort other) => x != (byte)other;
+
+    /// <summary>
+    /// Gets boolean true if byte is more than zero
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <returns>True if the value is positive</returns>
+    public static bool IsPositive(this byte x) => x > 0;
+
+    /// <summary>
+    /// Checks if byte is less than byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this byte x, byte other) => x < other;
+
+    /// <summary>
+    /// Checks if byte is less than char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this byte x, char other) => x < (byte)other;
+
+    /// <summary>
+    /// Checks if byte is less than decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this byte x, decimal other) => x < (byte)other;
+
+    /// <summary>
+    /// Checks if byte is less than double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this byte x, double other) => x < (byte)other;
+
+    /// <summary>
+    /// Checks if byte is less than float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this byte x, float other) => x < (byte)other;
+
+    /// <summary>
+    /// Checks if byte is less than int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this byte x, int other) => x < (byte)other;
+
+    /// <summary>
+    /// Checks if byte is less than long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this byte x, long other) => x < (byte)other;
+
+    /// <summary>
+    /// Checks if byte is less than sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this byte x, sbyte other) => x < (byte)other;
+
+    /// <summary>
+    /// Checks if byte is less than short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this byte x, short other) => x < (byte)other;
+
+    /// <summary>
+    /// Checks if byte is less than uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this byte x, uint other) => x < (byte)other;
+
+    /// <summary>
+    /// Checks if byte is less than ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this byte x, ulong other) => x < (byte)other;
+
+    /// <summary>
+    /// Checks if byte is less than ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this byte x, ushort other) => x < (byte)other;
+
+    /// <summary>
+    /// Gets remainder of byte divided by byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static byte Modulus(this byte x, byte divisor) => (byte)(x % divisor);
+
+    /// <summary>
+    /// Gets remainder of byte divided by char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static byte Modulus(this byte x, char divisor) => (byte)(x % (byte)divisor);
+
+    /// <summary>
+    /// Gets remainder of byte divided by decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static byte Modulus(this byte x, decimal divisor) => (byte)(x % (byte)divisor);
+
+    /// <summary>
+    /// Gets remainder of byte divided by double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static byte Modulus(this byte x, double divisor) => (byte)(x % (byte)divisor);
+
+    /// <summary>
+    /// Gets remainder of byte divided by float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static byte Modulus(this byte x, float divisor) => (byte)(x % (byte)divisor);
+
+    /// <summary>
+    /// Gets remainder of byte divided by int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static byte Modulus(this byte x, int divisor) => (byte)(x % (byte)divisor);
+
+    /// <summary>
+    /// Gets remainder of byte divided by long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static byte Modulus(this byte x, long divisor) => (byte)(x % (byte)divisor);
+
+    /// <summary>
+    /// Gets remainder of byte divided by sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static byte Modulus(this byte x, sbyte divisor) => (byte)(x % (byte)divisor);
+
+    /// <summary>
+    /// Gets remainder of byte divided by short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static byte Modulus(this byte x, short divisor) => (byte)(x % (byte)divisor);
+
+    /// <summary>
+    /// Gets remainder of byte divided by uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static byte Modulus(this byte x, uint divisor) => (byte)(x % (byte)divisor);
+
+    /// <summary>
+    /// Gets remainder of byte divided by ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static byte Modulus(this byte x, ulong divisor) => (byte)(x % (byte)divisor);
+
+    /// <summary>
+    /// Gets remainder of byte divided by ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static byte Modulus(this byte x, ushort divisor) => (byte)(x % (byte)divisor);
 
     /// <summary>
     /// Multiplies byte with byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte MultipliedWith(this byte x, byte y) => (byte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static byte MultipliedWith(this byte x, byte multiplier) => (byte)(x * multiplier);
 
     /// <summary>
-    /// Multiplies char with byte
+    /// Multiplies byte with char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte MultipliedWith(this byte x, char y) => (byte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static byte MultipliedWith(this byte x, char multiplier) => (byte)(x * (byte)multiplier);
 
     /// <summary>
-    /// Multiplies decimal with byte
+    /// Multiplies byte with decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte MultipliedWith(this byte x, decimal y) => (byte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static byte MultipliedWith(this byte x, decimal multiplier) => (byte)(x * (byte)multiplier);
 
     /// <summary>
-    /// Multiplies double with byte
+    /// Multiplies byte with double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte MultipliedWith(this byte x, double y) => (byte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static byte MultipliedWith(this byte x, double multiplier) => (byte)(x * (byte)multiplier);
 
     /// <summary>
-    /// Multiplies float with byte
+    /// Multiplies byte with float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte MultipliedWith(this byte x, float y) => (byte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static byte MultipliedWith(this byte x, float multiplier) => (byte)(x * (byte)multiplier);
 
     /// <summary>
-    /// Multiplies int with byte
+    /// Multiplies byte with int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte MultipliedWith(this byte x, int y) => (byte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static byte MultipliedWith(this byte x, int multiplier) => (byte)(x * (byte)multiplier);
 
     /// <summary>
-    /// Multiplies long with byte
+    /// Multiplies byte with long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte MultipliedWith(this byte x, long y) => (byte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static byte MultipliedWith(this byte x, long multiplier) => (byte)(x * (byte)multiplier);
 
     /// <summary>
-    /// Multiplies sbyte with byte
+    /// Multiplies byte with sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte MultipliedWith(this byte x, sbyte y) => (byte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static byte MultipliedWith(this byte x, sbyte multiplier) => (byte)(x * (byte)multiplier);
 
     /// <summary>
-    /// Multiplies short with byte
+    /// Multiplies byte with short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte MultipliedWith(this byte x, short y) => (byte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static byte MultipliedWith(this byte x, short multiplier) => (byte)(x * (byte)multiplier);
 
     /// <summary>
-    /// Multiplies uint with byte
+    /// Multiplies byte with uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte MultipliedWith(this byte x, uint y) => (byte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static byte MultipliedWith(this byte x, uint multiplier) => (byte)(x * (byte)multiplier);
 
     /// <summary>
-    /// Multiplies ulong with byte
+    /// Multiplies byte with ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte MultipliedWith(this byte x, ulong y) => (byte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static byte MultipliedWith(this byte x, ulong multiplier) => (byte)(x * (byte)multiplier);
 
     /// <summary>
-    /// Multiplies ushort with byte
+    /// Multiplies byte with ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte MultipliedWith(this byte x, ushort y) => (byte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static byte MultipliedWith(this byte x, ushort multiplier) => (byte)(x * (byte)multiplier);
 
     /// <summary>
-    /// Gets the NOT of byte
-    /// </summary>
-    /// <param name="x">The x <see cref="byte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static byte Not(this byte x) => (byte)~(int)x;
-
-    /// <summary>
-    /// Gets the OR of byte and byte
+    /// Calculates byte percent of byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Or(this byte x, byte y) => (byte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static byte PercentOf(this byte x, byte number) => (byte)(x / 100 * number);
 
     /// <summary>
-    /// Gets the OR of char and byte
+    /// Calculates byte percent of char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Or(this byte x, char y) => (byte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static byte PercentOf(this byte x, char number) => (byte)(x / 100 * (byte)number);
 
     /// <summary>
-    /// Gets the OR of decimal and byte
+    /// Calculates byte percent of decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Or(this byte x, decimal y) => (byte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static byte PercentOf(this byte x, decimal number) => (byte)(x / 100 * (byte)number);
 
     /// <summary>
-    /// Gets the OR of double and byte
+    /// Calculates byte percent of double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Or(this byte x, double y) => (byte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static byte PercentOf(this byte x, double number) => (byte)(x / 100 * (byte)number);
 
     /// <summary>
-    /// Gets the OR of float and byte
+    /// Calculates byte percent of float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Or(this byte x, float y) => (byte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static byte PercentOf(this byte x, float number) => (byte)(x / 100 * (byte)number);
 
     /// <summary>
-    /// Gets the OR of int and byte
+    /// Calculates byte percent of int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Or(this byte x, int y) => (byte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static byte PercentOf(this byte x, int number) => (byte)(x / 100 * (byte)number);
 
     /// <summary>
-    /// Gets the OR of long and byte
+    /// Calculates byte percent of long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Or(this byte x, long y) => (byte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static byte PercentOf(this byte x, long number) => (byte)(x / 100 * (byte)number);
 
     /// <summary>
-    /// Gets the OR of sbyte and byte
+    /// Calculates byte percent of sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Or(this byte x, sbyte y) => (byte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static byte PercentOf(this byte x, sbyte number) => (byte)(x / 100 * (byte)number);
 
     /// <summary>
-    /// Gets the OR of short and byte
+    /// Calculates byte percent of short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Or(this byte x, short y) => (byte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static byte PercentOf(this byte x, short number) => (byte)(x / 100 * (byte)number);
 
     /// <summary>
-    /// Gets the OR of uint and byte
+    /// Calculates byte percent of uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Or(this byte x, uint y) => (byte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static byte PercentOf(this byte x, uint number) => (byte)(x / 100 * (byte)number);
 
     /// <summary>
-    /// Gets the OR of ulong and byte
+    /// Calculates byte percent of ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Or(this byte x, ulong y) => (byte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static byte PercentOf(this byte x, ulong number) => (byte)(x / 100 * (byte)number);
 
     /// <summary>
-    /// Gets the OR of ushort and byte
+    /// Calculates byte percent of ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Or(this byte x, ushort y) => (byte)((int)x | (int)y);
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static byte PercentOf(this byte percent, byte value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static byte PercentOf(this byte percent, char value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static byte PercentOf(this byte percent, decimal value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static byte PercentOf(this byte percent, double value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static byte PercentOf(this byte percent, float value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static byte PercentOf(this byte percent, int value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static byte PercentOf(this byte percent, long value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static byte PercentOf(this byte percent, sbyte value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static byte PercentOf(this byte percent, short value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static byte PercentOf(this byte percent, uint value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static byte PercentOf(this byte percent, ulong value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static byte PercentOf(this byte percent, ushort value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
-
-    /// <summary>
-    /// Rotates the numbers to the left.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The (<c>byte[]</c>)/></returns>
-    public static byte[] RotateLeft(this byte[] array)
-    {
-        var first = array.GetFirstValue();
-        Array.Copy(array, 1, array, 0, array.Length - 1);
-        array[^1] = first;
-        return array;
-    }
-
-    /// <summary>
-    /// Rotates the numbers to the right.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The (<c>byte[]</c>)/></returns>
-    public static byte[] RotateRight(this byte[] array)
-    {
-        var last = array.GetLastValue();
-        Array.Copy(array, 0, array, 1, array.Length - 1);
-        array[0] = last;
-        return array;
-    }
-
-    /// <summary>
-    /// Compare original and second number and set the variable with the highest
-    /// </summary>
-    /// <param name="first">The variable</param>
-    /// <param name="second">The number to compare</param>
-    /// <param name="third">The number to compare with</param>
-    /// <returns>Sets the variable to the highest of the two numbers</returns>
-    public static ref byte SetHighestValueOf(this ref byte first, byte second, byte third)
-    {
-        first = second > third ? second : third;
-        return ref first;
-    }
-
-    /// <summary>
-    /// Compare original and second number and set the variable with the lowest
-    /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <param name="third">The third <see cref="byte"/></param>
-    /// <returns>Sets the variable to the lowest of the two numbers</returns>
-    public static ref byte SetLowestValueOf(this ref byte first, byte second, byte third)
-    {
-        first = second < third ? second : third;
-        return ref first;
-    }
-
-    /// <summary>
-    /// Get the current size of the array
-    /// </summary>
-    /// <param name="array">The array <see cref="byte"/></param>
-    /// <param name="size">The size <see cref="int"/></param>
-    /// <returns>An array of <see cref="byte"/> values.</returns>
-    public static byte[] SetNewArraySize(this byte[] array, int size)
-    {
-        var newArr = new byte[size];
-        Array.Copy(array, 0, newArr, 0, array.Length);
-        return newArr;
-    }
-
-    /// <summary>
-    /// Gets shift left of byte from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftLeft(this byte x, byte y) => (byte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of char from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftLeft(this byte x, char y) => (byte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of decimal from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftLeft(this byte x, decimal y) => (byte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of double from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftLeft(this byte x, double y) => (byte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of float from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftLeft(this byte x, float y) => (byte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of int from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftLeft(this byte x, int y) => (byte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of long from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftLeft(this byte x, long y) => (byte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of sbyte from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftLeft(this byte x, sbyte y) => (byte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of short from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftLeft(this byte x, short y) => (byte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of uint from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftLeft(this byte x, uint y) => (byte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of ulong from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftLeft(this byte x, ulong y) => (byte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of ushort from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftLeft(this byte x, ushort y) => (byte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift right of byte from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftRight(this byte x, byte y) => (byte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of char from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftRight(this byte x, char y) => (byte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of decimal from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftRight(this byte x, decimal y) => (byte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of double from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftRight(this byte x, double y) => (byte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of float from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftRight(this byte x, float y) => (byte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of int from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftRight(this byte x, int y) => (byte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of long from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftRight(this byte x, long y) => (byte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of sbyte from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftRight(this byte x, sbyte y) => (byte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of short from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftRight(this byte x, short y) => (byte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of uint from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftRight(this byte x, uint y) => (byte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of ulong from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftRight(this byte x, ulong y) => (byte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of ushort from byte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte ShiftRight(this byte x, ushort y) => (byte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Sorts array from lowest to highest
-    /// </summary>
-    /// <param name="array">The array (<c>byte[]</c>)/></param>
-    /// <returns>A sorted array</returns>
-    public static byte[] SortArrayAsc(this byte[] array) => [.. array.OrderBy(x => x)];
-
-    /// <summary>
-    /// Sorts array from highest to lowest
-    /// </summary>
-    /// <param name="array">The array (<c>byte[]</c>)/></param>
-    /// <returns>A sorted array</returns>
-    public static byte[] SortArrayDesc(this byte[] array) => [.. array.OrderByDescending(x => x)];
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static byte PercentOf(this byte x, ushort number) => (byte)(x / 100 * (byte)number);
 
     /// <summary>
     /// Subtracts byte from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,byte) instead.", false)]
-    public static byte Substract(this byte x, byte y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static byte Substract(this byte x, byte subtrahend) => (byte)(x - subtrahend);
 
     /// <summary>
     /// Subtracts char from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,char) instead.", false)]
-    public static byte Substract(this byte x, char y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static byte Substract(this byte x, char subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts decimal from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,decimal) instead.", false)]
-    public static byte Substract(this byte x, decimal y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static byte Substract(this byte x, decimal subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts double from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,double) instead.", false)]
-    public static byte Substract(this byte x, double y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static byte Substract(this byte x, double subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts float from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,float) instead.", false)]
-    public static byte Substract(this byte x, float y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static byte Substract(this byte x, float subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts int from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,int) instead.", false)]
-    public static byte Substract(this byte x, int y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static byte Substract(this byte x, int subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts long from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,long) instead.", false)]
-    public static byte Substract(this byte x, long y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static byte Substract(this byte x, long subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts sbyte from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,sbyte) instead.", false)]
-    public static byte Substract(this byte x, sbyte y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static byte Substract(this byte x, sbyte subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts short from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,short) instead.", false)]
-    public static byte Substract(this byte x, short y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static byte Substract(this byte x, short subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts uint from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,uint) instead.", false)]
-    public static byte Substract(this byte x, uint y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static byte Substract(this byte x, uint subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts ulong from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,ulong) instead.", false)]
-    public static byte Substract(this byte x, ulong y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static byte Substract(this byte x, ulong subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts ushort from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,ushort) instead.", false)]
-    public static byte Substract(this byte x, ushort y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static byte Substract(this byte x, ushort subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of byte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(byte) instead.", false)]
-    public static byte SubstractPercent(this byte value, byte percent) => (byte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static byte SubstractPercent(this byte x, byte percent) => (byte)(x - (x * percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of byte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(char) instead.", false)]
-    public static byte SubstractPercent(this byte value, char percent) => (byte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static byte SubstractPercent(this byte x, char percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of byte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(decimal) instead.", false)]
-    public static byte SubstractPercent(this byte value, decimal percent) => (byte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static byte SubstractPercent(this byte x, decimal percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of byte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(double) instead.", false)]
-    public static byte SubstractPercent(this byte value, double percent) => (byte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static byte SubstractPercent(this byte x, double percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of byte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(float) instead.", false)]
-    public static byte SubstractPercent(this byte value, float percent) => (byte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static byte SubstractPercent(this byte x, float percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of byte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(int) instead.", false)]
-    public static byte SubstractPercent(this byte value, int percent) => (byte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static byte SubstractPercent(this byte x, int percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of byte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(long) instead.", false)]
-    public static byte SubstractPercent(this byte value, long percent) => (byte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static byte SubstractPercent(this byte x, long percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of byte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(sbyte) instead.", false)]
-    public static byte SubstractPercent(this byte value, sbyte percent) => (byte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static byte SubstractPercent(this byte x, sbyte percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of byte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(short) instead.", false)]
-    public static byte SubstractPercent(this byte value, short percent) => (byte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static byte SubstractPercent(this byte x, short percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of byte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(uint) instead.", false)]
-    public static byte SubstractPercent(this byte value, uint percent) => (byte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static byte SubstractPercent(this byte x, uint percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of byte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ulong) instead.", false)]
-    public static byte SubstractPercent(this byte value, ulong percent) => (byte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static byte SubstractPercent(this byte x, ulong percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of byte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ushort) instead.", false)]
-    public static byte SubstractPercent(this byte value, ushort percent) => (byte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static byte SubstractPercent(this byte x, ushort percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
     /// Subtracts byte from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Subtract(this byte x, byte y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static byte Subtract(this byte x, byte subtrahend) => (byte)(x - subtrahend);
 
     /// <summary>
     /// Subtracts char from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Subtract(this byte x, char y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static byte Subtract(this byte x, char subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts decimal from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Subtract(this byte x, decimal y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static byte Subtract(this byte x, decimal subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts double from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Subtract(this byte x, double y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static byte Subtract(this byte x, double subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts float from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Subtract(this byte x, float y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static byte Subtract(this byte x, float subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts int from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Subtract(this byte x, int y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static byte Subtract(this byte x, int subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts long from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Subtract(this byte x, long y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static byte Subtract(this byte x, long subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts sbyte from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Subtract(this byte x, sbyte y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static byte Subtract(this byte x, sbyte subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts short from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Subtract(this byte x, short y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static byte Subtract(this byte x, short subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts uint from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Subtract(this byte x, uint y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static byte Subtract(this byte x, uint subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts ulong from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Subtract(this byte x, ulong y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static byte Subtract(this byte x, ulong subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
     /// Subtracts ushort from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Subtract(this byte x, ushort y) => (byte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static byte Subtract(this byte x, ushort subtrahend) => (byte)(x - (byte)subtrahend);
 
     /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte SubtractPercent(this byte value, byte percent) => (byte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte SubtractPercent(this byte value, char percent) => (byte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte SubtractPercent(this byte value, decimal percent) => (byte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte SubtractPercent(this byte value, double percent) => (byte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte SubtractPercent(this byte value, float percent) => (byte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte SubtractPercent(this byte value, int percent) => (byte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte SubtractPercent(this byte value, long percent) => (byte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte SubtractPercent(this byte value, sbyte percent) => (byte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte SubtractPercent(this byte value, short percent) => (byte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte SubtractPercent(this byte value, uint percent) => (byte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte SubtractPercent(this byte value, ulong percent) => (byte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static byte SubtractPercent(this byte value, ushort percent) => (byte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Swaps two variables
-    /// </summary>
-    /// <param name="first">The main variable</param>
-    /// <param name="second">The variable to switch with</param>
-    /// <returns>
-    /// The value from the second variable and sets second variable to original value
-    /// </returns>
-    public static ref byte SwapWith(this ref byte first, ref byte second)
-    {
-        (first, second) = (second, first);
-        return ref first;
-    }
-
-    /// <summary>
-    /// Gets XOR of byte of byte
+    /// Subtracts percentage from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Xor(this byte x, byte y) => (byte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static byte SubtractPercent(this byte x, byte percent) => (byte)(x - (x * percent / 100));
 
     /// <summary>
-    /// Gets XOR of char of byte
+    /// Subtracts percentage from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Xor(this byte x, char y) => (byte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static byte SubtractPercent(this byte x, char percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of decimal of byte
+    /// Subtracts percentage from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Xor(this byte x, decimal y) => (byte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static byte SubtractPercent(this byte x, decimal percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of double of byte
+    /// Subtracts percentage from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Xor(this byte x, double y) => (byte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static byte SubtractPercent(this byte x, double percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of float of byte
+    /// Subtracts percentage from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Xor(this byte x, float y) => (byte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static byte SubtractPercent(this byte x, float percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of int of byte
+    /// Subtracts percentage from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Xor(this byte x, int y) => (byte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static byte SubtractPercent(this byte x, int percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of long of byte
+    /// Subtracts percentage from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Xor(this byte x, long y) => (byte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static byte SubtractPercent(this byte x, long percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of sbyte of byte
+    /// Subtracts percentage from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Xor(this byte x, sbyte y) => (byte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static byte SubtractPercent(this byte x, sbyte percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of short of byte
+    /// Subtracts percentage from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Xor(this byte x, short y) => (byte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static byte SubtractPercent(this byte x, short percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of uint of byte
+    /// Subtracts percentage from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Xor(this byte x, uint y) => (byte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static byte SubtractPercent(this byte x, uint percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of ulong of byte
+    /// Subtracts percentage from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Xor(this byte x, ulong y) => (byte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static byte SubtractPercent(this byte x, ulong percent) => (byte)(x - (x * (byte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of ushort of byte
+    /// Subtracts percentage from byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static byte Xor(this byte x, ushort y) => (byte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static byte SubtractPercent(this byte x, ushort percent) => (byte)(x - (x * (byte)percent / 100));
+
+    /// <summary>
+    /// Decreases all values in the array by the specified amount
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="dec">The amount to subtract</param>
+    /// <returns>Array with all values decreased</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.DecreaseAllValuesWith(). This method will be removed in v2.0.", false)]
+    public static byte[] DecreaseAllValuesWith(this byte[] array, byte dec) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.DecreaseAllValuesWith(array, dec);
+
+    /// <summary>
+    /// Peeks the average value of the numbers in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The average value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetAverage(). This method will be removed in v2.0.", false)]
+    public static double GetAverage(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetAverage(array);
+
+    /// <summary>
+    /// Gets the first half of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The first half of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetFirstHalf(). This method will be removed in v2.0.", false)]
+    public static byte[] GetFirstHalf(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetFirstHalf(array);
+
+    /// <summary>
+    /// Gets the first value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The first value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetFirstValue(). This method will be removed in v2.0.", false)]
+    public static byte GetFirstValue(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetFirstValue(array);
+
+    /// <summary>
+    /// Gets the highest value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The highest value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetHighestValue(). This method will be removed in v2.0.", false)]
+    public static byte GetHighestValue(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetHighestValue(array);
+
+    /// <summary>
+    /// Gets the last half of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The last half of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetLastHalf(). This method will be removed in v2.0.", false)]
+    public static byte[] GetLastHalf(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetLastHalf(array);
+
+    /// <summary>
+    /// Gets the last value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The last value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetLastValue(). This method will be removed in v2.0.", false)]
+    public static byte GetLastValue(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetLastValue(array);
+
+    /// <summary>
+    /// Gets the lowest value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The lowest value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetLowestValue(). This method will be removed in v2.0.", false)]
+    public static byte GetLowestValue(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetLowestValue(array);
+
+    /// <summary>
+    /// Gets the middle portion of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The middle portion of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetMiddle(). This method will be removed in v2.0.", false)]
+    public static byte[] GetMiddle(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetMiddle(array);
+
+    /// <summary>
+    /// Gets the middle value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The middle value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetMiddleValue(). This method will be removed in v2.0.", false)]
+    public static byte GetMiddleValue(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetMiddleValue(array);
+
+    /// <summary>
+    /// Gets all values higher than or equal to the specified value
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="x">The threshold value</param>
+    /// <returns>Array of values higher than or equal to threshold</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetValuesHigherThan(). This method will be removed in v2.0.", false)]
+    public static byte[] GetValuesHigherThan(this byte[] array, byte x) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetValuesHigherThan(array, x);
+
+    /// <summary>
+    /// Gets all values lower than or equal to the specified value
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="x">The threshold value</param>
+    /// <returns>Array of values lower than or equal to threshold</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetValuesLowerThan(). This method will be removed in v2.0.", false)]
+    public static byte[] GetValuesLowerThan(this byte[] array, byte x) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.GetValuesLowerThan(array, x);
+
+    /// <summary>
+    /// Increases all values in the array by the specified amount
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="add">The amount to add</param>
+    /// <returns>Array with all values increased</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.IncreaseAllValuesWith(). This method will be removed in v2.0.", false)]
+    public static byte[] IncreaseAllValuesWith(this byte[] array, byte add) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.IncreaseAllValuesWith(array, add);
+
+    /// <summary>
+    /// Rotates the numbers to the left
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The rotated array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.RotateLeft(). This method will be removed in v2.0.", false)]
+    public static byte[] RotateLeft(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.RotateLeft(array);
+
+    /// <summary>
+    /// Rotates the numbers to the right
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The rotated array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.RotateRight(). This method will be removed in v2.0.", false)]
+    public static byte[] RotateRight(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.RotateRight(array);
+
+    /// <summary>
+    /// Sets a new size for the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="size">The new size</param>
+    /// <returns>Array with new size</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.SetNewArraySize(). This method will be removed in v2.0.", false)]
+    public static byte[] SetNewArraySize(this byte[] array, int size) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.SetNewArraySize(array, size);
+
+    /// <summary>
+    /// Sorts the array in ascending order
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>Array sorted in ascending order</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.SortArrayAsc(). This method will be removed in v2.0.", false)]
+    public static byte[] SortArrayAsc(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.SortArrayAsc(array);
+
+    /// <summary>
+    /// Sorts the array in descending order
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>Array sorted in descending order</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.SortArrayDesc(). This method will be removed in v2.0.", false)]
+    public static byte[] SortArrayDesc(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.SortArrayDesc(array);
+
+    /// <summary>
+    /// Sums all values in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The sum of all values</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.SumAllValues(). This method will be removed in v2.0.", false)]
+    public static byte SumAllValues(this byte[] array) =>
+        MarcusMedinaPro.TypedMath.ByteCollections.TypedMathByteCollections.SumAllValues(array);
 }

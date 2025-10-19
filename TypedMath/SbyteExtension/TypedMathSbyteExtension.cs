@@ -4,9 +4,6 @@
 //     conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
-// Credits for borrowed code: LinQ Primenumbers, Zoran Horvat, at
-// http://www.codinghelmet.com/articles/linq-all-primes/ Increase/Decrease array values, mgp -
-// https://stackoverflow.com/users/55943/mqp, at https://stackoverflow.com/a/823537 ----------------------------------------------------------------------------------------------
 
 namespace MarcusMedinaPro.TypedMath.SbyteExtension;
 
@@ -18,2152 +15,1958 @@ using System.Linq;
 /// </summary>
 public static class TypedMathSbyteExtension
 {
+
     /// <summary>
     /// Adds byte to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Add(this sbyte x, byte y) => (sbyte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static sbyte Add(this sbyte x, byte addend) => (sbyte)(x + (sbyte)addend);
 
     /// <summary>
     /// Adds char to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Add(this sbyte x, char y) => (sbyte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static sbyte Add(this sbyte x, char addend) => (sbyte)(x + (sbyte)addend);
 
     /// <summary>
     /// Adds decimal to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Add(this sbyte x, decimal y) => (sbyte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static sbyte Add(this sbyte x, decimal addend) => (sbyte)(x + (sbyte)addend);
 
     /// <summary>
     /// Adds double to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Add(this sbyte x, double y) => (sbyte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static sbyte Add(this sbyte x, double addend) => (sbyte)(x + (sbyte)addend);
 
     /// <summary>
     /// Adds float to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Add(this sbyte x, float y) => (sbyte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static sbyte Add(this sbyte x, float addend) => (sbyte)(x + (sbyte)addend);
 
     /// <summary>
     /// Adds int to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Add(this sbyte x, int y) => (sbyte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static sbyte Add(this sbyte x, int addend) => (sbyte)(x + (sbyte)addend);
 
     /// <summary>
     /// Adds long to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Add(this sbyte x, long y) => (sbyte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static sbyte Add(this sbyte x, long addend) => (sbyte)(x + (sbyte)addend);
 
     /// <summary>
     /// Adds sbyte to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Add(this sbyte x, sbyte y) => (sbyte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static sbyte Add(this sbyte x, sbyte addend) => (sbyte)(x + addend);
 
     /// <summary>
     /// Adds short to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Add(this sbyte x, short y) => (sbyte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static sbyte Add(this sbyte x, short addend) => (sbyte)(x + (sbyte)addend);
 
     /// <summary>
     /// Adds uint to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Add(this sbyte x, uint y) => (sbyte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static sbyte Add(this sbyte x, uint addend) => (sbyte)(x + (sbyte)addend);
 
     /// <summary>
     /// Adds ulong to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Add(this sbyte x, ulong y) => (sbyte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static sbyte Add(this sbyte x, ulong addend) => (sbyte)(x + (sbyte)addend);
 
     /// <summary>
     /// Adds ushort to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Add(this sbyte x, ushort y) => (sbyte)((int)x + (int)y);
+    /// <param name="addend">The value to add</param>
+    /// <returns>The sum of both values</returns>
+    public static sbyte Add(this sbyte x, ushort addend) => (sbyte)(x + (sbyte)addend);
 
     /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte AddPercent(this sbyte value, byte percent) => (sbyte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte AddPercent(this sbyte value, char percent) => (sbyte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte AddPercent(this sbyte value, decimal percent) => (sbyte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte AddPercent(this sbyte value, double percent) => (sbyte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte AddPercent(this sbyte value, float percent) => (sbyte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte AddPercent(this sbyte value, int percent) => (sbyte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte AddPercent(this sbyte value, long percent) => (sbyte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte AddPercent(this sbyte value, sbyte percent) => (sbyte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte AddPercent(this sbyte value, short percent) => (sbyte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte AddPercent(this sbyte value, uint percent) => (sbyte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte AddPercent(this sbyte value, ulong percent) => (sbyte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Adds the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte AddPercent(this sbyte value, ushort percent) => (sbyte)(value + value.PercentOf(percent));
-
-    /// <summary>
-    /// Gets the AND of byte and sbyte
+    /// Adds percentage to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte And(this sbyte x, byte y) => (sbyte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static sbyte AddPercent(this sbyte x, byte percent) => (sbyte)(x + (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of char and sbyte
+    /// Adds percentage to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte And(this sbyte x, char y) => (sbyte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static sbyte AddPercent(this sbyte x, char percent) => (sbyte)(x + (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of decimal and sbyte
+    /// Adds percentage to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte And(this sbyte x, decimal y) => (sbyte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static sbyte AddPercent(this sbyte x, decimal percent) => (sbyte)(x + (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of double and sbyte
+    /// Adds percentage to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte And(this sbyte x, double y) => (sbyte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static sbyte AddPercent(this sbyte x, double percent) => (sbyte)(x + (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of float and sbyte
+    /// Adds percentage to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte And(this sbyte x, float y) => (sbyte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static sbyte AddPercent(this sbyte x, float percent) => (sbyte)(x + (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of int and sbyte
+    /// Adds percentage to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte And(this sbyte x, int y) => (sbyte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static sbyte AddPercent(this sbyte x, int percent) => (sbyte)(x + (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of long and sbyte
+    /// Adds percentage to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte And(this sbyte x, long y) => (sbyte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static sbyte AddPercent(this sbyte x, long percent) => (sbyte)(x + (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of sbyte and sbyte
+    /// Adds percentage to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte And(this sbyte x, sbyte y) => (sbyte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static sbyte AddPercent(this sbyte x, sbyte percent) => (sbyte)(x + (x * percent / 100));
 
     /// <summary>
-    /// Gets the AND of short and sbyte
+    /// Adds percentage to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte And(this sbyte x, short y) => (sbyte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static sbyte AddPercent(this sbyte x, short percent) => (sbyte)(x + (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of uint and sbyte
+    /// Adds percentage to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte And(this sbyte x, uint y) => (sbyte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static sbyte AddPercent(this sbyte x, uint percent) => (sbyte)(x + (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of ulong and sbyte
+    /// Adds percentage to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte And(this sbyte x, ulong y) => (sbyte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static sbyte AddPercent(this sbyte x, ulong percent) => (sbyte)(x + (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets the AND of ushort and sbyte
+    /// Adds percentage to sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte And(this sbyte x, ushort y) => (sbyte)((int)x & (int)y);
+    /// <param name="percent">The percentage to add</param>
+    /// <returns>The value after adding the percentage</returns>
+    public static sbyte AddPercent(this sbyte x, ushort percent) => (sbyte)(x + (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Tries to cast sbyte to byte, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static byte CastSbyteToByte(this sbyte x) => (byte)x;
-
-    /// <summary>
-    /// Tries to cast sbyte to char, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static char CastSbyteToChar(this sbyte x) => (char)x;
-
-    /// <summary>
-    /// Tries to cast sbyte to decimal, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static decimal CastSbyteToDecimal(this sbyte x) => (decimal)x;
-
-    /// <summary>
-    /// Tries to cast sbyte to double, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static double CastSbyteToDouble(this sbyte x) => (double)x;
-
-    /// <summary>
-    /// Tries to cast sbyte to float, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static float CastSbyteToFloat(this sbyte x) => (float)x;
-
-    /// <summary>
-    /// Tries to cast sbyte to int, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static int CastSbyteToInt(this sbyte x) => (int)x;
-
-    /// <summary>
-    /// Tries to cast sbyte to long, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static long CastSbyteToLong(this sbyte x) => (long)x;
-
-    /// <summary>
-    /// Tries to cast sbyte to short, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static short CastSbyteToShort(this sbyte x) => (short)x;
-
-    /// <summary>
-    /// Tries to cast sbyte to uint, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static uint CastSbyteToUint(this sbyte x) => (uint)x;
-
-    /// <summary>
-    /// Tries to cast sbyte to ulong, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static ulong CastSbyteToUlong(this sbyte x) => (ulong)x;
-
-    /// <summary>
-    /// Tries to cast sbyte to ushort, this can get ugly though
-    /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static ushort CastSbyteToUshort(this sbyte x) => (ushort)x;
-
-    /// <summary>
-    /// Compare original and second number
-    /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <returns>The highest of the two numbers</returns>
-    public static sbyte ChooseIfHigher(this sbyte first, sbyte second) => first > second ? first : second;
-
-    /// <summary>
-    /// Compare original and second number
-    /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <returns>The lowest of the two numbers</returns>
-    public static sbyte ChooseIfLower(this sbyte first, sbyte second) => first < second ? first : second;
-
-    /// <summary>
-    /// Converts the array to int.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>An array of <see cref="int"/> values.</returns>
-    public static int[] ConvertArrayToInt(this sbyte[] array) => [.. array.Select(x => (int)x)];
-
-    /// <summary>
-    /// Gets the differnce between two numbers
-    /// </summary>
-    /// <param name="original">The original.</param>
-    /// <param name="compareTo">The compare to.</param>
-    /// <returns></returns>
-    public static sbyte DiferenceFrom(this sbyte original, sbyte compareTo) => (sbyte)(original > compareTo ? original - compareTo : original < compareTo ? compareTo - original : 0);
-
-    /// <summary>
-    /// Divides byte from sbyte
+    /// Returns sbyte if higher than byte, otherwise byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte DividedBy(this sbyte x, byte y) => (sbyte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static sbyte ChooseIfHigher(this sbyte x, byte other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Divides char from sbyte
+    /// Returns sbyte if higher than char, otherwise char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte DividedBy(this sbyte x, char y) => (sbyte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static sbyte ChooseIfHigher(this sbyte x, char other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Divides decimal from sbyte
+    /// Returns sbyte if higher than decimal, otherwise decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte DividedBy(this sbyte x, decimal y) => (sbyte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static sbyte ChooseIfHigher(this sbyte x, decimal other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Divides double from sbyte
+    /// Returns sbyte if higher than double, otherwise double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte DividedBy(this sbyte x, double y) => (sbyte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static sbyte ChooseIfHigher(this sbyte x, double other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Divides float from sbyte
+    /// Returns sbyte if higher than float, otherwise float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte DividedBy(this sbyte x, float y) => (sbyte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static sbyte ChooseIfHigher(this sbyte x, float other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Divides int from sbyte
+    /// Returns sbyte if higher than int, otherwise int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte DividedBy(this sbyte x, int y) => (sbyte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static sbyte ChooseIfHigher(this sbyte x, int other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Divides long from sbyte
+    /// Returns sbyte if higher than long, otherwise long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte DividedBy(this sbyte x, long y) => (sbyte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static sbyte ChooseIfHigher(this sbyte x, long other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Divides sbyte from sbyte
+    /// Returns sbyte if higher than sbyte, otherwise sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte DividedBy(this sbyte x, sbyte y) => (sbyte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static sbyte ChooseIfHigher(this sbyte x, sbyte other) => (sbyte)(x > other ? x : other);
 
     /// <summary>
-    /// Divides short from sbyte
+    /// Returns sbyte if higher than short, otherwise short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte DividedBy(this sbyte x, short y) => (sbyte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static sbyte ChooseIfHigher(this sbyte x, short other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Divides uint from sbyte
+    /// Returns sbyte if higher than uint, otherwise uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte DividedBy(this sbyte x, uint y) => (sbyte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static sbyte ChooseIfHigher(this sbyte x, uint other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Divides ulong from sbyte
+    /// Returns sbyte if higher than ulong, otherwise ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte DividedBy(this sbyte x, ulong y) => (sbyte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static sbyte ChooseIfHigher(this sbyte x, ulong other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Divides ushort from sbyte
+    /// Returns sbyte if higher than ushort, otherwise ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte DividedBy(this sbyte x, ushort y) => (sbyte)((int)x / (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The higher of the two values</returns>
+    public static sbyte ChooseIfHigher(this sbyte x, ushort other) => (sbyte)(x > (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Gets the first half of the array.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="sbyte"/></returns>
-    public static sbyte[] GetFirstHalf(this sbyte[] array) => [.. array.Take(array.Length / 2)];
-
-    /// <summary>
-    /// Gets the first number in the array
-    /// </summary>
-    /// <param name="array">The array <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte GetFirstValue(this sbyte[] array) => array[0];
-
-    /// <summary>
-    /// Gets the hightest value of the numbers in the array
-    /// </summary>
-    /// <param name="array">The array</param>
-    /// <returns>The hightest value in the array</returns>
-    public static sbyte GetHighestValue(this sbyte[] array) => array.Max();
-
-    /// <summary>
-    /// Gets the last half of the array.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="sbyte"/></returns>
-    public static sbyte[] GetLastHalf(this sbyte[] array) => [.. array.Skip(array.Length / 2).Take(array.Length / 2)];
-
-    /// <summary>
-    /// Gets the last number in the array
-    /// </summary>
-    /// <param name="array">The array <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte GetLastValue(this sbyte[] array) => array[^1];
-
-    /// <summary>
-    /// Peeks the lowest value in the array
-    /// </summary>
-    /// <param name="array">The array <see cref="sbyte"/></param>
-    /// <returns>The lowest value i the array</returns>
-    public static sbyte GetLowestValue(this sbyte[] array) => array.Min();
-
-    /// <summary>
-    /// Gets the middle of both halves in the array.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="sbyte"/></returns>
-    public static sbyte[] GetMiddle(this sbyte[] array) => [.. array.Skip(array.Length / 4).Take(array.Length / 2)];
-
-    /// <summary>
-    /// Gets the number in the middle of the array
-    /// </summary>
-    /// <param name="array">The array <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte GetMiddleValue(this sbyte[] array) => array[(array.Length - 1) / 2];
-
-    /// <summary>
-    /// Peeks numbers higher than given value in the array
-    /// </summary>
-    /// <param name="array"></param>
-    /// <param name="x">The limit value</param>
-    /// <returns>Returns a new array with all numbers higher than x</returns>
-    public static sbyte[] GetValuesHigherThan(this sbyte[] array, sbyte x) => [.. array.Where(y => y >= x)];
-
-    /// <summary>
-    /// Peeks numbers lower than given value in the array
-    /// </summary>
-    /// <param name="array"></param>
-    /// <param name="x">The limit value</param>
-    /// <returns>Returns a new array with all numbers lower than x</returns>
-    public static sbyte[] GetValuesLowerThan(this sbyte[] array, sbyte x) => [.. array.Where(y => y <= x)];
-
-    /// <summary>
-    /// Gets a boolean True if sbyte is greater than byte
+    /// Returns sbyte if lower than byte, otherwise byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this sbyte x, byte y) => x > (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static sbyte ChooseIfLower(this sbyte x, byte other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Gets a boolean True if sbyte is greater than char
+    /// Returns sbyte if lower than char, otherwise char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this sbyte x, char y) => x > (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static sbyte ChooseIfLower(this sbyte x, char other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Gets a boolean True if sbyte is greater than decimal
+    /// Returns sbyte if lower than decimal, otherwise decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this sbyte x, decimal y) => x > (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static sbyte ChooseIfLower(this sbyte x, decimal other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Gets a boolean True if sbyte is greater than double
+    /// Returns sbyte if lower than double, otherwise double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this sbyte x, double y) => x > (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static sbyte ChooseIfLower(this sbyte x, double other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Gets a boolean True if sbyte is greater than float
+    /// Returns sbyte if lower than float, otherwise float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this sbyte x, float y) => x > (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static sbyte ChooseIfLower(this sbyte x, float other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Gets a boolean True if sbyte is greater than int
+    /// Returns sbyte if lower than int, otherwise int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this sbyte x, int y) => x > (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static sbyte ChooseIfLower(this sbyte x, int other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Gets a boolean True if sbyte is greater than long
+    /// Returns sbyte if lower than long, otherwise long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this sbyte x, long y) => x > (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static sbyte ChooseIfLower(this sbyte x, long other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Gets a boolean True if sbyte is greater than sbyte
+    /// Returns sbyte if lower than sbyte, otherwise sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this sbyte x, sbyte y) => x > y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static sbyte ChooseIfLower(this sbyte x, sbyte other) => (sbyte)(x < other ? x : other);
 
     /// <summary>
-    /// Gets a boolean True if sbyte is greater than short
+    /// Returns sbyte if lower than short, otherwise short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this sbyte x, short y) => x > (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static sbyte ChooseIfLower(this sbyte x, short other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Gets a boolean True if sbyte is greater than uint
+    /// Returns sbyte if lower than uint, otherwise uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this sbyte x, uint y) => x > (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static sbyte ChooseIfLower(this sbyte x, uint other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Gets a boolean True if sbyte is greater than ulong
+    /// Returns sbyte if lower than ulong, otherwise ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this sbyte x, ulong y) => x > (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static sbyte ChooseIfLower(this sbyte x, ulong other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Gets a boolean True if sbyte is greater than ushort
+    /// Returns sbyte if lower than ushort, otherwise ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool GreaterThan(this sbyte x, ushort y) => x > (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The lower of the two values</returns>
+    public static sbyte ChooseIfLower(this sbyte x, ushort other) => (sbyte)(x < (sbyte)other ? x : (sbyte)other);
 
     /// <summary>
-    /// Gets boolean True if byte is equal to sbyte
+    /// Gets absolute difference between sbyte and byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this sbyte x, byte y) => x == (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static sbyte DiferenceFrom(this sbyte x, byte other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if char is equal to sbyte
+    /// Gets absolute difference between sbyte and char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this sbyte x, char y) => x == (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static sbyte DiferenceFrom(this sbyte x, char other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if decimal is equal to sbyte
+    /// Gets absolute difference between sbyte and decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this sbyte x, decimal y) => x == (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static sbyte DiferenceFrom(this sbyte x, decimal other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if double is equal to sbyte
+    /// Gets absolute difference between sbyte and double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this sbyte x, double y) => x == (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static sbyte DiferenceFrom(this sbyte x, double other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if float is equal to sbyte
+    /// Gets absolute difference between sbyte and float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this sbyte x, float y) => x == (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static sbyte DiferenceFrom(this sbyte x, float other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if int is equal to sbyte
+    /// Gets absolute difference between sbyte and int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this sbyte x, int y) => x == (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static sbyte DiferenceFrom(this sbyte x, int other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if long is equal to sbyte
+    /// Gets absolute difference between sbyte and long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this sbyte x, long y) => x == (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static sbyte DiferenceFrom(this sbyte x, long other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if sbyte is equal to sbyte
+    /// Gets absolute difference between sbyte and sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this sbyte x, sbyte y) => x == y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static sbyte DiferenceFrom(this sbyte x, sbyte other) => (sbyte)(x > other ? x - other : x < other ? other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if short is equal to sbyte
+    /// Gets absolute difference between sbyte and short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this sbyte x, short y) => x == (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static sbyte DiferenceFrom(this sbyte x, short other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if uint is equal to sbyte
+    /// Gets absolute difference between sbyte and uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this sbyte x, uint y) => x == (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static sbyte DiferenceFrom(this sbyte x, uint other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if ulong is equal to sbyte
+    /// Gets absolute difference between sbyte and ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this sbyte x, ulong y) => x == (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static sbyte DiferenceFrom(this sbyte x, ulong other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean True if ushort is equal to sbyte
+    /// Gets absolute difference between sbyte and ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsEqualTo(this sbyte x, ushort y) => x == (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use DifferenceFrom() instead.")]
+    public static sbyte DiferenceFrom(this sbyte x, ushort other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
 
     /// <summary>
-    /// Gets boolean true if value is less than zero
+    /// Gets absolute difference between sbyte and byte
     /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static sbyte DifferenceFrom(this sbyte x, byte other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
+
+    /// <summary>
+    /// Gets absolute difference between sbyte and char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static sbyte DifferenceFrom(this sbyte x, char other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
+
+    /// <summary>
+    /// Gets absolute difference between sbyte and decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static sbyte DifferenceFrom(this sbyte x, decimal other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
+
+    /// <summary>
+    /// Gets absolute difference between sbyte and double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static sbyte DifferenceFrom(this sbyte x, double other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
+
+    /// <summary>
+    /// Gets absolute difference between sbyte and float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static sbyte DifferenceFrom(this sbyte x, float other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
+
+    /// <summary>
+    /// Gets absolute difference between sbyte and int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static sbyte DifferenceFrom(this sbyte x, int other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
+
+    /// <summary>
+    /// Gets absolute difference between sbyte and long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static sbyte DifferenceFrom(this sbyte x, long other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
+
+    /// <summary>
+    /// Gets absolute difference between sbyte and sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static sbyte DifferenceFrom(this sbyte x, sbyte other) => (sbyte)(x > other ? x - other : x < other ? other - x : 0);
+
+    /// <summary>
+    /// Gets absolute difference between sbyte and short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static sbyte DifferenceFrom(this sbyte x, short other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
+
+    /// <summary>
+    /// Gets absolute difference between sbyte and uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static sbyte DifferenceFrom(this sbyte x, uint other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
+
+    /// <summary>
+    /// Gets absolute difference between sbyte and ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static sbyte DifferenceFrom(this sbyte x, ulong other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
+
+    /// <summary>
+    /// Gets absolute difference between sbyte and ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>The absolute difference between the values</returns>
+    public static sbyte DifferenceFrom(this sbyte x, ushort other) => (sbyte)(x > (sbyte)other ? x - (sbyte)other : x < (sbyte)other ? (sbyte)other - x : 0);
+
+    /// <summary>
+    /// Divides sbyte by byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static sbyte DividedBy(this sbyte x, byte divisor) => (sbyte)(x / (sbyte)divisor);
+
+    /// <summary>
+    /// Divides sbyte by char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static sbyte DividedBy(this sbyte x, char divisor) => (sbyte)(x / (sbyte)divisor);
+
+    /// <summary>
+    /// Divides sbyte by decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static sbyte DividedBy(this sbyte x, decimal divisor) => (sbyte)(x / (sbyte)divisor);
+
+    /// <summary>
+    /// Divides sbyte by double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static sbyte DividedBy(this sbyte x, double divisor) => (sbyte)(x / (sbyte)divisor);
+
+    /// <summary>
+    /// Divides sbyte by float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static sbyte DividedBy(this sbyte x, float divisor) => (sbyte)(x / (sbyte)divisor);
+
+    /// <summary>
+    /// Divides sbyte by int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static sbyte DividedBy(this sbyte x, int divisor) => (sbyte)(x / (sbyte)divisor);
+
+    /// <summary>
+    /// Divides sbyte by long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static sbyte DividedBy(this sbyte x, long divisor) => (sbyte)(x / (sbyte)divisor);
+
+    /// <summary>
+    /// Divides sbyte by sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static sbyte DividedBy(this sbyte x, sbyte divisor) => (sbyte)(x / divisor);
+
+    /// <summary>
+    /// Divides sbyte by short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static sbyte DividedBy(this sbyte x, short divisor) => (sbyte)(x / (sbyte)divisor);
+
+    /// <summary>
+    /// Divides sbyte by uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static sbyte DividedBy(this sbyte x, uint divisor) => (sbyte)(x / (sbyte)divisor);
+
+    /// <summary>
+    /// Divides sbyte by ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static sbyte DividedBy(this sbyte x, ulong divisor) => (sbyte)(x / (sbyte)divisor);
+
+    /// <summary>
+    /// Divides sbyte by ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The result of the division</returns>
+    public static sbyte DividedBy(this sbyte x, ushort divisor) => (sbyte)(x / (sbyte)divisor);
+
+    /// <summary>
+    /// Checks if sbyte is greater than byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this sbyte x, byte other) => x > (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte is greater than char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this sbyte x, char other) => x > (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte is greater than decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this sbyte x, decimal other) => x > (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte is greater than double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this sbyte x, double other) => x > (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte is greater than float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this sbyte x, float other) => x > (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte is greater than int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this sbyte x, int other) => x > (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte is greater than long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this sbyte x, long other) => x > (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte is greater than sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this sbyte x, sbyte other) => x > other;
+
+    /// <summary>
+    /// Checks if sbyte is greater than short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this sbyte x, short other) => x > (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte is greater than uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this sbyte x, uint other) => x > (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte is greater than ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this sbyte x, ulong other) => x > (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte is greater than ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is greater than the other value</returns>
+    public static bool GreaterThan(this sbyte x, ushort other) => x > (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte equals byte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this sbyte x, byte other) => x == (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte equals char
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this sbyte x, char other) => x == (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte equals decimal
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this sbyte x, decimal other) => x == (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte equals double
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this sbyte x, double other) => x == (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte equals float
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this sbyte x, float other) => x == (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte equals int
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this sbyte x, int other) => x == (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte equals long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this sbyte x, long other) => x == (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte equals sbyte
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this sbyte x, sbyte other) => x == other;
+
+    /// <summary>
+    /// Checks if sbyte equals short
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this sbyte x, short other) => x == (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte equals uint
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this sbyte x, uint other) => x == (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte equals ulong
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this sbyte x, ulong other) => x == (sbyte)other;
+
+    /// <summary>
+    /// Checks if sbyte equals ushort
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are equal</returns>
+    public static bool IsEqualTo(this sbyte x, ushort other) => x == (sbyte)other;
+
+    /// <summary>
+    /// Gets boolean true if sbyte is less than zero
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <returns>True if the value is negative</returns>
     public static bool IsNegative(this sbyte x) => x < 0;
 
     /// <summary>
-    /// Gets boolean True if byte is not equal to sbyte
+    /// Checks if sbyte does not equal byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this sbyte x, byte y) => x != (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this sbyte x, byte other) => x != (sbyte)other;
 
     /// <summary>
-    /// Gets boolean True if char is not equal to sbyte
+    /// Checks if sbyte does not equal char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this sbyte x, char y) => x != (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this sbyte x, char other) => x != (sbyte)other;
 
     /// <summary>
-    /// Gets boolean True if decimal is not equal to sbyte
+    /// Checks if sbyte does not equal decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this sbyte x, decimal y) => x != (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this sbyte x, decimal other) => x != (sbyte)other;
 
     /// <summary>
-    /// Gets boolean True if double is not equal to sbyte
+    /// Checks if sbyte does not equal double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this sbyte x, double y) => x != (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this sbyte x, double other) => x != (sbyte)other;
 
     /// <summary>
-    /// Gets boolean True if float is not equal to sbyte
+    /// Checks if sbyte does not equal float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this sbyte x, float y) => x != (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this sbyte x, float other) => x != (sbyte)other;
 
     /// <summary>
-    /// Gets boolean True if int is not equal to sbyte
+    /// Checks if sbyte does not equal int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this sbyte x, int y) => x != (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this sbyte x, int other) => x != (sbyte)other;
 
     /// <summary>
-    /// Gets boolean True if long is not equal to sbyte
+    /// Checks if sbyte does not equal long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this sbyte x, long y) => x != (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this sbyte x, long other) => x != (sbyte)other;
 
     /// <summary>
-    /// Gets boolean True if sbyte is not equal to sbyte
+    /// Checks if sbyte does not equal sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this sbyte x, sbyte y) => x != y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this sbyte x, sbyte other) => x != other;
 
     /// <summary>
-    /// Gets boolean True if short is not equal to sbyte
+    /// Checks if sbyte does not equal short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this sbyte x, short y) => x != (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this sbyte x, short other) => x != (sbyte)other;
 
     /// <summary>
-    /// Gets boolean True if uint is not equal to sbyte
+    /// Checks if sbyte does not equal uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this sbyte x, uint y) => x != (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this sbyte x, uint other) => x != (sbyte)other;
 
     /// <summary>
-    /// Gets boolean True if ulong is not equal to sbyte
+    /// Checks if sbyte does not equal ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this sbyte x, ulong y) => x != (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this sbyte x, ulong other) => x != (sbyte)other;
 
     /// <summary>
-    /// Gets boolean True if ushort is not equal to sbyte
+    /// Checks if sbyte does not equal ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsNotEqualTo(this sbyte x, ushort y) => x != (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if values are not equal</returns>
+    public static bool IsNotEqualTo(this sbyte x, ushort other) => x != (sbyte)other;
 
     /// <summary>
-    /// Gets boolean true if value is more than zero
-    /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static bool IsPositive(this sbyte x) => x >= 0;
-
-    /// <summary>
-    /// Checks if a number is prime
-    /// </summary>
-    /// <param name="number">The number</param>
-    /// <returns>True if the number is prime</returns>
-    public static bool IsPrime(this sbyte number) => Enumerable.Range(2, (int)Math.Sqrt(number) - 1).All(divisor => number % divisor != 0);
-
-    /// <summary>
-    /// Gets a boolean True if sbyte is less than byte
+    /// Gets boolean true if sbyte is more than zero
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this sbyte x, byte y) => x < (sbyte)y;
+    /// <returns>True if the value is positive</returns>
+    public static bool IsPositive(this sbyte x) => x > 0;
 
     /// <summary>
-    /// Gets a boolean True if sbyte is less than char
+    /// Checks if sbyte is less than byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this sbyte x, char y) => x < (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this sbyte x, byte other) => x < (sbyte)other;
 
     /// <summary>
-    /// Gets a boolean True if sbyte is less than decimal
+    /// Checks if sbyte is less than char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this sbyte x, decimal y) => x < (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this sbyte x, char other) => x < (sbyte)other;
 
     /// <summary>
-    /// Gets a boolean True if sbyte is less than double
+    /// Checks if sbyte is less than decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this sbyte x, double y) => x < (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this sbyte x, decimal other) => x < (sbyte)other;
 
     /// <summary>
-    /// Gets a boolean True if sbyte is less than float
+    /// Checks if sbyte is less than double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this sbyte x, float y) => x < (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this sbyte x, double other) => x < (sbyte)other;
 
     /// <summary>
-    /// Gets a boolean True if sbyte is less than int
+    /// Checks if sbyte is less than float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this sbyte x, int y) => x < (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this sbyte x, float other) => x < (sbyte)other;
 
     /// <summary>
-    /// Gets a boolean True if sbyte is less than long
+    /// Checks if sbyte is less than int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this sbyte x, long y) => x < (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this sbyte x, int other) => x < (sbyte)other;
 
     /// <summary>
-    /// Gets a boolean True if sbyte is less than sbyte
+    /// Checks if sbyte is less than long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this sbyte x, sbyte y) => x < y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this sbyte x, long other) => x < (sbyte)other;
 
     /// <summary>
-    /// Gets a boolean True if sbyte is less than short
+    /// Checks if sbyte is less than sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this sbyte x, short y) => x < (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this sbyte x, sbyte other) => x < other;
 
     /// <summary>
-    /// Gets a boolean True if sbyte is less than uint
+    /// Checks if sbyte is less than short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this sbyte x, uint y) => x < (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this sbyte x, short other) => x < (sbyte)other;
 
     /// <summary>
-    /// Gets a boolean True if sbyte is less than ulong
+    /// Checks if sbyte is less than uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this sbyte x, ulong y) => x < (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this sbyte x, uint other) => x < (sbyte)other;
 
     /// <summary>
-    /// Gets a boolean True if sbyte is less than ushort
+    /// Checks if sbyte is less than ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static bool LessThan(this sbyte x, ushort y) => x < (sbyte)y;
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this sbyte x, ulong other) => x < (sbyte)other;
 
     /// <summary>
-    /// Gets the remainder of byte from sbyte
+    /// Checks if sbyte is less than ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Modulus(this sbyte x, byte y) => (sbyte)((int)x % (int)y);
+    /// <param name="other">The value to compare with</param>
+    /// <returns>True if this value is less than the other value</returns>
+    public static bool LessThan(this sbyte x, ushort other) => x < (sbyte)other;
 
     /// <summary>
-    /// Gets the remainder of char from sbyte
+    /// Gets remainder of sbyte divided by byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Modulus(this sbyte x, char y) => (sbyte)((int)x % (int)y);
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static sbyte Modulus(this sbyte x, byte divisor) => (sbyte)(x % (sbyte)divisor);
 
     /// <summary>
-    /// Gets the remainder of decimal from sbyte
+    /// Gets remainder of sbyte divided by char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Modulus(this sbyte x, decimal y) => (sbyte)((int)x % (int)y);
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static sbyte Modulus(this sbyte x, char divisor) => (sbyte)(x % (sbyte)divisor);
 
     /// <summary>
-    /// Gets the remainder of double from sbyte
+    /// Gets remainder of sbyte divided by decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Modulus(this sbyte x, double y) => (sbyte)((int)x % (int)y);
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static sbyte Modulus(this sbyte x, decimal divisor) => (sbyte)(x % (sbyte)divisor);
 
     /// <summary>
-    /// Gets the remainder of float from sbyte
+    /// Gets remainder of sbyte divided by double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Modulus(this sbyte x, float y) => (sbyte)((int)x % (int)y);
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static sbyte Modulus(this sbyte x, double divisor) => (sbyte)(x % (sbyte)divisor);
 
     /// <summary>
-    /// Gets the remainder of int from sbyte
+    /// Gets remainder of sbyte divided by float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Modulus(this sbyte x, int y) => (sbyte)((int)x % (int)y);
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static sbyte Modulus(this sbyte x, float divisor) => (sbyte)(x % (sbyte)divisor);
 
     /// <summary>
-    /// Gets the remainder of long from sbyte
+    /// Gets remainder of sbyte divided by int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Modulus(this sbyte x, long y) => (sbyte)((int)x % (int)y);
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static sbyte Modulus(this sbyte x, int divisor) => (sbyte)(x % (sbyte)divisor);
 
     /// <summary>
-    /// Gets the remainder of sbyte from sbyte
+    /// Gets remainder of sbyte divided by long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Modulus(this sbyte x, sbyte y) => (sbyte)((int)x % (int)y);
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static sbyte Modulus(this sbyte x, long divisor) => (sbyte)(x % (sbyte)divisor);
 
     /// <summary>
-    /// Gets the remainder of short from sbyte
+    /// Gets remainder of sbyte divided by sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Modulus(this sbyte x, short y) => (sbyte)((int)x % (int)y);
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static sbyte Modulus(this sbyte x, sbyte divisor) => (sbyte)(x % divisor);
 
     /// <summary>
-    /// Gets the remainder of uint from sbyte
+    /// Gets remainder of sbyte divided by short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Modulus(this sbyte x, uint y) => (sbyte)((int)x % (int)y);
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static sbyte Modulus(this sbyte x, short divisor) => (sbyte)(x % (sbyte)divisor);
 
     /// <summary>
-    /// Gets the remainder of ulong from sbyte
+    /// Gets remainder of sbyte divided by uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Modulus(this sbyte x, ulong y) => (sbyte)((int)x % (int)y);
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static sbyte Modulus(this sbyte x, uint divisor) => (sbyte)(x % (sbyte)divisor);
 
     /// <summary>
-    /// Gets the remainder of ushort from sbyte
+    /// Gets remainder of sbyte divided by ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Modulus(this sbyte x, ushort y) => (sbyte)((int)x % (int)y);
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static sbyte Modulus(this sbyte x, ulong divisor) => (sbyte)(x % (sbyte)divisor);
 
     /// <summary>
-    /// Multiplies byte with sbyte
+    /// Gets remainder of sbyte divided by ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte MultipliedWith(this sbyte x, byte y) => (sbyte)((int)x * (int)y);
+    /// <param name="divisor">The divisor value</param>
+    /// <returns>The remainder of the division</returns>
+    public static sbyte Modulus(this sbyte x, ushort divisor) => (sbyte)(x % (sbyte)divisor);
 
     /// <summary>
-    /// Multiplies char with sbyte
+    /// Multiplies sbyte with byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte MultipliedWith(this sbyte x, char y) => (sbyte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static sbyte MultipliedWith(this sbyte x, byte multiplier) => (sbyte)(x * (sbyte)multiplier);
 
     /// <summary>
-    /// Multiplies decimal with sbyte
+    /// Multiplies sbyte with char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte MultipliedWith(this sbyte x, decimal y) => (sbyte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static sbyte MultipliedWith(this sbyte x, char multiplier) => (sbyte)(x * (sbyte)multiplier);
 
     /// <summary>
-    /// Multiplies double with sbyte
+    /// Multiplies sbyte with decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte MultipliedWith(this sbyte x, double y) => (sbyte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static sbyte MultipliedWith(this sbyte x, decimal multiplier) => (sbyte)(x * (sbyte)multiplier);
 
     /// <summary>
-    /// Multiplies float with sbyte
+    /// Multiplies sbyte with double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte MultipliedWith(this sbyte x, float y) => (sbyte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static sbyte MultipliedWith(this sbyte x, double multiplier) => (sbyte)(x * (sbyte)multiplier);
 
     /// <summary>
-    /// Multiplies int with sbyte
+    /// Multiplies sbyte with float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte MultipliedWith(this sbyte x, int y) => (sbyte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static sbyte MultipliedWith(this sbyte x, float multiplier) => (sbyte)(x * (sbyte)multiplier);
 
     /// <summary>
-    /// Multiplies long with sbyte
+    /// Multiplies sbyte with int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte MultipliedWith(this sbyte x, long y) => (sbyte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static sbyte MultipliedWith(this sbyte x, int multiplier) => (sbyte)(x * (sbyte)multiplier);
+
+    /// <summary>
+    /// Multiplies sbyte with long
+    /// </summary>
+    /// <param name="x">The original value</param>
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static sbyte MultipliedWith(this sbyte x, long multiplier) => (sbyte)(x * (sbyte)multiplier);
 
     /// <summary>
     /// Multiplies sbyte with sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte MultipliedWith(this sbyte x, sbyte y) => (sbyte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static sbyte MultipliedWith(this sbyte x, sbyte multiplier) => (sbyte)(x * multiplier);
 
     /// <summary>
-    /// Multiplies short with sbyte
+    /// Multiplies sbyte with short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte MultipliedWith(this sbyte x, short y) => (sbyte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static sbyte MultipliedWith(this sbyte x, short multiplier) => (sbyte)(x * (sbyte)multiplier);
 
     /// <summary>
-    /// Multiplies uint with sbyte
+    /// Multiplies sbyte with uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte MultipliedWith(this sbyte x, uint y) => (sbyte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static sbyte MultipliedWith(this sbyte x, uint multiplier) => (sbyte)(x * (sbyte)multiplier);
 
     /// <summary>
-    /// Multiplies ulong with sbyte
+    /// Multiplies sbyte with ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte MultipliedWith(this sbyte x, ulong y) => (sbyte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static sbyte MultipliedWith(this sbyte x, ulong multiplier) => (sbyte)(x * (sbyte)multiplier);
 
     /// <summary>
-    /// Multiplies ushort with sbyte
+    /// Multiplies sbyte with ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte MultipliedWith(this sbyte x, ushort y) => (sbyte)((int)x * (int)y);
+    /// <param name="multiplier">The multiplier value</param>
+    /// <returns>The result of the multiplication</returns>
+    public static sbyte MultipliedWith(this sbyte x, ushort multiplier) => (sbyte)(x * (sbyte)multiplier);
 
     /// <summary>
-    /// Gets the NOT of sbyte
-    /// </summary>
-    /// <param name="x">The x <see cref="sbyte"/></param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Not(this sbyte x) => (sbyte)~(int)x;
-
-    /// <summary>
-    /// Gets the OR of byte and sbyte
+    /// Calculates sbyte percent of byte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Or(this sbyte x, byte y) => (sbyte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static sbyte PercentOf(this sbyte x, byte number) => (sbyte)(x / 100 * (sbyte)number);
 
     /// <summary>
-    /// Gets the OR of char and sbyte
+    /// Calculates sbyte percent of char
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Or(this sbyte x, char y) => (sbyte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static sbyte PercentOf(this sbyte x, char number) => (sbyte)(x / 100 * (sbyte)number);
 
     /// <summary>
-    /// Gets the OR of decimal and sbyte
+    /// Calculates sbyte percent of decimal
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Or(this sbyte x, decimal y) => (sbyte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static sbyte PercentOf(this sbyte x, decimal number) => (sbyte)(x / 100 * (sbyte)number);
 
     /// <summary>
-    /// Gets the OR of double and sbyte
+    /// Calculates sbyte percent of double
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Or(this sbyte x, double y) => (sbyte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static sbyte PercentOf(this sbyte x, double number) => (sbyte)(x / 100 * (sbyte)number);
 
     /// <summary>
-    /// Gets the OR of float and sbyte
+    /// Calculates sbyte percent of float
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Or(this sbyte x, float y) => (sbyte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static sbyte PercentOf(this sbyte x, float number) => (sbyte)(x / 100 * (sbyte)number);
 
     /// <summary>
-    /// Gets the OR of int and sbyte
+    /// Calculates sbyte percent of int
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Or(this sbyte x, int y) => (sbyte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static sbyte PercentOf(this sbyte x, int number) => (sbyte)(x / 100 * (sbyte)number);
 
     /// <summary>
-    /// Gets the OR of long and sbyte
+    /// Calculates sbyte percent of long
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Or(this sbyte x, long y) => (sbyte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static sbyte PercentOf(this sbyte x, long number) => (sbyte)(x / 100 * (sbyte)number);
 
     /// <summary>
-    /// Gets the OR of sbyte and sbyte
+    /// Calculates sbyte percent of sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Or(this sbyte x, sbyte y) => (sbyte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static sbyte PercentOf(this sbyte x, sbyte number) => (sbyte)(x / 100 * number);
 
     /// <summary>
-    /// Gets the OR of short and sbyte
+    /// Calculates sbyte percent of short
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Or(this sbyte x, short y) => (sbyte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static sbyte PercentOf(this sbyte x, short number) => (sbyte)(x / 100 * (sbyte)number);
 
     /// <summary>
-    /// Gets the OR of uint and sbyte
+    /// Calculates sbyte percent of uint
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Or(this sbyte x, uint y) => (sbyte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static sbyte PercentOf(this sbyte x, uint number) => (sbyte)(x / 100 * (sbyte)number);
 
     /// <summary>
-    /// Gets the OR of ulong and sbyte
+    /// Calculates sbyte percent of ulong
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Or(this sbyte x, ulong y) => (sbyte)((int)x | (int)y);
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static sbyte PercentOf(this sbyte x, ulong number) => (sbyte)(x / 100 * (sbyte)number);
 
     /// <summary>
-    /// Gets the OR of ushort and sbyte
+    /// Calculates sbyte percent of ushort
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Or(this sbyte x, ushort y) => (sbyte)((int)x | (int)y);
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static sbyte PercentOf(this sbyte percent, byte value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static sbyte PercentOf(this sbyte percent, char value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static sbyte PercentOf(this sbyte percent, decimal value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static sbyte PercentOf(this sbyte percent, double value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static sbyte PercentOf(this sbyte percent, float value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static sbyte PercentOf(this sbyte percent, int value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static sbyte PercentOf(this sbyte percent, long value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static sbyte PercentOf(this sbyte percent, sbyte value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static sbyte PercentOf(this sbyte percent, short value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static sbyte PercentOf(this sbyte percent, uint value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static sbyte PercentOf(this sbyte percent, ulong value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
-
-    /// <summary>
-    /// Gets the percent of the value
-    /// </summary>
-    /// <param name="percent">The amount of percent</param>
-    /// <param name="value">The value</param>
-    /// <returns>The percent</returns>
-    public static sbyte PercentOf(this sbyte percent, ushort value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
-
-    /// <summary>
-    /// Rotates the numbers to the left.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="sbyte"/></returns>
-    public static sbyte[] RotateLeft(this sbyte[] array)
-    {
-        var first = array.GetFirstValue();
-        Array.Copy(array, 1, array, 0, array.Length - 1);
-        array[^1] = first;
-        return array;
-    }
-
-    /// <summary>
-    /// Rotates the numbers to the right.
-    /// </summary>
-    /// <param name="array">The array.</param>
-    /// <returns>The <see cref="sbyte"/></returns>
-    public static sbyte[] RotateRight(this sbyte[] array)
-    {
-        var last = array.GetLastValue();
-        Array.Copy(array, 0, array, 1, array.Length - 1);
-        array[0] = last;
-        return array;
-    }
-
-    /// <summary>
-    /// Compare original and second number and set the variable with the highest
-    /// </summary>
-    /// <param name="first">The variable</param>
-    /// <param name="second">The number to compare</param>
-    /// <param name="third">The number to compare with</param>
-    /// <returns>Sets the variable to the highest of the two numbers</returns>
-    public static ref sbyte SetHighestValueOf(this ref sbyte first, sbyte second, sbyte third)
-    {
-        first = second > third ? second : third;
-        return ref first;
-    }
-
-    /// <summary>
-    /// Compare original and second number and set the variable with the lowest
-    /// </summary>
-    /// <param name="first">The number</param>
-    /// <param name="second">The number to compare with</param>
-    /// <param name="third">The third <see cref="sbyte"/></param>
-    /// <returns>Sets the variable to the lowest of the two numbers</returns>
-    public static ref sbyte SetLowestValueOf(this ref sbyte first, sbyte second, sbyte third)
-    {
-        first = second < third ? second : third;
-        return ref first;
-    }
-
-    /// <summary>
-    /// Get the current size of the array
-    /// </summary>
-    /// <param name="array">The array <see cref="sbyte"/></param>
-    /// <param name="size">The size <see cref="int"/></param>
-    /// <returns>The size of the array</returns>
-    public static sbyte[] SetNewArraySize(this sbyte[] array, int size)
-    {
-        var newArr = new sbyte[size];
-        Array.Copy(array, 0, newArr, 0, array.Length);
-        return newArr;
-    }
-
-    /// <summary>
-    /// Gets shift left of byte from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftLeft(this sbyte x, byte y) => (sbyte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of char from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftLeft(this sbyte x, char y) => (sbyte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of decimal from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftLeft(this sbyte x, decimal y) => (sbyte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of double from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftLeft(this sbyte x, double y) => (sbyte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of float from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftLeft(this sbyte x, float y) => (sbyte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of int from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftLeft(this sbyte x, int y) => (sbyte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of long from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftLeft(this sbyte x, long y) => (sbyte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of sbyte from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftLeft(this sbyte x, sbyte y) => (sbyte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of short from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftLeft(this sbyte x, short y) => (sbyte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of uint from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftLeft(this sbyte x, uint y) => (sbyte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of ulong from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftLeft(this sbyte x, ulong y) => (sbyte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift left of ushort from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftLeft(this sbyte x, ushort y) => (sbyte)((int)x << (int)y);
-
-    /// <summary>
-    /// Gets shift right of byte from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftRight(this sbyte x, byte y) => (sbyte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of char from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftRight(this sbyte x, char y) => (sbyte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of decimal from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftRight(this sbyte x, decimal y) => (sbyte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of double from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftRight(this sbyte x, double y) => (sbyte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of float from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftRight(this sbyte x, float y) => (sbyte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of int from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftRight(this sbyte x, int y) => (sbyte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of long from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftRight(this sbyte x, long y) => (sbyte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of sbyte from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftRight(this sbyte x, sbyte y) => (sbyte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of short from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftRight(this sbyte x, short y) => (sbyte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of uint from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftRight(this sbyte x, uint y) => (sbyte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of ulong from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftRight(this sbyte x, ulong y) => (sbyte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Gets shift right of ushort from sbyte
-    /// </summary>
-    /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte ShiftRight(this sbyte x, ushort y) => (sbyte)((int)x >> (int)y);
-
-    /// <summary>
-    /// Sorts array from lowest to highest
-    /// </summary>
-    /// <param name="array">The array <see cref="sbyte"/></param>
-    /// <returns>A sorted array</returns>
-    public static sbyte[] SortArrayAsc(this sbyte[] array) => [.. array.OrderBy(x => x)];
-
-    /// <summary>
-    /// Sorts array from highest to lowest
-    /// </summary>
-    /// <param name="array">The array <see cref="sbyte"/></param>
-    /// <returns>A sorted array</returns>
-    public static sbyte[] SortArrayDesc(this sbyte[] array) => [.. array.OrderByDescending(x => x)];
+    /// <param name="number">The value to calculate percentage of</param>
+    /// <returns>The percentage of the value</returns>
+    public static sbyte PercentOf(this sbyte x, ushort number) => (sbyte)(x / 100 * (sbyte)number);
 
     /// <summary>
     /// Subtracts byte from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,byte) instead.", false)]
-    public static sbyte Substract(this sbyte x, byte y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static sbyte Substract(this sbyte x, byte subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts char from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,char) instead.", false)]
-    public static sbyte Substract(this sbyte x, char y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static sbyte Substract(this sbyte x, char subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts decimal from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,decimal) instead.", false)]
-    public static sbyte Substract(this sbyte x, decimal y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static sbyte Substract(this sbyte x, decimal subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts double from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,double) instead.", false)]
-    public static sbyte Substract(this sbyte x, double y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static sbyte Substract(this sbyte x, double subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts float from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,float) instead.", false)]
-    public static sbyte Substract(this sbyte x, float y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static sbyte Substract(this sbyte x, float subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts int from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,int) instead.", false)]
-    public static sbyte Substract(this sbyte x, int y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static sbyte Substract(this sbyte x, int subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts long from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,long) instead.", false)]
-    public static sbyte Substract(this sbyte x, long y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static sbyte Substract(this sbyte x, long subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts sbyte from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,sbyte) instead.", false)]
-    public static sbyte Substract(this sbyte x, sbyte y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static sbyte Substract(this sbyte x, sbyte subtrahend) => (sbyte)(x - subtrahend);
 
     /// <summary>
     /// Subtracts short from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,short) instead.", false)]
-    public static sbyte Substract(this sbyte x, short y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static sbyte Substract(this sbyte x, short subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts uint from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,uint) instead.", false)]
-    public static sbyte Substract(this sbyte x, uint y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static sbyte Substract(this sbyte x, uint subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts ulong from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,ulong) instead.", false)]
-    public static sbyte Substract(this sbyte x, ulong y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static sbyte Substract(this sbyte x, ulong subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts ushort from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,ushort) instead.", false)]
-    public static sbyte Substract(this sbyte x, ushort y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use Subtract() instead.")]
+    public static sbyte Substract(this sbyte x, ushort subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of sbyte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(byte) instead.", false)]
-    public static sbyte SubstractPercent(this sbyte value, byte percent) => (sbyte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static sbyte SubstractPercent(this sbyte x, byte percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of sbyte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(char) instead.", false)]
-    public static sbyte SubstractPercent(this sbyte value, char percent) => (sbyte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static sbyte SubstractPercent(this sbyte x, char percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of sbyte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(decimal) instead.", false)]
-    public static sbyte SubstractPercent(this sbyte value, decimal percent) => (sbyte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static sbyte SubstractPercent(this sbyte x, decimal percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of sbyte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(double) instead.", false)]
-    public static sbyte SubstractPercent(this sbyte value, double percent) => (sbyte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static sbyte SubstractPercent(this sbyte x, double percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of sbyte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(float) instead.", false)]
-    public static sbyte SubstractPercent(this sbyte value, float percent) => (sbyte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static sbyte SubstractPercent(this sbyte x, float percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of sbyte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(int) instead.", false)]
-    public static sbyte SubstractPercent(this sbyte value, int percent) => (sbyte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static sbyte SubstractPercent(this sbyte x, int percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of sbyte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(long) instead.", false)]
-    public static sbyte SubstractPercent(this sbyte value, long percent) => (sbyte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static sbyte SubstractPercent(this sbyte x, long percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of sbyte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(sbyte) instead.", false)]
-    public static sbyte SubstractPercent(this sbyte value, sbyte percent) => (sbyte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static sbyte SubstractPercent(this sbyte x, sbyte percent) => (sbyte)(x - (x * percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of sbyte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(short) instead.", false)]
-    public static sbyte SubstractPercent(this sbyte value, short percent) => (sbyte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static sbyte SubstractPercent(this sbyte x, short percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of sbyte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(uint) instead.", false)]
-    public static sbyte SubstractPercent(this sbyte value, uint percent) => (sbyte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static sbyte SubstractPercent(this sbyte x, uint percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of sbyte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ulong) instead.", false)]
-    public static sbyte SubstractPercent(this sbyte value, ulong percent) => (sbyte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static sbyte SubstractPercent(this sbyte x, ulong percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Subtracts the percent of the value (deprecated)
+    /// Subtracts percentage of sbyte
     /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ushort) instead.", false)]
-    public static sbyte SubstractPercent(this sbyte value, ushort percent) => (sbyte)(value - value.PercentOf(percent));
+    /// <param name="x">The original value</param>
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    [Obsolete("This method will be removed in v2.0 due to typo in name. Use SubtractPercent() instead.")]
+    public static sbyte SubstractPercent(this sbyte x, ushort percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
     /// Subtracts byte from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Subtract(this sbyte x, byte y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static sbyte Subtract(this sbyte x, byte subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts char from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Subtract(this sbyte x, char y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static sbyte Subtract(this sbyte x, char subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts decimal from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Subtract(this sbyte x, decimal y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static sbyte Subtract(this sbyte x, decimal subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts double from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Subtract(this sbyte x, double y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static sbyte Subtract(this sbyte x, double subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts float from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Subtract(this sbyte x, float y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static sbyte Subtract(this sbyte x, float subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts int from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Subtract(this sbyte x, int y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static sbyte Subtract(this sbyte x, int subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts long from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Subtract(this sbyte x, long y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static sbyte Subtract(this sbyte x, long subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts sbyte from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Subtract(this sbyte x, sbyte y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static sbyte Subtract(this sbyte x, sbyte subtrahend) => (sbyte)(x - subtrahend);
 
     /// <summary>
     /// Subtracts short from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Subtract(this sbyte x, short y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static sbyte Subtract(this sbyte x, short subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts uint from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Subtract(this sbyte x, uint y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static sbyte Subtract(this sbyte x, uint subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts ulong from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Subtract(this sbyte x, ulong y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static sbyte Subtract(this sbyte x, ulong subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
     /// Subtracts ushort from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Subtract(this sbyte x, ushort y) => (sbyte)((int)x - (int)y);
+    /// <param name="subtrahend">The value to subtract</param>
+    /// <returns>The difference between the values</returns>
+    public static sbyte Subtract(this sbyte x, ushort subtrahend) => (sbyte)(x - (sbyte)subtrahend);
 
     /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte SubtractPercent(this sbyte value, byte percent) => (sbyte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte SubtractPercent(this sbyte value, char percent) => (sbyte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte SubtractPercent(this sbyte value, decimal percent) => (sbyte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte SubtractPercent(this sbyte value, double percent) => (sbyte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte SubtractPercent(this sbyte value, float percent) => (sbyte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte SubtractPercent(this sbyte value, int percent) => (sbyte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte SubtractPercent(this sbyte value, long percent) => (sbyte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte SubtractPercent(this sbyte value, sbyte percent) => (sbyte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte SubtractPercent(this sbyte value, short percent) => (sbyte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte SubtractPercent(this sbyte value, uint percent) => (sbyte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte SubtractPercent(this sbyte value, ulong percent) => (sbyte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Subtracts the percent of the value
-    /// </summary>
-    /// <param name="value">The value</param>
-    /// <param name="percent">The amount of percent</param>
-    /// <returns>The result</returns>
-    public static sbyte SubtractPercent(this sbyte value, ushort percent) => (sbyte)(value - value.PercentOf(percent));
-
-    /// <summary>
-    /// Swaps two variables
-    /// </summary>
-    /// <param name="first">The main variable</param>
-    /// <param name="second">The variable to switch with</param>
-    /// <returns>
-    /// The value from the second variable and sets second variable to original value
-    /// </returns>
-    public static ref sbyte SwapWith(this ref sbyte first, ref sbyte second)
-    {
-        (first, second) = (second, first);
-        return ref first;
-    }
-
-    /// <summary>
-    /// Gets XOR of byte of sbyte
+    /// Subtracts percentage from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Xor(this sbyte x, byte y) => (sbyte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static sbyte SubtractPercent(this sbyte x, byte percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of char of sbyte
+    /// Subtracts percentage from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Xor(this sbyte x, char y) => (sbyte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static sbyte SubtractPercent(this sbyte x, char percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of decimal of sbyte
+    /// Subtracts percentage from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Xor(this sbyte x, decimal y) => (sbyte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static sbyte SubtractPercent(this sbyte x, decimal percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of double of sbyte
+    /// Subtracts percentage from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Xor(this sbyte x, double y) => (sbyte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static sbyte SubtractPercent(this sbyte x, double percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of float of sbyte
+    /// Subtracts percentage from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Xor(this sbyte x, float y) => (sbyte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static sbyte SubtractPercent(this sbyte x, float percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of int of sbyte
+    /// Subtracts percentage from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Xor(this sbyte x, int y) => (sbyte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static sbyte SubtractPercent(this sbyte x, int percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of long of sbyte
+    /// Subtracts percentage from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Xor(this sbyte x, long y) => (sbyte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static sbyte SubtractPercent(this sbyte x, long percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of sbyte of sbyte
+    /// Subtracts percentage from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Xor(this sbyte x, sbyte y) => (sbyte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static sbyte SubtractPercent(this sbyte x, sbyte percent) => (sbyte)(x - (x * percent / 100));
 
     /// <summary>
-    /// Gets XOR of short of sbyte
+    /// Subtracts percentage from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Xor(this sbyte x, short y) => (sbyte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static sbyte SubtractPercent(this sbyte x, short percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of uint of sbyte
+    /// Subtracts percentage from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Xor(this sbyte x, uint y) => (sbyte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static sbyte SubtractPercent(this sbyte x, uint percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of ulong of sbyte
+    /// Subtracts percentage from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Xor(this sbyte x, ulong y) => (sbyte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static sbyte SubtractPercent(this sbyte x, ulong percent) => (sbyte)(x - (x * (sbyte)percent / 100));
 
     /// <summary>
-    /// Gets XOR of ushort of sbyte
+    /// Subtracts percentage from sbyte
     /// </summary>
     /// <param name="x">The original value</param>
-    /// <param name="y">The work value</param>
-    /// <returns>The result of the operation</returns>
-    public static sbyte Xor(this sbyte x, ushort y) => (sbyte)((int)x ^ (int)y);
+    /// <param name="percent">The percentage to subtract</param>
+    /// <returns>The value after subtracting the percentage</returns>
+    public static sbyte SubtractPercent(this sbyte x, ushort percent) => (sbyte)(x - (x * (sbyte)percent / 100));
+
+    /// <summary>
+    /// Decreases all values in the array by the specified amount
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="dec">The amount to subtract</param>
+    /// <returns>Array with all values decreased</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.DecreaseAllValuesWith(). This method will be removed in v2.0.", false)]
+    public static sbyte[] DecreaseAllValuesWith(this sbyte[] array, sbyte dec) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.DecreaseAllValuesWith(array, dec);
+
+    /// <summary>
+    /// Peeks the average value of the numbers in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The average value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetAverage(). This method will be removed in v2.0.", false)]
+    public static double GetAverage(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetAverage(array);
+
+    /// <summary>
+    /// Gets the first half of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The first half of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetFirstHalf(). This method will be removed in v2.0.", false)]
+    public static sbyte[] GetFirstHalf(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetFirstHalf(array);
+
+    /// <summary>
+    /// Gets the first value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The first value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetFirstValue(). This method will be removed in v2.0.", false)]
+    public static sbyte GetFirstValue(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetFirstValue(array);
+
+    /// <summary>
+    /// Gets the highest value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The highest value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetHighestValue(). This method will be removed in v2.0.", false)]
+    public static sbyte GetHighestValue(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetHighestValue(array);
+
+    /// <summary>
+    /// Gets the last half of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The last half of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetLastHalf(). This method will be removed in v2.0.", false)]
+    public static sbyte[] GetLastHalf(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetLastHalf(array);
+
+    /// <summary>
+    /// Gets the last value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The last value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetLastValue(). This method will be removed in v2.0.", false)]
+    public static sbyte GetLastValue(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetLastValue(array);
+
+    /// <summary>
+    /// Gets the lowest value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The lowest value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetLowestValue(). This method will be removed in v2.0.", false)]
+    public static sbyte GetLowestValue(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetLowestValue(array);
+
+    /// <summary>
+    /// Gets the middle portion of the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The middle portion of the array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetMiddle(). This method will be removed in v2.0.", false)]
+    public static sbyte[] GetMiddle(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetMiddle(array);
+
+    /// <summary>
+    /// Gets the middle value in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The middle value</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetMiddleValue(). This method will be removed in v2.0.", false)]
+    public static sbyte GetMiddleValue(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetMiddleValue(array);
+
+    /// <summary>
+    /// Gets all values higher than or equal to the specified value
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="x">The threshold value</param>
+    /// <returns>Array of values higher than or equal to threshold</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetValuesHigherThan(). This method will be removed in v2.0.", false)]
+    public static sbyte[] GetValuesHigherThan(this sbyte[] array, sbyte x) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetValuesHigherThan(array, x);
+
+    /// <summary>
+    /// Gets all values lower than or equal to the specified value
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="x">The threshold value</param>
+    /// <returns>Array of values lower than or equal to threshold</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetValuesLowerThan(). This method will be removed in v2.0.", false)]
+    public static sbyte[] GetValuesLowerThan(this sbyte[] array, sbyte x) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.GetValuesLowerThan(array, x);
+
+    /// <summary>
+    /// Increases all values in the array by the specified amount
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="add">The amount to add</param>
+    /// <returns>Array with all values increased</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.IncreaseAllValuesWith(). This method will be removed in v2.0.", false)]
+    public static sbyte[] IncreaseAllValuesWith(this sbyte[] array, sbyte add) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.IncreaseAllValuesWith(array, add);
+
+    /// <summary>
+    /// Rotates the numbers to the left
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The rotated array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.RotateLeft(). This method will be removed in v2.0.", false)]
+    public static sbyte[] RotateLeft(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.RotateLeft(array);
+
+    /// <summary>
+    /// Rotates the numbers to the right
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The rotated array</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.RotateRight(). This method will be removed in v2.0.", false)]
+    public static sbyte[] RotateRight(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.RotateRight(array);
+
+    /// <summary>
+    /// Sets a new size for the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <param name="size">The new size</param>
+    /// <returns>Array with new size</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.SetNewArraySize(). This method will be removed in v2.0.", false)]
+    public static sbyte[] SetNewArraySize(this sbyte[] array, int size) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.SetNewArraySize(array, size);
+
+    /// <summary>
+    /// Sorts the array in ascending order
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>Array sorted in ascending order</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.SortArrayAsc(). This method will be removed in v2.0.", false)]
+    public static sbyte[] SortArrayAsc(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.SortArrayAsc(array);
+
+    /// <summary>
+    /// Sorts the array in descending order
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>Array sorted in descending order</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.SortArrayDesc(). This method will be removed in v2.0.", false)]
+    public static sbyte[] SortArrayDesc(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.SortArrayDesc(array);
+
+    /// <summary>
+    /// Sums all values in the array
+    /// </summary>
+    /// <param name="array">The array</param>
+    /// <returns>The sum of all values</returns>
+    [Obsolete("Moved to MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.SumAllValues(). This method will be removed in v2.0.", false)]
+    public static sbyte SumAllValues(this sbyte[] array) =>
+        MarcusMedinaPro.TypedMath.SbyteCollections.TypedMathSbyteCollections.SumAllValues(array);
 }
