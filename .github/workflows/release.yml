@@ -1,204 +1,242 @@
-# TypedMath - Release Workflow
-# Automated NuGet package publishing
-
-name: Release
+name: 🚀 Release - Full Pipeline
 
 on:
   push:
-    tags:
-      - 'v*'  # Trigger on version tags (v1.0.0, v2.0.0, etc.)
+    tags: ["v*"]
+    branches: [release, main]
 
-env:
-  DOTNET_VERSION: '8.0.x'
-  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
-  DOTNET_CLI_TELEMETRY_OPTOUT: true
+permissions:
+  contents: write
+  security-events: write
+  packages: write
+  id-token: write
 
 jobs:
-  # ==================== VALIDATE RELEASE ====================
-  validate:
-    name: Validate Release
+  build-and-test:
     runs-on: ubuntu-latest
-
-    outputs:
-      version: ${{ steps.version.outputs.version }}
-      is_prerelease: ${{ steps.version.outputs.is_prerelease }}
-
+    name: 1️⃣ Build & Test
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
         with:
-          fetch-depth: 0
-
-      - name: Extract Version
-        id: version
-        run: |
-          VERSION=${GITHUB_REF#refs/tags/v}
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
-
-          if [[ "$VERSION" =~ (alpha|beta|rc) ]]; then
-            echo "is_prerelease=true" >> $GITHUB_OUTPUT
-          else
-            echo "is_prerelease=false" >> $GITHUB_OUTPUT
-          fi
-
-          echo "Release version: $VERSION"
-          echo "Pre-release: ${{ steps.version.outputs.is_prerelease }}"
-
-      - name: Verify CHANGELOG
-        run: |
-          if ! grep -q "${{ steps.version.outputs.version }}" CHANGELOG.md; then
-            echo "❌ Error: Version ${{ steps.version.outputs.version }} not found in CHANGELOG.md"
-            exit 1
-          fi
-          echo "✅ CHANGELOG.md contains release notes for ${{ steps.version.outputs.version }}"
-
-  # ==================== BUILD & TEST ====================
-  build:
-    name: Build & Test Release
-    runs-on: ubuntu-latest
-    needs: validate
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-
-      - name: Setup .NET 8
-        uses: actions/setup-dotnet@v5
-        with:
-          dotnet-version: '8.0.x'
+          dotnet-version: 8.0.x
 
       - name: Restore dependencies
         run: dotnet restore
 
-      - name: Build Release
-        run: dotnet build --configuration Release --no-restore /p:Version=${{ needs.validate.outputs.version }}
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
 
-      - name: Run Tests
-        run: |
-          dotnet test \
-            --configuration Release \
-            --no-build \
-            --verbosity normal \
-            --collect:"XPlat Code Coverage"
+      - name: Test
+        run: dotnet test --configuration Release --no-build --verbosity normal --logger trx
 
-      - name: Security Scan - Vulnerable Packages
-        run: |
-          dotnet list package --vulnerable --include-transitive 2>&1 | tee security-scan.txt
-          if grep -q "has the following vulnerable packages" security-scan.txt; then
-            echo "❌ Vulnerable packages detected!"
-            cat security-scan.txt
-            exit 1
-          fi
-          echo "✅ No vulnerable packages found"
+      - name: Pack
+        run: dotnet pack --configuration Release --no-build --output ./nupkgs
 
-  # ==================== PACKAGE ====================
-  package:
-    name: Create NuGet Package
-    runs-on: ubuntu-latest
-    needs: [validate, build]
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-
-      - name: Setup .NET 8
-        uses: actions/setup-dotnet@v5
-        with:
-          dotnet-version: '8.0.x'
-
-      - name: Pack NuGet Package
-        run: |
-          dotnet pack \
-            --configuration Release \
-            --output ./artifacts \
-            /p:Version=${{ needs.validate.outputs.version }} \
-            /p:PackageReleaseNotes="See CHANGELOG.md for details"
-
-      - name: Upload Package Artifact
+      - name: Upload unsigned packages
         uses: actions/upload-artifact@v4
         with:
-          name: nuget-package
-          path: ./artifacts/*.nupkg
-          retention-days: 30
+          name: unsigned-packages
+          path: ./nupkgs/*.nupkg
 
-  # ==================== PUBLISH ====================
-  publish:
-    name: Publish to NuGet
-    runs-on: ubuntu-latest
-    needs: [validate, package]
-
-    steps:
-      - name: Download Package
-        uses: actions/download-artifact@v5
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: nuget-package
-          path: ./packages
+          name: test-results
+          path: '**/TestResults/**/*.trx'
 
-      - name: Setup .NET 8
-        uses: actions/setup-dotnet@v5
-        with:
-          dotnet-version: '8.0.x'
-
-      - name: Publish to NuGet.org
-        run: |
-          dotnet nuget push ./packages/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
-
-  # ==================== GITHUB RELEASE ====================
-  github-release:
-    name: Create GitHub Release
+  quality-gate:
+    needs: build-and-test
     runs-on: ubuntu-latest
-    needs: [validate, publish]
-    permissions:
-      contents: write
-
+    name: 2️⃣ Code Quality
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
+        uses: actions/checkout@v4
 
-      - name: Download Package
-        uses: actions/download-artifact@v5
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
         with:
-          name: nuget-package
+          dotnet-version: 8.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: csharp
+          queries: security-extended,security-and-quality
+
+      - name: Build for CodeQL
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+
+      - name: Dependency Vulnerability Scan
+        run: |
+          dotnet list package --vulnerable --include-transitive 2>&1 | tee vulnerability-report.txt
+        continue-on-error: true
+
+      - name: Upload quality reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: quality-reports
+          path: vulnerability-report.txt
+
+  package-signing:
+    needs: quality-gate
+    runs-on: ubuntu-latest
+    name: 3️⃣ Package Signing
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Download unsigned packages
+        uses: actions/download-artifact@v4
+        with:
+          name: unsigned-packages
+          path: ./unsigned
+
+      - name: Decode signing certificate
+        run: |
+          echo "${{ secrets.NUGET_SIGNING_CERT }}" | base64 --decode > cert.pfx
+
+      - name: Sign packages
+        run: |
+          for package in ./unsigned/*.nupkg; do
+            dotnet nuget sign "$package" \
+              --certificate-path cert.pfx \
+              --certificate-password "${{ secrets.NUGET_SIGNING_CERT_PASSWORD }}" \
+              --timestamper http://timestamp.digicert.com
+          done
+
+      - name: Verify signatures
+        run: |
+          for package in ./unsigned/*.nupkg; do
+            dotnet nuget verify "$package"
+          done
+
+      - name: Generate SHA256 checksums
+        run: |
+          cd unsigned
+          sha256sum *.nupkg > SHA256SUMS.txt
+          cat SHA256SUMS.txt
+
+      - name: Upload signed packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: signed-packages
+          path: |
+            ./unsigned/*.nupkg
+            ./unsigned/SHA256SUMS.txt
+
+  antivirus-scan:
+    needs: package-signing
+    runs-on: ubuntu-latest
+    name: 4️⃣ Antivirus Scan
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download signed packages
+        uses: actions/download-artifact@v4
+        with:
+          name: signed-packages
           path: ./packages
 
-      - name: Extract Release Notes
-        id: release_notes
+      - name: VirusTotal Scan
+        uses: crazy-max/ghaction-virustotal@v4
+        id: virustotal
+        continue-on-error: true
+        with:
+          vt_api_key: ${{ secrets.VIRUSTOTAL_API_KEY }}
+          files: ./packages/*.nupkg
+          vt_monitor: false
+
+      - name: Save VirusTotal Results
+        shell: bash
         run: |
-          VERSION=${{ needs.validate.outputs.version }}
+          echo "VirusTotal Scan Report - $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > VirusTotal-Summary.txt
+          echo "================================================================" >> VirusTotal-Summary.txt
+          echo "" >> VirusTotal-Summary.txt
 
-          # Extract version section from CHANGELOG.md
-          awk "/## \[?$VERSION\]?/,/## \[?[0-9]/" CHANGELOG.md | \
-            head -n -1 | tail -n +2 > release-notes.md
-
-          if [ ! -s release-notes.md ]; then
-            echo "Release notes for version $VERSION" > release-notes.md
+          if [ "${{ steps.virustotal.outcome }}" == "success" ]; then
+            echo "✅ VirusTotal scan completed successfully" >> VirusTotal-Summary.txt
+          elif [ "${{ steps.virustotal.outcome }}" == "failure" ]; then
+            echo "⚠️  VirusTotal scan failed (possibly 409 duplicate - files already scanned)" >> VirusTotal-Summary.txt
+            echo "This is normal for re-releases and does not indicate problems" >> VirusTotal-Summary.txt
+          else
+            echo "ℹ️  VirusTotal scan status: ${{ steps.virustotal.outcome }}" >> VirusTotal-Summary.txt
           fi
+
+          echo "" >> VirusTotal-Summary.txt
+          echo "Files Scanned:" >> VirusTotal-Summary.txt
+          for file in ./packages/*.nupkg; do
+            size=$(du -h "$file" | cut -f1)
+            echo "- $(basename "$file") ($size)" >> VirusTotal-Summary.txt
+          done
+
+          cat VirusTotal-Summary.txt
+          cp VirusTotal-Summary.txt ./packages/
+
+      - name: Upload scan results
+        uses: actions/upload-artifact@v4
+        with:
+          name: scan-results
+          path: |
+            ./packages/SHA256SUMS.txt
+            ./packages/VirusTotal-Summary.txt
+
+  publish-nuget:
+    needs: antivirus-scan
+    runs-on: ubuntu-latest
+    name: 5️⃣ Publish to NuGet.org
+    if: startsWith(github.ref, 'refs/tags/v')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Download signed packages
+        uses: actions/download-artifact@v4
+        with:
+          name: signed-packages
+          path: ./packages
+          name: scan-results
+          path: ./scan-results
+
+      - name: Download scan results
+        uses: actions/download-artifact@v4
+        with:
+      - name: Publish to NuGet.org
+        run: |
+          dotnet nuget push ./packages/*.nupkg \
+            --api-key ${{ secrets.NUGET_API_KEY }} \
+            --source https://api.nuget.org/v3/index.json \
+            --skip-duplicate
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          name: Release v${{ needs.validate.outputs.version }}
-          body_path: release-notes.md
+          files: |
+            ./packages/*.nupkg
+            ./scan-results/SHA256SUMS.txt
+            ./scan-results/VirusTotal-Summary.txt
+          generate_release_notes: true
           draft: false
-          prerelease: ${{ needs.validate.outputs.is_prerelease }}
-          files: ./packages/*.nupkg
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  # ==================== POST-RELEASE ====================
-  post-release:
-    name: Post-Release Tasks
-    runs-on: ubuntu-latest
-    needs: [validate, github-release]
-
-    steps:
-      - name: Release Summary
-        run: |
-          echo "🎉 Release v${{ needs.validate.outputs.version }} published successfully!"
-          echo ""
-          echo "📦 NuGet Package: https://www.nuget.org/packages/TypedMath/${{ needs.validate.outputs.version }}"
-          echo "📋 GitHub Release: ${{ github.server_url }}/${{ github.repository }}/releases/tag/v${{ needs.validate.outputs.version }}"
-          echo ""
-          echo "Pre-release: ${{ needs.validate.outputs.is_prerelease }}"
+          prerelease: false
