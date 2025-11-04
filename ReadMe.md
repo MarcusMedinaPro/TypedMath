@@ -412,3 +412,6 @@ Feel free to add, suggest, or request a feature. If you want to help develop thi
 ---
 
 **Made with ❤️ for better code readability**
+
+---
+_For metadata and SEO keywords, see [SEO.md](SEO.md)._

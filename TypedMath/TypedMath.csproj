@@ -17,6 +17,8 @@
 		<Description>Verbose math operations for better code readability. Helps with dyscalculia by making calculations explicit and readable.</Description>
 		<PackageProjectUrl>https://github.com/MarcusMedina/TypedMath/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/MarcusMedina/TypedMath/</RepositoryUrl>
+<RepositoryType>git</RepositoryType>
+
 		<RootNamespace>MarcusMedinaPro.TypedMath</RootNamespace>
 		<PackageTags>math;extensions;readability;dyscalculia;verbose;calculations;c#;csharp;dotnet;net8</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
