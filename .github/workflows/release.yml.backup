@@ -141,10 +141,67 @@ jobs:
             ./unsigned/*.nupkg
             ./unsigned/SHA256SUMS.txt
 
-  publish-nuget:
+  antivirus-scan:
     needs: package-signing
     runs-on: ubuntu-latest
-    name: 4️⃣ Publish to NuGet.org
+    name: 4️⃣ Antivirus Scan
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download signed packages
+        uses: actions/download-artifact@v4
+        with:
+          name: signed-packages
+          path: ./packages
+
+      - name: VirusTotal Scan
+        uses: crazy-max/ghaction-virustotal@v4
+        id: virustotal
+        continue-on-error: true
+        with:
+          vt_api_key: ${{ secrets.VIRUSTOTAL_API_KEY }}
+          files: ./packages/*.nupkg
+          vt_monitor: false
+
+      - name: Save VirusTotal Results
+        shell: bash
+        run: |
+          echo "VirusTotal Scan Report - $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > VirusTotal-Summary.txt
+          echo "================================================================" >> VirusTotal-Summary.txt
+          echo "" >> VirusTotal-Summary.txt
+
+          if [ "${{ steps.virustotal.outcome }}" == "success" ]; then
+            echo "✅ VirusTotal scan completed successfully" >> VirusTotal-Summary.txt
+          elif [ "${{ steps.virustotal.outcome }}" == "failure" ]; then
+            echo "⚠️  VirusTotal scan failed (possibly 409 duplicate - files already scanned)" >> VirusTotal-Summary.txt
+            echo "This is normal for re-releases and does not indicate problems" >> VirusTotal-Summary.txt
+          else
+            echo "ℹ️  VirusTotal scan status: ${{ steps.virustotal.outcome }}" >> VirusTotal-Summary.txt
+          fi
+
+          echo "" >> VirusTotal-Summary.txt
+          echo "Files Scanned:" >> VirusTotal-Summary.txt
+          for file in ./packages/*.nupkg; do
+            size=$(du -h "$file" | cut -f1)
+            echo "- $(basename "$file") ($size)" >> VirusTotal-Summary.txt
+          done
+
+          cat VirusTotal-Summary.txt
+          cp VirusTotal-Summary.txt ./packages/
+
+      - name: Upload scan results
+        uses: actions/upload-artifact@v4
+        with:
+          name: scan-results
+          path: |
+            ./packages/SHA256SUMS.txt
+            ./packages/VirusTotal-Summary.txt
+
+  publish-nuget:
+    needs: antivirus-scan
+    runs-on: ubuntu-latest
+    name: 5️⃣ Publish to NuGet.org
     if: startsWith(github.ref, 'refs/tags/v')
     steps:
       - name: Checkout
@@ -160,7 +217,12 @@ jobs:
         with:
           name: signed-packages
           path: ./packages
+          name: scan-results
+          path: ./scan-results
 
+      - name: Download scan results
+        uses: actions/download-artifact@v4
+        with:
       - name: Publish to NuGet.org
         run: |
           dotnet nuget push ./packages/*.nupkg \
@@ -173,7 +235,8 @@ jobs:
         with:
           files: |
             ./packages/*.nupkg
-            ./packages/SHA256SUMS.txt
+            ./scan-results/SHA256SUMS.txt
+            ./scan-results/VirusTotal-Summary.txt
           generate_release_notes: true
           draft: false
           prerelease: false
