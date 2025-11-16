@@ -5,6 +5,7 @@
 - **Authors:** Marcus Medina
 - **Project URL:** https://github.com/MarcusMedina/TypedMath/
 - **Repository:** https://github.com/MarcusMedina/TypedMath/
+- **Repository Type:** git
 
 ## Description
 Verbose math operations for better code readability. Helps with dyscalculia by making calculations explicit and readable.
